@@ -4,6 +4,6 @@
   min-height: 100vh;
 }
 
-.mainSection {
-  flex-grow: 1;
+footer {
+  margin-top: auto;
 }
