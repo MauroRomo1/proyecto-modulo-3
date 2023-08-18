@@ -1,14 +1,44 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
+import Error404 from "./components/views/Error404";
+import PaginaPrincipal from "./components/views/PaginaPrincipal";
+import Login from "./components/views/Login";
+import Administracion from "./components/views/Administracion";
+import DetalleJuego from "./components/views/DetalleJuego";
+import AcercaDeNosotros from "./components/views/AcercaDeNosotros";
 
 function App() {
   return (
     <>
-      <Header></Header>
-      <h1>Proyecto modulo 3</h1>
-      <Footer></Footer>
+      <BrowserRouter>
+        <Header></Header>
+        <Routes>
+          <Route exact path="/" element={<PaginaPrincipal></PaginaPrincipal>} />
+          <Route
+            exact
+            path="/administracion"
+            element={<Administracion></Administracion>}
+          />
+          <Route
+            exact
+            path="/detalle-juego"
+            element={<DetalleJuego></DetalleJuego>}
+          />
+          <Route
+            exact
+            path="/acerca-de-nosotros"
+            element={<AcercaDeNosotros></AcercaDeNosotros>}
+          />
+          <Route exact path="/login" element={<Login></Login>} />
+          <Route exact path="*" element={<Error404></Error404>} />
+        </Routes>
+        <Footer></Footer>
+      </BrowserRouter>
     </>
   );
 }
