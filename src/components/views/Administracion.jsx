@@ -1,5 +1,4 @@
 import { Table } from "react-bootstrap";
-
 import { Link } from "react-router-dom";
 import ItemJuego from "./Juego/ItemJuego";
 
