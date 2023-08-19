@@ -5,12 +5,9 @@ const Error404 = () => {
   return (
     <>
       <div className="container">
-        <img
-          src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODV4dHoxM2ZzdGxwM2I2cXA4bTU1d2kwaG05NmsyemRkdzhsNzNtNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/H54feNXf6i4eAQubud/giphy.gif"
-          alt=""
-        ></img>
-        <h1>La Pagina que ha solicitado no se encuentra disponible</h1>
-        <Button>Volver al Inicio</Button>
+        <img src="https://media.giphy.com/media/8L0Pky6C83SzkzU55a/giphy.gif"></img>
+        <h3>La Pagina que ha solicitado no se encuentra disponible</h3>
+        <Button variant="danger">Volver al Inicio</Button>
       </div>
     </>
   );
