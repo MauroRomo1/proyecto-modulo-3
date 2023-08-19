@@ -4,7 +4,7 @@
       "nombre": "Red Dead Redemption 2",
       "precio": 59.99,
       "categoria": ["Acción", "Mundo abierto"],
-      "urlPortada": "",
+      "urlPortada": "https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png",
       "descripcion": "América, 1899. Arthur Morgan y la banda de Van der Linde se ven obligados a huir. Con agentes federales y los mejores cazarrecompensas de la nación pisándoles los talones, la banda deberá atracar, robar y luchar, para sobrevivir en su camino por el escabroso territorio del corazón de América. Mientras las divisiones internas aumentan y amenazan con separarlos a todos, Arthur deberá elegir entre sus propios ideales y la lealtad a la banda que lo vio crecer.",
       "requisitos": {
         "minimos": {
@@ -31,7 +31,7 @@
       "nombre": "Hogwarts Legacy",
       "precio": 49.99,
       "categoria": ["Acción", "Aventura"],
-      "urlPortada": "",
+      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202208/0921/dR9KJAKDW2izPbptHQbh3rnj.png",
       "descripcion": "Hogwarts Legacy es un RPG envolvente de acción en un mundo abierto ambientado en el universo de los libros de Harry Potter. Ahora puedes tomar el control de la acción y ser el centro de tu propia aventura en el mundo mágico. Tú defines tu legado. Vive la historia nunca escrita.",
       "requisitos": {
         "minimos": {
@@ -58,7 +58,7 @@
       "nombre": "FIFA 23",
       "precio": 69.99,
       "categoria": ["Simulación"],
-      "urlPortada": "",
+      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202301/0312/yM0eeJui8AFByeP5BC5XV5j9.png",
       "descripcion": "FIFA 23 nos acerca a The World's Game con la tecnología HyperMotion2, la FIFA World Cup™ masculina y femenina disponibles durante la temporada, clubes femeninos, función de juego cruzado* y mucho más.",
       "requisitos": {
         "minimos": {
@@ -85,7 +85,7 @@
       "nombre": "Among Us",
       "precio": 0.99,
       "categoria": ["Casual"],
-      "urlPortada": "",
+      "urlPortada": "https://es.digitaltrends.com/wp-content/uploads/2021/01/among-us-featured.jpg",
       "descripcion": "Un juego para 4 a 15 jugadores en línea o en modo local mediante wifi en el que debéis preparar vuestra nave espacial para el despegue. Pero, cuidado: ¡uno o más jugadores elegidos al azar entre la tripulación son impostores dispuestos a matar al resto!",
       "requisitos": {
         "minimos": {
@@ -112,7 +112,7 @@
       "nombre": "Assassin's Creed Valhalla",
       "precio": 32.99,
       "categoria": ["Acción", "Mundo abierto"],
-      "urlPortada": "",
+      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202006/1520/EDtkdijFRwbmGKk1G9lrDoEF.png",
       "descripcion": "Ponte en la piel de una leyenda vikinga en busca de gloria. Saquea a tus enemigos, haz prosperar tu asentamiento y consolida tu poder político.",
       "requisitos": {
         "minimos": {
@@ -139,7 +139,7 @@
       "nombre": "Dead Island 2",
       "precio": 44.99,
       "categoria": ["Acción", "Terror"],
-      "urlPortada": "",
+      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1012/SyX3pwXDmPfzSY6KsdCU6dfk.jpg",
       "descripcion": "Un virus mortal se extiende por Los Ángeles y está convirtiendo a sus habitantes en zombis. Te han mordido e infectado, pero tu cuerpo es inmune. Descubre la verdad tras el brote y quién (o qué) eres.",
       "requisitos": {
         "minimos": {
@@ -166,7 +166,7 @@
       "nombre": "Resident Evil 4",
       "precio": 59.99,
       "categoria": ["Acción", "Terror"],
-      "urlPortada": "",
+      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202210/0706/EVWyZD63pahuh95eKloFaJuC.png",
       "descripcion": "Seis años después de la catástrofe biológica en Raccoon City, el agente Leon S. Kennedy, uno de los supervivientes del desastre, ha sido enviado a rescatar a la hija del presidente, a quien han secuestrado. Siguiendo su rastro, llega a una apartada población europea, donde sus habitantes sufren un mal terrible. Así comienza esta historia de un arriesgado rescate y terror escalofriante donde se cruzan la vida y la muerte, y el miedo y la catarsis.",
       "requisitos": {
         "minimos": {
@@ -193,7 +193,7 @@
       "nombre": "ELDEN RING",
       "precio": 59.99,
       "categoria": ["Rol", "Acción"],
-      "urlPortada": "",
+      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202110/2000/aGhopp3MHppi7kooGE2Dtt8C.png",
       "descripcion": "Elden Ring es el nuevo videojuego de FromSoftware, creadores de Dark Souls, Sekiro o Bloodborne. Se trata del nuevo título de acción y rol para un jugador ideado por Hidetaka Miyazaki, que en esta ocasión, estrenará un mundo abierto más grande y ambicioso. Su argumento y mitología están firmados por George R.R. Martin, autor de Canción de hielo y fuego.",
       "requisitos": {
         "minimos": {
@@ -220,7 +220,7 @@
       "nombre": "DOOM Eternal",
       "precio": 39.99,
       "categoria": ["Acción", "Sangriento"],
-      "urlPortada": "",
+      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202010/0114/ERNPc4gFqeRDG1tYQIfOKQtM.png",
       "descripcion": "Los ejércitos del infierno han invadido la Tierra. Ponte en la piel del Slayer en una épica campaña para un jugador y cruza dimensiones aniquilando demonios para detener la destrucción definitiva de la humanidad.",
       "requisitos": {
         "minimos": {
@@ -247,7 +247,7 @@
       "nombre": "Forza Horizon 5",
       "precio": 59.99,
       "categoria": ["Carreras", "Simulación"],
-      "urlPortada": "",
+      "urlPortada": "https://www.ultimagame.es/forza-horizon-5/imagen-i18351-pge.jpg",
       "descripcion": "Explora los vibrantes paisajes del mundo abierto de México y disfruta de una diversión sin límites al volante de los mejores coches del mundo. Conquista la escarpada Sierra Nueva en la experiencia definitiva del rally de Horizon.",
       "requisitos": {
         "minimos": {
