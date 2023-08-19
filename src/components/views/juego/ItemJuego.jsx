@@ -1,8 +1,9 @@
 import React from "react";
 import { Button, Image } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const ItemJuego = () => {
+  const detalleJuego = useNavigate();
   return (
     <tr>
       <td>
@@ -11,6 +12,7 @@ const ItemJuego = () => {
           alt="imagen-del-juego"
           rounded
           style={{ width: "80px", height: "80px", cursor: "pointer" }}
+          onClick={() => detalleJuego("/detalle-juego")}
         ></Image>
       </td>
       <td className="text-start flex-wrap">
