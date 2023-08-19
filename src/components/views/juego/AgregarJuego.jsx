@@ -319,6 +319,10 @@ const AgregarJuego = () => {
                 placeholder="URL imagen de portada*"
                 {...register("urlPortada", {
                   required: "La Url de la portada es obligatoria",
+                  pattern: {
+                    value: /^https?:\/\/[\w\-]+(\.[\w\-]+)+[/#?]?.*$/,
+                    message: "La Url debe ser valida",
+                  },
                 })}
               ></Form.Control>
               <Form.Text className="text-danger ps-2">
@@ -343,6 +347,12 @@ const AgregarJuego = () => {
               <Form.Control
                 type="text"
                 placeholder="URL imagen 2"
+                {...register("imgExtras.urlImg2", {
+                  pattern: {
+                    value: /^https?:\/\/[\w\-]+(\.[\w\-]+)+[/#?]?.*$/,
+                    message: "La Url debe ser valida",
+                  },
+                })}
               ></Form.Control>
             </FloatingLabel>
           </Col>
@@ -363,6 +373,12 @@ const AgregarJuego = () => {
               <Form.Control
                 type="text"
                 placeholder="URL imagen 3"
+                {...register("imgExtras.urlImg3", {
+                  pattern: {
+                    value: /^https?:\/\/[\w\-]+(\.[\w\-]+)+[/#?]?.*$/,
+                    message: "La Url debe ser valida",
+                  },
+                })}
               ></Form.Control>
             </FloatingLabel>
           </Col>
@@ -383,6 +399,12 @@ const AgregarJuego = () => {
               <Form.Control
                 type="text"
                 placeholder="URL imagen 4"
+                {...register("imgExtras.urlImg", {
+                  pattern: {
+                    value: /^https?:\/\/[\w\-]+(\.[\w\-]+)+[/#?]?.*$/,
+                    message: "La Url debe ser valida",
+                  },
+                })}
               ></Form.Control>
             </FloatingLabel>
           </Col>
