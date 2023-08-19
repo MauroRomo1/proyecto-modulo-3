@@ -10,14 +10,14 @@
         "minimos": {
           "sistemaOperativo": "Windows 10 - April 2018 Update (v1803)",
           "procesador": "Intel(R) Core(TM) i5-2500K / AMD FX-6300",
-          "memoria": "8 GB",
+          "memoria": "8 GB de RAM",
           "tarjetaGrafica": "Nvidia GeForce GTX 770 2 GB / AMD Radeon R9 280 3 GB",
           "almacenamiento": "150 GB"
         },
         "recomendado": {
           "sistemaOperativo": "Windows 10 - April 2018 Update (v1803)",
           "procesador": "Intel(R) Core(TM) i7-4770K / AMD Ryzen 5 1500x",
-          "memoria": "12 GB",
+          "memoria": "12 GB de RAM",
           "tarjetaGrafica": "Nvidia GeForce GTX 1060 6 GB / AMD Radeon RX 480 4 GB",
           "almacenamiento": "150 GB"
         }
@@ -37,14 +37,14 @@
         "minimos": {
           "sistemaOperativo": "Windows 10",
           "procesador": "Intel Core i5-8400 o AMD Ryzen 5 2600",
-          "memoria": "8 GB",
+          "memoria": "8 GB de RAM",
           "tarjetaGrafica": "NVIDIA GeForce GTX 1070 o AMD RX Vega 56",
           "almacenamiento": "85 GB"
         },
         "recomendado": {
           "sistemaOperativo": "Windows 10",
           "procesador": "Intel Core i7-8700 o AMD Ryzen 5 3600",
-          "memoria": "16 GB",
+          "memoria": "16 GB de RAM",
           "tarjetaGrafica": "NVIDIA GeForce 1080 Ti o AMD RX 5700 XT",
           "almacenamiento": "85 GB"
         }
@@ -64,14 +64,14 @@
         "minimos": {
           "sistemaOperativo": "Windows 10 de 64 bits",
           "procesador": "Ryzen 5 1600, Core i5 6600K",
-          "memoria": "8 GB",
+          "memoria": "8 GB de RAM",
           "tarjetaGrafica": "Radeon RX 570, GeForce GTX 1050 Ti",
           "almacenamiento": "100 GB"
         },
         "recomendado": {
           "sistemaOperativo": "Windows 10 de 64 bits",
           "procesador": "Ryzen 7 2700X, Core i7 6700",
-          "memoria": "12 GB",
+          "memoria": "12 GB de RAM",
           "tarjetaGrafica": "Radeon RX 5600 XT, GeForce GTX 1660",
           "almacenamiento": "100 GB"
         }
@@ -91,14 +91,14 @@
         "minimos": {
           "sistemaOperativo": "Windows 7 SP1 o superior",
           "procesador": "Compatible con el conjunto de instrucciones SSE2",
-          "memoria": "1 GB",
+          "memoria": "1 GB de RAM",
           "tarjetaGrafica": "Integrada o superior",
           "almacenamiento": "250 MB"
         },
         "recomendado": {
           "sistemaOperativo": "Windows 7 SP1 o superior",
           "procesador": "Compatible con el conjunto de instrucciones SSE2",
-          "memoria": "1 GB",
+          "memoria": "1 GB de RAM",
           "tarjetaGrafica": "Integrada o superior",
           "almacenamiento": "250 MB"
         }
@@ -118,14 +118,14 @@
         "minimos": {
           "sistemaOperativo": "Windows 10 (solo de 64 bits)",
           "procesador": "Ryzen 3 1200 a 3,1 GHz / i5-4460 a 3,2 GHz",
-          "memoria": "8 GB (modo de doble canal)",
+          "memoria": "8 GB de RAM",
           "tarjetaGrafica": "AMD R9 380 de 4 GB / GeForce GTX 960 de 4 GB",
           "almacenamiento": "50 GB"
         },
         "recomendado": {
           "sistemaOperativo": "Windows 10 (solo de 64 bits)",
           "procesador": "Ryzen 5 1600 a 3,2 GHz / i7-4790 a 3,6 GHz",
-          "memoria": "8 GB (modo de doble canal)",
+          "memoria": "8 GB de RAM",
           "tarjetaGrafica": "AMD RX 570 de 8 GB / GeForce GTX 1060 de 6 GB",
           "almacenamiento": "50 GB"
         }
@@ -145,14 +145,14 @@
         "minimos": {
           "sistemaOperativo": "Windows 10",
           "procesador": "AMD FX-9590, Intel Core i7-7700HQ",
-          "memoria": "10 GB",
+          "memoria": "10 GB de RAM",
           "tarjetaGrafica": "Radeon R9 390X (8192 MB de VRAM), GeForce GTX 1060 (6144 MB de VRAM)",
           "almacenamiento": "70 GB"
         },
         "recomendado": {
           "sistemaOperativo": "Windows 10",
           "procesador": "Ryzen 5 5600X, Intel Core i9-9900k",
-          "memoria": "10 GB",
+          "memoria": "10 GB de RAM",
           "tarjetaGrafica": "Radeon RX 6800 XT (16 384 MB de VRAM), GeForce RTX 2070 Super (8192 MB de VRAM)",
           "almacenamiento": "70 GB"
         }
@@ -161,6 +161,114 @@
       "editora": "Deep Silver",
       "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
       "id": 6
+    },
+    {
+      "nombre": "Resident Evil 4",
+      "precio": 59.99,
+      "categoria": ["Acción", "Terror"],
+      "urlPortada": "",
+      "descripcion": "Seis años después de la catástrofe biológica en Raccoon City, el agente Leon S. Kennedy, uno de los supervivientes del desastre, ha sido enviado a rescatar a la hija del presidente, a quien han secuestrado. Siguiendo su rastro, llega a una apartada población europea, donde sus habitantes sufren un mal terrible. Así comienza esta historia de un arriesgado rescate y terror escalofriante donde se cruzan la vida y la muerte, y el miedo y la catarsis.",
+      "requisitos": {
+        "minimos": {
+          "sistemaOperativo": "Windows 10 (64 bit)",
+          "procesador": "AMD Ryzen 3 1200 / Intel Core i5-7500",
+          "memoria": "8 GB de RAM",
+          "tarjetaGrafica": "AMD Radeon RX 560 with 4GB VRAM / NVIDIA GeForce GTX 1050 Ti with 4GB VRAM",
+          "almacenamiento": "51 GB"
+        },
+        "recomendado": {
+          "sistemaOperativo": "Windows 10 (64 bit)/Windows 11 (64 bit)",
+          "procesador": "AMD Ryzen 5 3600 / Intel Core i7 8700",
+          "memoria": "16 GB de RAM",
+          "tarjetaGrafica": "AMD Radeon RX 5700 / NVIDIA GeForce GTX 1070",
+          "almacenamiento": "51 GB"
+        }
+      },
+      "desarrolladora": "Capcom",
+      "editora": "Capcom",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "id": 7
+    },
+    {
+      "nombre": "ELDEN RING",
+      "precio": 59.99,
+      "categoria": ["Rol", "Acción"],
+      "urlPortada": "",
+      "descripcion": "Elden Ring es el nuevo videojuego de FromSoftware, creadores de Dark Souls, Sekiro o Bloodborne. Se trata del nuevo título de acción y rol para un jugador ideado por Hidetaka Miyazaki, que en esta ocasión, estrenará un mundo abierto más grande y ambicioso. Su argumento y mitología están firmados por George R.R. Martin, autor de Canción de hielo y fuego.",
+      "requisitos": {
+        "minimos": {
+          "sistemaOperativo": "Windows 10",
+          "procesador": "INTEL CORE I5-8400 or AMD RYZEN 3 3300X",
+          "memoria": "12 GB de RAM",
+          "tarjetaGrafica": "NVIDIA GEFORCE GTX 1060 3 GB or AMD RADEON RX 580 4 GB",
+          "almacenamiento": "60 GB"
+        },
+        "recomendado": {
+          "sistemaOperativo": "Windows 10/11",
+          "procesador": "INTEL CORE I7-8700K or AMD RYZEN 5 3600X",
+          "memoria": "16 GB de RAM",
+          "tarjetaGrafica": "NVIDIA GEFORCE GTX 1070 8 GB or AMD RADEON RX VEGA 56 8 GB",
+          "almacenamiento": "60 GB"
+        }
+      },
+      "desarrolladora": "FromSoftware Inc.",
+      "editora": "FromSoftware Inc.",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "id": 8
+    },
+    {
+      "nombre": "DOOM Eternal",
+      "precio": 39.99,
+      "categoria": ["Acción", "Sangriento"],
+      "urlPortada": "",
+      "descripcion": "Los ejércitos del infierno han invadido la Tierra. Ponte en la piel del Slayer en una épica campaña para un jugador y cruza dimensiones aniquilando demonios para detener la destrucción definitiva de la humanidad.",
+      "requisitos": {
+        "minimos": {
+          "sistemaOperativo": "64-bit Windows 7 / 64-Bit Windows 10",
+          "procesador": "Intel Core i5 @ 3.3 GHz or better, or AMD Ryzen 3 @ 3.1 GHz or better",
+          "memoria": "8 GB de RAM",
+          "tarjetaGrafica": "NVIDIA GeForce GTX 1050Ti (4GB), GTX 1060 (3GB), GTX 1650 (4GB) or AMD Radeon R9 280(3GB), AMD Radeon R9 290 (4GB), RX 470 (4GB)",
+          "almacenamiento": "80 GB"
+        },
+        "recomendado": {
+          "sistemaOperativo": "64-bit Windows 10",
+          "procesador": "Intel Core i7-6700K or better, or AMD Ryzen 7 1800X or better",
+          "memoria": "8 GB de RAM",
+          "tarjetaGrafica": "NVIDIA GeForce GTX 1060 (6GB), NVIDIA GeForce 970 (4GB), AMD RX 480 (8GB)",
+          "almacenamiento": "80 GB"
+        }
+      },
+      "desarrolladora": "id Software",
+      "editora": "Bethesda Softworks",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "id": 9
+    },
+    {
+      "nombre": "Forza Horizon 5",
+      "precio": 59.99,
+      "categoria": ["Carreras", "Simulación"],
+      "urlPortada": "",
+      "descripcion": "Explora los vibrantes paisajes del mundo abierto de México y disfruta de una diversión sin límites al volante de los mejores coches del mundo. Conquista la escarpada Sierra Nueva en la experiencia definitiva del rally de Horizon.",
+      "requisitos": {
+        "minimos": {
+          "sistemaOperativo": "Windows 10",
+          "procesador": "Intel i5-4460 or AMD Ryzen 3 1200",
+          "memoria": "8 GB de RAM",
+          "tarjetaGrafica": "NVidia GTX 970 OR AMD RX 470",
+          "almacenamiento": "110 GB"
+        },
+        "recomendado": {
+          "sistemaOperativo": "Windows 10",
+          "procesador": "Intel i5-8400 or AMD Ryzen 5 1500X",
+          "memoria": "16 GB de RAM",
+          "tarjetaGrafica": "NVidia GTX 1070 OR AMD RX 590",
+          "almacenamiento": "110 GB"
+        }
+      },
+      "desarrolladora": "Playground Games",
+      "editora": "Xbox Game Studios",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Everyone_SP.svg",
+      "id": 10
     }
   ]
 }
