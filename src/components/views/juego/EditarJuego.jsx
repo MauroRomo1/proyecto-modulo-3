@@ -122,7 +122,12 @@ const EditarJuego = () => {
               <Form.Control
                 type="text"
                 placeholder="Desarrolladora"
-                {...register("desarrolladora")}
+                {...register("desarrolladora", {
+                  maxLength: {
+                    value: 30,
+                    message: "Maximo 30 caracteres",
+                  },
+                })}
               ></Form.Control>
             </FloatingLabel>
           </Col>
@@ -167,7 +172,12 @@ const EditarJuego = () => {
               <Form.Control
                 type="text"
                 placeholder="Editora"
-                {...register("editora")}
+                {...register("editora", {
+                  maxLength: {
+                    value: 30,
+                    message: "Maximo 30 caracteres",
+                  },
+                })}
               ></Form.Control>
             </FloatingLabel>
           </Col>
@@ -182,6 +192,10 @@ const EditarJuego = () => {
                 placeholder="Descripcion"
                 {...register("descripcion", {
                   required: "la descripcion es obligatoria",
+                  maxLength: {
+                    value: 450,
+                    message: "limite de 450 caracteres",
+                  },
                 })}
               ></Form.Control>
               <Form.Text className="text-danger ps-2">
