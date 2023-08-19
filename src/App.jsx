@@ -11,6 +11,8 @@ import Login from "./components/views/Login";
 import Administracion from "./components/views/Administracion";
 import DetalleJuego from "./components/views/DetalleJuego";
 import AcercaDeNosotros from "./components/views/AcercaDeNosotros";
+import AgregarJuego from "./components/views/juego/AgregarJuego";
+import EditarJuego from "./components/views/Juego/EditarJuego";
 
 function App() {
   return (
@@ -23,6 +25,16 @@ function App() {
             exact
             path="/administracion"
             element={<Administracion></Administracion>}
+          />
+          <Route
+            exact
+            path="/agregar-juego"
+            element={<AgregarJuego></AgregarJuego>}
+          />
+          <Route
+            exact
+            path="/editar-juego"
+            element={<EditarJuego></EditarJuego>}
           />
           <Route
             exact

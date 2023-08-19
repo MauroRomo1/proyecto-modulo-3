@@ -1,5 +1,7 @@
-import { Button, Container, Table } from "react-bootstrap";
-import ItemJuego from "./ItemJuego";
+import { Table } from "react-bootstrap";
+
+import { Link } from "react-router-dom";
+import ItemJuego from "./Juego/ItemJuego";
 
 const Administracion = () => {
   return (
@@ -7,10 +9,18 @@ const Administracion = () => {
       <article className="display-2 pt-4 ps-3">
         <p>Administrar Juegos</p>
       </article>
-      <article>
-        <Button variant="primary">➕ Agregar Juegos</Button>
+      <article className="d-flex justify-content-between">
+        <Link to={"/agregar-juego"} className="btn btn-primary btn-lg ps-2">
+          ➕ Agregar Juegos
+        </Link>
       </article>
-      <Table striped hover variant="secondary" className="my-4" responsive="sm">
+      <Table
+        striped
+        hover
+        variant="secondary"
+        className="my-4 shadow"
+        responsive="sm"
+      >
         <thead>
           <tr>
             <th className="fs-4 fw-light">img</th>
@@ -22,8 +32,6 @@ const Administracion = () => {
           </tr>
         </thead>
         <tbody>
-          <ItemJuego></ItemJuego>
-          <ItemJuego></ItemJuego>
           <ItemJuego></ItemJuego>
           <ItemJuego></ItemJuego>
         </tbody>

@@ -23,7 +23,9 @@ const ItemJuego = () => {
       <td>⭐4.3</td>
       <td>
         <div className="d-flex flex-column">
-          <Link className="btn btn-warning btn-sm">🖊</Link>
+          <Link to={"/editar-juego"} className="btn btn-warning btn-sm">
+            🖊
+          </Link>
           <Button variant="danger" size="sm" className="mt-2">
             ✖
           </Button>
