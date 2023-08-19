@@ -1,1 +1,166 @@
-{}
+{
+  "juegos": [
+    {
+      "nombre": "Red Dead Redemption 2",
+      "precio": 59.99,
+      "categoria": ["Acción", "Mundo abierto"],
+      "urlPortada": "",
+      "descripcion": "América, 1899. Arthur Morgan y la banda de Van der Linde se ven obligados a huir. Con agentes federales y los mejores cazarrecompensas de la nación pisándoles los talones, la banda deberá atracar, robar y luchar, para sobrevivir en su camino por el escabroso territorio del corazón de América. Mientras las divisiones internas aumentan y amenazan con separarlos a todos, Arthur deberá elegir entre sus propios ideales y la lealtad a la banda que lo vio crecer.",
+      "requisitos": {
+        "minimos": {
+          "sistemaOperativo": "Windows 10 - April 2018 Update (v1803)",
+          "procesador": "Intel(R) Core(TM) i5-2500K / AMD FX-6300",
+          "memoria": "8 GB",
+          "tarjetaGrafica": "Nvidia GeForce GTX 770 2 GB / AMD Radeon R9 280 3 GB",
+          "almacenamiento": "150 GB"
+        },
+        "recomendado": {
+          "sistemaOperativo": "Windows 10 - April 2018 Update (v1803)",
+          "procesador": "Intel(R) Core(TM) i7-4770K / AMD Ryzen 5 1500x",
+          "memoria": "12 GB",
+          "tarjetaGrafica": "Nvidia GeForce GTX 1060 6 GB / AMD Radeon RX 480 4 GB",
+          "almacenamiento": "150 GB"
+        }
+      },
+      "desarrolladora": "Rockstar Games",
+      "editora": "Rockstar Games",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "id": 1
+    },
+    {
+      "nombre": "Hogwarts Legacy",
+      "precio": 49.99,
+      "categoria": ["Acción", "Aventura"],
+      "urlPortada": "",
+      "descripcion": "Hogwarts Legacy es un RPG envolvente de acción en un mundo abierto ambientado en el universo de los libros de Harry Potter. Ahora puedes tomar el control de la acción y ser el centro de tu propia aventura en el mundo mágico. Tú defines tu legado. Vive la historia nunca escrita.",
+      "requisitos": {
+        "minimos": {
+          "sistemaOperativo": "Windows 10",
+          "procesador": "Intel Core i5-8400 o AMD Ryzen 5 2600",
+          "memoria": "8 GB",
+          "tarjetaGrafica": "NVIDIA GeForce GTX 1070 o AMD RX Vega 56",
+          "almacenamiento": "85 GB"
+        },
+        "recomendado": {
+          "sistemaOperativo": "Windows 10",
+          "procesador": "Intel Core i7-8700 o AMD Ryzen 5 3600",
+          "memoria": "16 GB",
+          "tarjetaGrafica": "NVIDIA GeForce 1080 Ti o AMD RX 5700 XT",
+          "almacenamiento": "85 GB"
+        }
+      },
+      "desarrolladora": "Avalanche Software",
+      "editora": "Warner Bros. Games",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Teen_SP.svg",
+      "id": 2
+    },
+    {
+      "nombre": "FIFA 23",
+      "precio": 69.99,
+      "categoria": ["Simulación"],
+      "urlPortada": "",
+      "descripcion": "FIFA 23 nos acerca a The World's Game con la tecnología HyperMotion2, la FIFA World Cup™ masculina y femenina disponibles durante la temporada, clubes femeninos, función de juego cruzado* y mucho más.",
+      "requisitos": {
+        "minimos": {
+          "sistemaOperativo": "Windows 10 de 64 bits",
+          "procesador": "Ryzen 5 1600, Core i5 6600K",
+          "memoria": "8 GB",
+          "tarjetaGrafica": "Radeon RX 570, GeForce GTX 1050 Ti",
+          "almacenamiento": "100 GB"
+        },
+        "recomendado": {
+          "sistemaOperativo": "Windows 10 de 64 bits",
+          "procesador": "Ryzen 7 2700X, Core i7 6700",
+          "memoria": "12 GB",
+          "tarjetaGrafica": "Radeon RX 5600 XT, GeForce GTX 1660",
+          "almacenamiento": "100 GB"
+        }
+      },
+      "desarrolladora": "EA Canada",
+      "editora": "Electronic Arts",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Everyone_SP.svg",
+      "id": 3
+    },
+    {
+      "nombre": "Among Us",
+      "precio": 0.99,
+      "categoria": ["Casual"],
+      "urlPortada": "",
+      "descripcion": "Un juego para 4 a 15 jugadores en línea o en modo local mediante wifi en el que debéis preparar vuestra nave espacial para el despegue. Pero, cuidado: ¡uno o más jugadores elegidos al azar entre la tripulación son impostores dispuestos a matar al resto!",
+      "requisitos": {
+        "minimos": {
+          "sistemaOperativo": "Windows 7 SP1 o superior",
+          "procesador": "Compatible con el conjunto de instrucciones SSE2",
+          "memoria": "1 GB",
+          "tarjetaGrafica": "Integrada o superior",
+          "almacenamiento": "250 MB"
+        },
+        "recomendado": {
+          "sistemaOperativo": "Windows 7 SP1 o superior",
+          "procesador": "Compatible con el conjunto de instrucciones SSE2",
+          "memoria": "1 GB",
+          "tarjetaGrafica": "Integrada o superior",
+          "almacenamiento": "250 MB"
+        }
+      },
+      "desarrolladora": "Innersloth",
+      "editora": "Innersloth",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Everyone10_SP.svg",
+      "id": 4
+    },
+    {
+      "nombre": "Assassin's Creed Valhalla",
+      "precio": 32.99,
+      "categoria": ["Acción", "Mundo abierto"],
+      "urlPortada": "",
+      "descripcion": "Ponte en la piel de una leyenda vikinga en busca de gloria. Saquea a tus enemigos, haz prosperar tu asentamiento y consolida tu poder político.",
+      "requisitos": {
+        "minimos": {
+          "sistemaOperativo": "Windows 10 (solo de 64 bits)",
+          "procesador": "Ryzen 3 1200 a 3,1 GHz / i5-4460 a 3,2 GHz",
+          "memoria": "8 GB (modo de doble canal)",
+          "tarjetaGrafica": "AMD R9 380 de 4 GB / GeForce GTX 960 de 4 GB",
+          "almacenamiento": "50 GB"
+        },
+        "recomendado": {
+          "sistemaOperativo": "Windows 10 (solo de 64 bits)",
+          "procesador": "Ryzen 5 1600 a 3,2 GHz / i7-4790 a 3,6 GHz",
+          "memoria": "8 GB (modo de doble canal)",
+          "tarjetaGrafica": "AMD RX 570 de 8 GB / GeForce GTX 1060 de 6 GB",
+          "almacenamiento": "50 GB"
+        }
+      },
+      "desarrolladora": "Ubisoft Montreal",
+      "editora": "Ubisoft",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "id": 5
+    },
+    {
+      "nombre": "Dead Island 2",
+      "precio": 44.99,
+      "categoria": ["Acción", "Terror"],
+      "urlPortada": "",
+      "descripcion": "Un virus mortal se extiende por Los Ángeles y está convirtiendo a sus habitantes en zombis. Te han mordido e infectado, pero tu cuerpo es inmune. Descubre la verdad tras el brote y quién (o qué) eres.",
+      "requisitos": {
+        "minimos": {
+          "sistemaOperativo": "Windows 10",
+          "procesador": "AMD FX-9590, Intel Core i7-7700HQ",
+          "memoria": "10 GB",
+          "tarjetaGrafica": "Radeon R9 390X (8192 MB de VRAM), GeForce GTX 1060 (6144 MB de VRAM)",
+          "almacenamiento": "70 GB"
+        },
+        "recomendado": {
+          "sistemaOperativo": "Windows 10",
+          "procesador": "Ryzen 5 5600X, Intel Core i9-9900k",
+          "memoria": "10 GB",
+          "tarjetaGrafica": "Radeon RX 6800 XT (16 384 MB de VRAM), GeForce RTX 2070 Super (8192 MB de VRAM)",
+          "almacenamiento": "70 GB"
+        }
+      },
+      "desarrolladora": "Deep Silver Dambuster Studios",
+      "editora": "Deep Silver",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "id": 6
+    }
+  ]
+}
