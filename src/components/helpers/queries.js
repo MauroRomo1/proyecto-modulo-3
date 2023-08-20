@@ -13,3 +13,17 @@ export const listarJuegos = async() => {
         return null;
     }
 }
+
+export const agregarJuegos = async(juego) => {
+    try {
+        const respuesta = await fetch(dbJuegos, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(juego)
+        })
+        return respuesta;
+    } catch (error) {
+        console.log(error);
+        return null;
+    }
+}

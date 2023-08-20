@@ -11,8 +11,12 @@ import {
   Row,
 } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import { agregarJuegos } from "../../helpers/queries";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 const AgregarJuego = () => {
+  const detalleJuego = useNavigate();
   const {
     register,
     handleSubmit,
@@ -21,7 +25,25 @@ const AgregarJuego = () => {
   } = useForm();
 
   const onSubmit = (juego) => {
-    console.log(juego);
+    agregarJuegos(juego)
+      .then((respuesta) => {
+        if (respuesta.status === 201) {
+          Swal.fire(
+            "El juego " + juego.nombre,
+            " fue cargado con exito",
+            "success"
+          );
+          detalleJuego("/detalle-juego/" + juego.id);
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+        Swal.fire(
+          "hubo un error!",
+          "codigo de error: " + error.message,
+          "error"
+        );
+      });
   };
 
   return (
