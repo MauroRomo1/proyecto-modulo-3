@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Button,
   Col,
@@ -11,14 +11,84 @@ import {
   Row,
 } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import { useParams } from "react-router-dom";
+import Swal from "sweetalert2";
+import { obtenerJuego } from "../../helpers/queries";
 
 const EditarJuego = () => {
+  const { id } = useParams();
+
   const {
     register,
     handleSubmit,
     formState: { errors },
+    setValue,
     reset,
   } = useForm();
+
+  useEffect(() => {
+    obtenerJuego(id)
+      .then((resp) => {
+        if (resp) {
+          setValue("nombre", resp.nombre);
+          setValue("precio", resp.precio);
+          setValue("categoria", resp.categoria);
+          setValue("desarrolladora", resp.desarrolladora);
+          setValue("clasificacionImg", resp.clasificacionImg);
+          setValue("editora", resp.editora);
+          setValue("descripcion", resp.descripcion);
+          setValue("urlPortada", resp.urlPortada);
+
+          setValue(
+            "requisitos.minimos.sistemaOperativo",
+            resp.requisitos.minimos.sistemaOperativo
+          );
+          setValue(
+            "requisitos.minimos.procesador",
+            resp.requisitos.minimos.procesador
+          );
+          setValue(
+            "requisitos.minimos.memoria",
+            resp.requisitos.minimos.memoria
+          );
+          setValue(
+            "requisitos.minimos.tarjetaGrafica",
+            resp.requisitos.minimos.tarjetaGrafica
+          );
+          setValue(
+            "requisitos.minimos.almacenamiento",
+            resp.requisitos.minimos.almacenamiento
+          );
+
+          setValue(
+            "requisitos.recomendado.sistemaOperativo",
+            resp.requisitos.recomendado.sistemaOperativo
+          );
+          setValue(
+            "requisitos.recomendado.procesador",
+            resp.requisitos.recomendado.procesador
+          );
+          setValue(
+            "requisitos.recomendado.memoria",
+            resp.requisitos.recomendado.memoria
+          );
+          setValue(
+            "requisitos.recomendado.tarjetaGrafica",
+            resp.requisitos.recomendado.tarjetaGrafica
+          );
+          setValue(
+            "requisitos.recomendado.almacenamiento",
+            resp.requisitos.recomendado.almacenamiento
+          );
+          setValue("capturas.url1", resp.capturas.url1);
+          setValue("capturas.url2", resp.capturas.url2);
+          setValue("capturas.url3", resp.capturas.url3);
+          setValue("capturas.url4", resp.capturas.url4);
+          setValue("urlTrailer", resp.urlTrailer);
+        }
+      })
+      .catch((error) => console.log(error));
+  }, []);
 
   const onSubmit = (juego) => {
     console.log(juego);
@@ -372,12 +442,16 @@ const EditarJuego = () => {
             ></Image>
           </Col>
           <Col md={10} className="pt-2 my-2">
-            <FloatingLabel controlId="1" label="URL captura 1" className="mb-3">
+            <FloatingLabel
+              controlId="url1"
+              label="URL captura 1"
+              className="mb-3"
+            >
               <Form.Control
                 type="text"
                 autoComplete="off"
                 placeholder="URL captura 1"
-                {...register("capturas.1", {
+                {...register("capturas.url1", {
                   pattern: {
                     value: /^https?:\/\/[\w\-]+(\.[\w\-]+)+[/#?]?.*$/,
                     message: "La Url debe ser valida",
@@ -386,7 +460,7 @@ const EditarJuego = () => {
               ></Form.Control>
             </FloatingLabel>
           </Col>
-          <Col md={2} className=" my-2">
+          <Col md={2} className="my-2">
             <Image
               src="https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
               alt="imagen-del-juego"
@@ -395,12 +469,16 @@ const EditarJuego = () => {
             ></Image>
           </Col>
           <Col md={10} className="pt-2 my-2">
-            <FloatingLabel controlId="2" label="URL captura 2" className="mb-3">
+            <FloatingLabel
+              controlId="url2"
+              label="URL captura 2"
+              className="mb-3"
+            >
               <Form.Control
                 type="text"
                 autoComplete="off"
                 placeholder="URL captura 2"
-                {...register("capturas.2", {
+                {...register("capturas.url2", {
                   pattern: {
                     value: /^https?:\/\/[\w\-]+(\.[\w\-]+)+[/#?]?.*$/,
                     message: "La Url debe ser valida",
@@ -418,12 +496,16 @@ const EditarJuego = () => {
             ></Image>
           </Col>
           <Col md={10} className="pt-2 my-2">
-            <FloatingLabel controlId="3" label="URL captura 3" className="mb-3">
+            <FloatingLabel
+              controlId="url3"
+              label="URL captura 3"
+              className="mb-3"
+            >
               <Form.Control
                 type="text"
                 autoComplete="off"
                 placeholder="URL captura 3"
-                {...register("capturas.3", {
+                {...register("capturas.url3", {
                   pattern: {
                     value: /^https?:\/\/[\w\-]+(\.[\w\-]+)+[/#?]?.*$/,
                     message: "La Url debe ser valida",
@@ -441,12 +523,16 @@ const EditarJuego = () => {
             ></Image>
           </Col>
           <Col md={10} className="pt-2 my-2">
-            <FloatingLabel controlId="4" label="URL captura 4" className="mb-3">
+            <FloatingLabel
+              controlId="url4"
+              label="URL captura 4"
+              className="mb-3"
+            >
               <Form.Control
                 type="text"
                 autoComplete="off"
                 placeholder="URL captura 4"
-                {...register("capturas.4", {
+                {...register("capturas.url4", {
                   pattern: {
                     value: /^https?:\/\/[\w\-]+(\.[\w\-]+)+[/#?]?.*$/,
                     message: "La Url debe ser valida",

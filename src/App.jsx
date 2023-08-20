@@ -12,7 +12,7 @@ import Administracion from "./components/views/Administracion";
 import DetalleJuego from "./components/views/DetalleJuego";
 import AcercaDeNosotros from "./components/views/AcercaDeNosotros";
 import AgregarJuego from "./components/views/juego/AgregarJuego";
-import EditarJuego from "./components/views/Juego/EditarJuego";
+import EditarJuego from "./components/views/juego/EditarJuego";
 
 function App() {
   return (
@@ -33,7 +33,7 @@ function App() {
           />
           <Route
             exact
-            path="/editar-juego"
+            path="/editar-juego/:id"
             element={<EditarJuego></EditarJuego>}
           />
           <Route

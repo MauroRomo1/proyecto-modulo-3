@@ -394,12 +394,16 @@ const AgregarJuego = () => {
             ></Image>
           </Col>
           <Col md={10} className="pt-2 my-2">
-            <FloatingLabel controlId="1" label="URL captura 1" className="mb-3">
+            <FloatingLabel
+              controlId="url1"
+              label="URL captura 1"
+              className="mb-3"
+            >
               <Form.Control
                 type="text"
                 autoComplete="off"
                 placeholder="URL captura 1"
-                {...register("capturas.1", {
+                {...register("capturas.url1", {
                   pattern: {
                     value: /^https?:\/\/[\w\-]+(\.[\w\-]+)+[/#?]?.*$/,
                     message: "La Url debe ser valida",
@@ -417,12 +421,16 @@ const AgregarJuego = () => {
             ></Image>
           </Col>
           <Col md={10} className="pt-2 my-2">
-            <FloatingLabel controlId="2" label="URL captura 2" className="mb-3">
+            <FloatingLabel
+              controlId="url2"
+              label="URL captura 2"
+              className="mb-3"
+            >
               <Form.Control
                 type="text"
                 autoComplete="off"
                 placeholder="URL captura 2"
-                {...register("capturas.2", {
+                {...register("capturas.url2", {
                   pattern: {
                     value: /^https?:\/\/[\w\-]+(\.[\w\-]+)+[/#?]?.*$/,
                     message: "La Url debe ser valida",
@@ -440,12 +448,16 @@ const AgregarJuego = () => {
             ></Image>
           </Col>
           <Col md={10} className="pt-2 my-2">
-            <FloatingLabel controlId="3" label="URL captura 3" className="mb-3">
+            <FloatingLabel
+              controlId="url3"
+              label="URL captura 3"
+              className="mb-3"
+            >
               <Form.Control
                 type="text"
                 autoComplete="off"
                 placeholder="URL captura 3"
-                {...register("capturas.3", {
+                {...register("capturas.url3", {
                   pattern: {
                     value: /^https?:\/\/[\w\-]+(\.[\w\-]+)+[/#?]?.*$/,
                     message: "La Url debe ser valida",
@@ -463,12 +475,16 @@ const AgregarJuego = () => {
             ></Image>
           </Col>
           <Col md={10} className="pt-2 my-2">
-            <FloatingLabel controlId="4" label="URL captura 4" className="mb-3">
+            <FloatingLabel
+              controlId="url4"
+              label="URL captura 4"
+              className="mb-3"
+            >
               <Form.Control
                 type="text"
                 autoComplete="off"
                 placeholder="URL captura 4"
-                {...register("capturas.4", {
+                {...register("capturas.url4", {
                   pattern: {
                     value: /^https?:\/\/[\w\-]+(\.[\w\-]+)+[/#?]?.*$/,
                     message: "La Url debe ser valida",
