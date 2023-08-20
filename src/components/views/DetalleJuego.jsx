@@ -66,7 +66,7 @@ const DetalleJuego = () => {
                       <h6>Clasificación:</h6>
                       <img
                         src={juego.clasificacionImg}
-                        alt=""
+                        alt="Clasificacion ESRB"
                         className="img-fluid"
                         width="45"
                       />
