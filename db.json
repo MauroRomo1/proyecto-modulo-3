@@ -6,10 +6,10 @@
       "categoria": ["Acción", "Mundo abierto"],
       "urlPortada": "https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png",
       "capturas": {
-        "1": "https://media.rockstargames.com/rockstargames-newsite/uploads/c0cc88f41d10ff2bfafcc43d4356303c1fcaba43.jpg",
-        "2": "https://media.rockstargames.com/rockstargames-newsite/uploads/10402b7c7c4a3faea439166ea0df0520d8ab1865.jpg",
-        "3": "https://media.rockstargames.com/rockstargames-newsite/uploads/3bd96e9640bf85015ea24970957ff8deab3e211d.jpg",
-        "4": "https://media.rockstargames.com/rockstargames-newsite/uploads/f924a7858cf5bbf0cb990f252a2fa8efb7919bec.jpg"
+        "url1": "https://media.rockstargames.com/rockstargames-newsite/uploads/c0cc88f41d10ff2bfafcc43d4356303c1fcaba43.jpg",
+        "url2": "https://media.rockstargames.com/rockstargames-newsite/uploads/10402b7c7c4a3faea439166ea0df0520d8ab1865.jpg",
+        "url3": "https://media.rockstargames.com/rockstargames-newsite/uploads/3bd96e9640bf85015ea24970957ff8deab3e211d.jpg",
+        "url4": "https://media.rockstargames.com/rockstargames-newsite/uploads/f924a7858cf5bbf0cb990f252a2fa8efb7919bec.jpg"
       },
       "descripcion": "América, 1899. Arthur Morgan y la banda de Van der Linde se ven obligados a huir. Con agentes federales y los mejores cazarrecompensas de la nación pisándoles los talones, la banda deberá atracar, robar y luchar, para sobrevivir en su camino por el escabroso territorio del corazón de América. Mientras las divisiones internas aumentan y amenazan con separarlos a todos, Arthur deberá elegir entre sus propios ideales y la lealtad a la banda que lo vio crecer.",
       "requisitos": {
@@ -40,10 +40,10 @@
       "categoria": ["Acción", "Aventura"],
       "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202208/0921/dR9KJAKDW2izPbptHQbh3rnj.png",
       "capturas": {
-        "1": "https://sm.ign.com/t/ign_latam/screenshot/default/screenshot-15-1600287822654_6r3d.1080.jpg",
-        "2": "https://sm.ign.com/t/ign_latam/screenshot/default/screenshot-20-1600287832362_f2qh.1080.jpg",
-        "3": "https://sm.ign.com/t/ign_latam/screenshot/default/screenshot-19-1600287830096_yfqg.1080.jpg",
-        "4": "https://sm.ign.com/t/ign_latam/screenshot/default/screenshot-22-1600287836034_jw93.1080.jpg"
+        "url1": "https://sm.ign.com/t/ign_latam/screenshot/default/screenshot-15-1600287822654_6r3d.1080.jpg",
+        "url2": "https://sm.ign.com/t/ign_latam/screenshot/default/screenshot-20-1600287832362_f2qh.1080.jpg",
+        "url3": "https://sm.ign.com/t/ign_latam/screenshot/default/screenshot-19-1600287830096_yfqg.1080.jpg",
+        "url4": "https://sm.ign.com/t/ign_latam/screenshot/default/screenshot-22-1600287836034_jw93.1080.jpg"
       },
       "descripcion": "Hogwarts Legacy es un RPG envolvente de acción en un mundo abierto ambientado en el universo de los libros de Harry Potter. Ahora puedes tomar el control de la acción y ser el centro de tu propia aventura en el mundo mágico. Tú defines tu legado. Vive la historia nunca escrita.",
       "requisitos": {
@@ -74,10 +74,10 @@
       "categoria": ["Simulación"],
       "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202301/0312/yM0eeJui8AFByeP5BC5XV5j9.png",
       "capturas": {
-        "1": "https://uvejuegos.com/img/juegos/68679/WANDAMETROPOLITANO_23_16X9_WM_LORES.jpg",
-        "2": "https://uvejuegos.com/img/juegos/68679/Mbappe_Lores_WM_16x9.jpg",
-        "3": "https://uvejuegos.com/img/juegos/68679/Copy-of-Kelly_Hero_Hires_WM_16x9.jpg",
-        "4": "https://uvejuegos.com/img/juegos/68679/FIFA-23_20221008015817.jpg"
+        "url1": "https://uvejuegos.com/img/juegos/68679/WANDAMETROPOLITANO_23_16X9_WM_LORES.jpg",
+        "url2": "https://uvejuegos.com/img/juegos/68679/Mbappe_Lores_WM_16x9.jpg",
+        "url3": "https://uvejuegos.com/img/juegos/68679/Copy-of-Kelly_Hero_Hires_WM_16x9.jpg",
+        "url4": "https://uvejuegos.com/img/juegos/68679/FIFA-23_20221008015817.jpg"
       },
       "descripcion": "FIFA 23 nos acerca a The World's Game con la tecnología HyperMotion2, la FIFA World Cup™ masculina y femenina disponibles durante la temporada, clubes femeninos, función de juego cruzado* y mucho más.",
       "requisitos": {
@@ -108,10 +108,10 @@
       "categoria": ["Acción", "Mundo abierto"],
       "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202202/2816/K6mmm89oNII1iI1aqaClO0wh.png",
       "capturas": {
-        "1": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_2.jpg",
-        "2": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_12.jpg",
-        "3": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_5.jpg",
-        "4": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_3.jpg"
+        "url1": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_2.jpg",
+        "url2": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_12.jpg",
+        "url3": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_5.jpg",
+        "url4": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_3.jpg"
       },
       "descripcion": "Cuando un joven estafador callejero, un ladrón de bancos retirado y un psicópata aterrador se ven involucrados con lo peor y más desquiciado del mundo criminal, del gobierno de los EE. UU. y de la industria del espectáculo, tendrán que llevar a cabo una serie de peligrosos golpes para sobrevivir en una ciudad implacable en la que no pueden confiar en nadie. Y mucho menos los unos en los otros.",
       "requisitos": {
@@ -142,10 +142,10 @@
       "categoria": ["Acción", "Mundo abierto"],
       "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202006/1520/EDtkdijFRwbmGKk1G9lrDoEF.png",
       "capturas": {
-        "1": "https://sm.ign.com/t/ign_latam/screenshot/default/ack-dlc-01-coronation-257625609339d99889e3-50289465-16208381_wew2.1080.jpg",
-        "2": "https://sm.ign.com/t/ign_latam/screenshot/default/ack-dlc-25-barid-257625609339d5055600-70353614-1620838198682_gw61.1080.jpg",
-        "3": "https://sm.ign.com/t/ign_latam/screenshot/default/ack-dlc-06-asfinnhut-257625609339e0cd8019-59668505-162083819_f2xk.1080.jpg",
-        "4": "https://sm.ign.com/t/ign_latam/screenshot/default/ack-dlc-11-doondaven-257625609339c5d59a18-08993957-162083819_9ghd.1080.jpg"
+        "url1": "https://sm.ign.com/t/ign_latam/screenshot/default/ack-dlc-01-coronation-257625609339d99889e3-50289465-16208381_wew2.1080.jpg",
+        "url2": "https://sm.ign.com/t/ign_latam/screenshot/default/ack-dlc-25-barid-257625609339d5055600-70353614-1620838198682_gw61.1080.jpg",
+        "url3": "https://sm.ign.com/t/ign_latam/screenshot/default/ack-dlc-06-asfinnhut-257625609339e0cd8019-59668505-162083819_f2xk.1080.jpg",
+        "url4": "https://sm.ign.com/t/ign_latam/screenshot/default/ack-dlc-11-doondaven-257625609339c5d59a18-08993957-162083819_9ghd.1080.jpg"
       },
       "descripcion": "Ponte en la piel de una leyenda vikinga en busca de gloria. Saquea a tus enemigos, haz prosperar tu asentamiento y consolida tu poder político.",
       "requisitos": {
@@ -176,10 +176,10 @@
       "categoria": ["Acción", "Terror"],
       "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1012/SyX3pwXDmPfzSY6KsdCU6dfk.jpg",
       "capturas": {
-        "1": "https://sm.ign.com/t/ign_es/screenshot/default/dead-island-2-20230404150747_sueq.1080.jpg",
-        "2": "https://sm.ign.com/t/ign_es/screenshot/default/dead-island-2-20230404151004_asxy.1080.jpg",
-        "3": "https://sm.ign.com/t/ign_es/screenshot/default/dead-island-2-20230404165511_15yw.1080.jpg",
-        "4": "https://sm.ign.com/t/ign_es/screenshot/default/dead-island-2-20230404170252_91ya.1080.jpg"
+        "url1": "https://sm.ign.com/t/ign_es/screenshot/default/dead-island-2-20230404150747_sueq.1080.jpg",
+        "url2": "https://sm.ign.com/t/ign_es/screenshot/default/dead-island-2-20230404151004_asxy.1080.jpg",
+        "url3": "https://sm.ign.com/t/ign_es/screenshot/default/dead-island-2-20230404165511_15yw.1080.jpg",
+        "url4": "https://sm.ign.com/t/ign_es/screenshot/default/dead-island-2-20230404170252_91ya.1080.jpg"
       },
       "descripcion": "Un virus mortal se extiende por Los Ángeles y está convirtiendo a sus habitantes en zombis. Te han mordido e infectado, pero tu cuerpo es inmune. Descubre la verdad tras el brote y quién (o qué) eres.",
       "requisitos": {
@@ -210,10 +210,10 @@
       "categoria": ["Acción", "Terror"],
       "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202210/0706/EVWyZD63pahuh95eKloFaJuC.png",
       "capturas": {
-        "1": "https://sm.ign.com/t/ign_es/screenshot/default/unknown-2023-03-09-16-42-45_tpbf.1080.jpg",
-        "2": "https://sm.ign.com/t/ign_es/screenshot/default/unknown-2023-03-09-16-48-43_nqw7.1080.jpg",
-        "3": "https://sm.ign.com/t/ign_es/screenshot/default/unknown-2023-03-09-17-29-59_cuw7.1080.jpg",
-        "4": "https://sm.ign.com/t/ign_es/screenshot/default/unknown-2023-03-09-16-45-24_qy46.1080.jpg"
+        "url1": "https://sm.ign.com/t/ign_es/screenshot/default/unknown-2023-03-09-16-42-45_tpbf.1080.jpg",
+        "url2": "https://sm.ign.com/t/ign_es/screenshot/default/unknown-2023-03-09-16-48-43_nqw7.1080.jpg",
+        "url3": "https://sm.ign.com/t/ign_es/screenshot/default/unknown-2023-03-09-17-29-59_cuw7.1080.jpg",
+        "url4": "https://sm.ign.com/t/ign_es/screenshot/default/unknown-2023-03-09-16-45-24_qy46.1080.jpg"
       },
       "descripcion": "Seis años después de la catástrofe biológica en Raccoon City, el agente Leon S. Kennedy, uno de los supervivientes del desastre, ha sido enviado a rescatar a la hija del presidente, a quien han secuestrado. Siguiendo su rastro, llega a una apartada población europea, donde sus habitantes sufren un mal terrible. Así comienza esta historia de un arriesgado rescate y terror escalofriante donde se cruzan la vida y la muerte, y el miedo y la catarsis.",
       "requisitos": {
@@ -272,10 +272,10 @@
       "categoria": ["Acción", "Sangriento"],
       "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202010/0114/ERNPc4gFqeRDG1tYQIfOKQtM.png",
       "capturas": {
-        "1": "https://sm.ign.com/t/ign_es/screenshot/default/chainsaw-1559900183-1579287070267_3j9z.1080.jpg",
-        "2": "https://sm.ign.com/t/ign_es/screenshot/default/cyber-mancubus-1579287083266_yxrt.1080.jpg",
-        "3": "https://sm.ign.com/t/ign_es/screenshot/default/doom-eternal-fire-baron-1533718919-1579287218145_fxvw.1080.jpg",
-        "4": "https://sm.ign.com/t/ign_es/screenshot/default/marauder-1559925215-1579287352523_h3e6.1080.jpg"
+        "url1": "https://sm.ign.com/t/ign_es/screenshot/default/chainsaw-1559900183-1579287070267_3j9z.1080.jpg",
+        "url2": "https://sm.ign.com/t/ign_es/screenshot/default/cyber-mancubus-1579287083266_yxrt.1080.jpg",
+        "url3": "https://sm.ign.com/t/ign_es/screenshot/default/doom-eternal-fire-baron-1533718919-1579287218145_fxvw.1080.jpg",
+        "url4": "https://sm.ign.com/t/ign_es/screenshot/default/marauder-1559925215-1579287352523_h3e6.1080.jpg"
       },
       "descripcion": "Los ejércitos del infierno han invadido la Tierra. Ponte en la piel del Slayer en una épica campaña para un jugador y cruza dimensiones aniquilando demonios para detener la destrucción definitiva de la humanidad.",
       "requisitos": {
@@ -306,10 +306,10 @@
       "categoria": ["Carreras", "Simulación"],
       "urlPortada": "https://www.ultimagame.es/forza-horizon-5/imagen-i18351-pge.jpg",
       "capturas": {
-        "1": "https://sm.ign.com/t/ign_es/gallery/f/forza-hori/forza-horizon-5-gamescom-screenshots_3eck.1080.jpg",
-        "2": "https://sm.ign.com/t/ign_es/photo/default/forzahorizon5-gamescom-01-16x9-wm-1629828784351_xmgk.1080.jpg",
-        "3": "https://sm.ign.com/t/ign_es/photo/default/forzahorizon5-gamescom-02-16x9-wm-1629828784352_ys1g.1080.jpg",
-        "4": "https://sm.ign.com/t/ign_es/photo/default/forzahorizon5-gamescom-03-16x9-wm-1629828784353_s4cm.1080.jpg"
+        "url1": "https://sm.ign.com/t/ign_es/gallery/f/forza-hori/forza-horizon-5-gamescom-screenshots_3eck.1080.jpg",
+        "url2": "https://sm.ign.com/t/ign_es/photo/default/forzahorizon5-gamescom-01-16x9-wm-1629828784351_xmgk.1080.jpg",
+        "url3": "https://sm.ign.com/t/ign_es/photo/default/forzahorizon5-gamescom-02-16x9-wm-1629828784352_ys1g.1080.jpg",
+        "url4": "https://sm.ign.com/t/ign_es/photo/default/forzahorizon5-gamescom-03-16x9-wm-1629828784353_s4cm.1080.jpg"
       },
       "descripcion": "Explora los vibrantes paisajes del mundo abierto de México y disfruta de una diversión sin límites al volante de los mejores coches del mundo. Conquista la escarpada Sierra Nueva en la experiencia definitiva del rally de Horizon.",
       "requisitos": {
