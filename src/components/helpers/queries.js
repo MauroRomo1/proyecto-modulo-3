@@ -53,3 +53,12 @@ export const editarJuego = async(id, juegoEditado) => {
         console.log(error);
     }
 }
+
+export const borrarJuego = async(id) => {
+    try {
+        const respuesta = await fetch(`${dbJuegos}/${id}`, { method: 'DELETE' })
+        return respuesta
+    } catch (error) {
+        console.log(error);
+    }
+}

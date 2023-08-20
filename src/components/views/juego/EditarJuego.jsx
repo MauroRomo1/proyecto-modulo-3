@@ -164,15 +164,13 @@ const EditarJuego = () => {
                 {errors.moneda?.message}
               </Form.Text>
             </FloatingLabel>
-            {/* </Col>
-          <Col md={3}> */}
             <FloatingLabel controlId="precio" label="Precio*" className="mb-3">
               <Form.Control
                 type="text"
                 autoComplete="off"
                 placeholder="Precio*"
                 minLength={2}
-                maxLength={7}
+                maxLength={8}
                 {...register("precio", {
                   required: "El precio es obligatorio",
                   minLength: {
@@ -180,7 +178,7 @@ const EditarJuego = () => {
                     message: "El precio minimo es de $10",
                   },
                   maxLength: {
-                    value: 6,
+                    value: 7,
                     message: "Exediste el precio maximo permitido ($999.999)",
                   },
                 })}

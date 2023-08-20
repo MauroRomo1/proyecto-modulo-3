@@ -2,9 +2,28 @@ import React from "react";
 
 import { Button, Image } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
+import { borrarJuego } from "../../helpers/queries";
+import Swal from "sweetalert2";
 
 const ItemJuego = ({ juego }) => {
   const detalleJuego = useNavigate();
+
+  const borrar = (juego) => {
+    Swal.fire({
+      title: "Quiere eliminar " + juego.nombre + "?",
+      text: "esta accion es permanente y no se podra revertir!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "error",
+      cancelButtonColor: "success",
+      confirmButtonText: "Si, quiero eliminar",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire("Eliminado!", "El juego fue eliminado con exito", "success");
+        borrarJuego(juego.id);
+      }
+    });
+  };
   return (
     <tr>
       <td>
@@ -34,10 +53,15 @@ const ItemJuego = ({ juego }) => {
             to={`/editar-juego/${juego.id}`}
             className="btn btn-warning btn-sm"
           >
-            🖊
+            Editar 🖊
           </Link>
-          <Button variant="danger" size="sm" className="mt-2">
-            ✖
+          <Button
+            variant="danger"
+            size="sm"
+            className="mt-2"
+            onClick={() => borrar(juego)}
+          >
+            Borrar ✖
           </Button>
         </div>
       </td>

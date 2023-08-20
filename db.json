@@ -3,7 +3,7 @@
     {
       "nombre": "Red Dead Redemption 2",
       "moneda": "USD",
-      "precio": 59.99,
+      "precio": "49.99",
       "categoria": "Aventura",
       "desarrolladora": "Rockstar Games",
       "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
@@ -398,41 +398,6 @@
       },
       "urlTrailer": "https://youtu.be/EE-4GvjKcfs",
       "id": 11
-    },
-    {
-      "nombre": "call of duty",
-      "moneda": "ARS",
-      "precio": "20.000",
-      "categoria": "Accion/Shooter",
-      "desarrolladora": "activision",
-      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
-      "editora": "sletchamer games",
-      "descripcion": "juego de guerra muy copado",
-      "requisitos": {
-        "minimos": {
-          "sistemaOperativo": "windows 7",
-          "procesador": "intel i3",
-          "memoria": "6gb",
-          "tarjetaGrafica": "nvidia 950",
-          "almacenamiento": "120gb"
-        },
-        "recomendado": {
-          "sistemaOperativo": "windows 10",
-          "procesador": "intel i9",
-          "memoria": "16gb",
-          "tarjetaGrafica": "nvidia 2070",
-          "almacenamiento": "125gb"
-        }
-      },
-      "urlPortada": "https://www.asdasdsadasasd.com",
-      "capturas": {
-        "url1": "https://www.asdasdsadasasd.com",
-        "url2": "https://www.asdasdsadasasd.com",
-        "url3": "https://www.asdasdsadasasd.com",
-        "url4": "https://www.asdasdsadasasd.com"
-      },
-      "urlTrailer": "https://www.asdasdsadasasd.com",
-      "id": 12
     }
   ]
 }
