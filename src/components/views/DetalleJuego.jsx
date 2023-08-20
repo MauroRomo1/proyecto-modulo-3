@@ -8,10 +8,10 @@ const DetalleJuego = () => {
     urlPortada:
       "https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png",
     capturas: {
-      1: "https://media.rockstargames.com/rockstargames-newsite/uploads/c0cc88f41d10ff2bfafcc43d4356303c1fcaba43.jpg",
-      2: "https://media.rockstargames.com/rockstargames-newsite/uploads/10402b7c7c4a3faea439166ea0df0520d8ab1865.jpg",
-      3: "https://media.rockstargames.com/rockstargames-newsite/uploads/3bd96e9640bf85015ea24970957ff8deab3e211d.jpg",
-      4: "https://media.rockstargames.com/rockstargames-newsite/uploads/f924a7858cf5bbf0cb990f252a2fa8efb7919bec.jpg",
+      url1: "https://media.rockstargames.com/rockstargames-newsite/uploads/c0cc88f41d10ff2bfafcc43d4356303c1fcaba43.jpg",
+      url2: "https://media.rockstargames.com/rockstargames-newsite/uploads/10402b7c7c4a3faea439166ea0df0520d8ab1865.jpg",
+      url3: "https://media.rockstargames.com/rockstargames-newsite/uploads/3bd96e9640bf85015ea24970957ff8deab3e211d.jpg",
+      url4: "https://media.rockstargames.com/rockstargames-newsite/uploads/f924a7858cf5bbf0cb990f252a2fa8efb7919bec.jpg",
     },
     descripcion:
       "América, 1899. Arthur Morgan y la banda de Van der Linde se ven obligados a huir. Con agentes federales y los mejores cazarrecompensas de la nación pisándoles los talones, la banda deberá atracar, robar y luchar, para sobrevivir en su camino por el escabroso territorio del corazón de América. Mientras las divisiones internas aumentan y amenazan con separarlos a todos, Arthur deberá elegir entre sus propios ideales y la lealtad a la banda que lo vio crecer.",
@@ -39,7 +39,6 @@ const DetalleJuego = () => {
       "https://www.youtube.com/watch?v=SXvQ1nK4oxk&ab_channel=RockstarGames",
     id: 1,
   };
-
   return (
     <section className="container my-4">
       <div className="row">
