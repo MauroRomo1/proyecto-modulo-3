@@ -40,3 +40,16 @@ export const obtenerJuego = async(id) => {
         return null;
     }
 }
+
+export const editarJuego = async(id, juegoEditado) => {
+    try {
+        const respuesta = await fetch(`${dbJuegos}/${id}`, {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(juegoEditado)
+        })
+        return respuesta;
+    } catch (error) {
+        console.log(error);
+    }
+}

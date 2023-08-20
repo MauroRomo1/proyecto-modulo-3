@@ -11,12 +11,13 @@ import {
   Row,
 } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Swal from "sweetalert2";
-import { obtenerJuego } from "../../helpers/queries";
+import { editarJuego, obtenerJuego } from "../../helpers/queries";
 
 const EditarJuego = () => {
   const { id } = useParams();
+  const detalleJuego = useNavigate();
 
   const {
     register,
@@ -38,7 +39,6 @@ const EditarJuego = () => {
           setValue("editora", resp.editora);
           setValue("descripcion", resp.descripcion);
           setValue("urlPortada", resp.urlPortada);
-
           setValue(
             "requisitos.minimos.sistemaOperativo",
             resp.requisitos.minimos.sistemaOperativo
@@ -59,7 +59,6 @@ const EditarJuego = () => {
             "requisitos.minimos.almacenamiento",
             resp.requisitos.minimos.almacenamiento
           );
-
           setValue(
             "requisitos.recomendado.sistemaOperativo",
             resp.requisitos.recomendado.sistemaOperativo
@@ -91,7 +90,24 @@ const EditarJuego = () => {
   }, []);
 
   const onSubmit = (juego) => {
-    console.log(juego);
+    editarJuego(id, juego)
+      .then((respuesta) => {
+        if (respuesta.status === 200) {
+          Swal.fire(
+            "El juego " + juego.nombre,
+            "fue editado con exito!",
+            "success"
+          );
+          detalleJuego(`/detalle-juego/${juego.id}`);
+        }
+      })
+      .catch((error) => {
+        Swal.fire(
+          "Se produjo un error!",
+          "no se pudo editar el juego",
+          "error"
+        );
+      });
   };
 
   return (

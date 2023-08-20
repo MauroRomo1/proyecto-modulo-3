@@ -3,7 +3,10 @@
     {
       "nombre": "Red Dead Redemption 2",
       "precio": 59.99,
-      "categoria": ["Acción", "Mundo abierto"],
+      "categoria": [
+        "Acción",
+        "Mundo abierto"
+      ],
       "urlPortada": "https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png",
       "capturas": {
         "url1": "https://media.rockstargames.com/rockstargames-newsite/uploads/c0cc88f41d10ff2bfafcc43d4356303c1fcaba43.jpg",
@@ -37,7 +40,10 @@
     {
       "nombre": "Hogwarts Legacy",
       "precio": 49.99,
-      "categoria": ["Acción", "Aventura"],
+      "categoria": [
+        "Acción",
+        "Aventura"
+      ],
       "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202208/0921/dR9KJAKDW2izPbptHQbh3rnj.png",
       "capturas": {
         "url1": "https://sm.ign.com/t/ign_latam/screenshot/default/screenshot-15-1600287822654_6r3d.1080.jpg",
@@ -71,7 +77,9 @@
     {
       "nombre": "FIFA 23",
       "precio": 69.99,
-      "categoria": ["Simulación"],
+      "categoria": [
+        "Simulación"
+      ],
       "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202301/0312/yM0eeJui8AFByeP5BC5XV5j9.png",
       "capturas": {
         "url1": "https://uvejuegos.com/img/juegos/68679/WANDAMETROPOLITANO_23_16X9_WM_LORES.jpg",
@@ -105,7 +113,10 @@
     {
       "nombre": "Grand Theft Auto V",
       "precio": 29.99,
-      "categoria": ["Acción", "Mundo abierto"],
+      "categoria": [
+        "Acción",
+        "Mundo abierto"
+      ],
       "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202202/2816/K6mmm89oNII1iI1aqaClO0wh.png",
       "capturas": {
         "url1": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_2.jpg",
@@ -139,7 +150,10 @@
     {
       "nombre": "Assassin's Creed Valhalla",
       "precio": 32.99,
-      "categoria": ["Acción", "Mundo abierto"],
+      "categoria": [
+        "Acción",
+        "Mundo abierto"
+      ],
       "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202006/1520/EDtkdijFRwbmGKk1G9lrDoEF.png",
       "capturas": {
         "url1": "https://sm.ign.com/t/ign_latam/screenshot/default/ack-dlc-01-coronation-257625609339d99889e3-50289465-16208381_wew2.1080.jpg",
@@ -173,7 +187,10 @@
     {
       "nombre": "Dead Island 2",
       "precio": 44.99,
-      "categoria": ["Acción", "Terror"],
+      "categoria": [
+        "Acción",
+        "Terror"
+      ],
       "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1012/SyX3pwXDmPfzSY6KsdCU6dfk.jpg",
       "capturas": {
         "url1": "https://sm.ign.com/t/ign_es/screenshot/default/dead-island-2-20230404150747_sueq.1080.jpg",
@@ -207,7 +224,10 @@
     {
       "nombre": "Resident Evil 4",
       "precio": 59.99,
-      "categoria": ["Acción", "Terror"],
+      "categoria": [
+        "Acción",
+        "Terror"
+      ],
       "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202210/0706/EVWyZD63pahuh95eKloFaJuC.png",
       "capturas": {
         "url1": "https://sm.ign.com/t/ign_es/screenshot/default/unknown-2023-03-09-16-42-45_tpbf.1080.jpg",
@@ -241,7 +261,10 @@
     {
       "nombre": "ELDEN RING",
       "precio": 59.99,
-      "categoria": ["Rol", "Acción"],
+      "categoria": [
+        "Rol",
+        "Acción"
+      ],
       "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202110/2000/aGhopp3MHppi7kooGE2Dtt8C.png",
       "descripcion": "Elden Ring es el nuevo videojuego de FromSoftware, creadores de Dark Souls, Sekiro o Bloodborne. Se trata del nuevo título de acción y rol para un jugador ideado por Hidetaka Miyazaki, que en esta ocasión, estrenará un mundo abierto más grande y ambicioso. Su argumento y mitología están firmados por George R.R. Martin, autor de Canción de hielo y fuego.",
       "capturas": {
@@ -275,7 +298,10 @@
     {
       "nombre": "DOOM Eternal",
       "precio": 39.99,
-      "categoria": ["Acción", "Sangriento"],
+      "categoria": [
+        "Acción",
+        "Sangriento"
+      ],
       "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202010/0114/ERNPc4gFqeRDG1tYQIfOKQtM.png",
       "capturas": {
         "url1": "https://sm.ign.com/t/ign_es/screenshot/default/chainsaw-1559900183-1579287070267_3j9z.1080.jpg",
@@ -309,7 +335,10 @@
     {
       "nombre": "Forza Horizon 5",
       "precio": 59.99,
-      "categoria": ["Carreras", "Simulación"],
+      "categoria": [
+        "Carreras",
+        "Simulación"
+      ],
       "urlPortada": "https://www.ultimagame.es/forza-horizon-5/imagen-i18351-pge.jpg",
       "capturas": {
         "url1": "https://sm.ign.com/t/ign_es/gallery/f/forza-hori/forza-horizon-5-gamescom-screenshots_3eck.1080.jpg",
@@ -342,7 +371,7 @@
     },
     {
       "nombre": "Good of War: Ragnarok",
-      "precio": "69",
+      "precio": "50",
       "categoria": "Aventura",
       "desarrolladora": "SIE Santa Monica",
       "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
@@ -371,9 +400,42 @@
         "url3": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHyGYEUaIzWH5Y2NJel_GsodIGiK2PtuT75g&usqp=CAU",
         "url4": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtyyV-4wsppuYCMcvWTBoVo9IYGm_2sQD3lRH4iGlQ5zuTZDVX7ppdtKajEnxdhTemYFg&usqp=CAU"
       },
-
       "urlTrailer": "https://youtu.be/EE-4GvjKcfs",
       "id": 11
+    },
+    {
+      "nombre": "call of duty",
+      "precio": "30",
+      "categoria": "Accion/Shooter",
+      "desarrolladora": "activision",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "editora": "sletchamer games",
+      "descripcion": "juego de guerra muy copado",
+      "requisitos": {
+        "minimos": {
+          "sistemaOperativo": "windows 7",
+          "procesador": "intel i3",
+          "memoria": "6gb",
+          "tarjetaGrafica": "nvidia 950",
+          "almacenamiento": "120gb"
+        },
+        "recomendado": {
+          "sistemaOperativo": "windows 10",
+          "procesador": "intel i9",
+          "memoria": "16gb",
+          "tarjetaGrafica": "nvidia 2070",
+          "almacenamiento": "125gb"
+        }
+      },
+      "urlPortada": "https://www.asdasdsadasasd.com",
+      "capturas": {
+        "url1": "https://www.asdasdsadasasd.com",
+        "url2": "https://www.asdasdsadasasd.com",
+        "url3": "https://www.asdasdsadasasd.com",
+        "url4": "https://www.asdasdsadasasd.com"
+      },
+      "urlTrailer": "https://www.asdasdsadasasd.com",
+      "id": 12
     }
   ]
 }
