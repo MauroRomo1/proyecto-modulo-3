@@ -1,4 +1,4 @@
-import { NavItem, Table } from "react-bootstrap";
+import { Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { listarJuegos } from "../helpers/queries";
 import { useEffect, useState } from "react";
@@ -50,11 +50,7 @@ const Administracion = () => {
             <th></th>
           </tr>
         </thead>
-        <tbody>
-          {listaJuegos.map((juego) => {
-            <ItemJuego></ItemJuego>;
-          })}
-        </tbody>
+        <tbody></tbody>
       </Table>
     </section>
   );
