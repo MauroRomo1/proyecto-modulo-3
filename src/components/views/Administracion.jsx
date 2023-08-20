@@ -1,10 +1,9 @@
-import { Table } from "react-bootstrap";
+import { Button, Table } from "react-bootstrap";
+import ItemJuego from "./Juego/ItemJuego";
 import { Link } from "react-router-dom";
 import { listarJuegos } from "../helpers/queries";
 import { useEffect, useState } from "react";
-
 import Swal from "sweetalert2";
-import ItemJuego from "./Juego/ItemJuego";
 
 const Administracion = () => {
   const [listaJuegos, setListaJuegos] = useState([]);
@@ -47,10 +46,14 @@ const Administracion = () => {
             <th className="fs-4 fw-light">Precio</th>
             <th className="fs-4 fw-light">Categoria</th>
             <th className="fs-4 fw-light">Valoracion</th>
-            <th></th>
+            <th className="fs-4 fw-light">Opciones</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          {listaJuegos.map((juego) => (
+            <ItemJuego key={juego.id} juego={juego}></ItemJuego>
+          ))}
+        </tbody>
       </Table>
     </section>
   );
