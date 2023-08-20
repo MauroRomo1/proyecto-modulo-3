@@ -19,7 +19,11 @@ const ItemJuego = ({ juego }) => {
       <td className="text-start flex-wrap">
         <p className="text-break fw-medium">{juego.nombre}</p>
       </td>
-      <td>${juego.precio}</td>
+      <td className="text-">
+        <p>
+          {juego.moneda === "USD" ? "Usd" : "Ars"}$ {juego.precio}
+        </p>
+      </td>
       <td>
         <p className="text-break">{juego.categoria}</p>
       </td>

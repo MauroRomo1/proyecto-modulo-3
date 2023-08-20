@@ -148,10 +148,27 @@ const EditarJuego = () => {
               </Form.Text>
             </FloatingLabel>
           </Col>
-          <Col md={6}>
+          <Col md={6} className="d-flex justify-content-evenly">
+            <FloatingLabel controlId="moneda" label="Moneda*" className="mb-3">
+              <Form.Select
+                aria-label="Moneda*"
+                {...register("moneda", {
+                  required: "Este dato es obligatorio",
+                })}
+              >
+                <option value="">Elije la moneda</option>
+                <option value="USD">Dolares</option>
+                <option value="ARS">Pesos Argentinos</option>
+              </Form.Select>
+              <Form.Text className="text-danger ps-2">
+                {errors.moneda?.message}
+              </Form.Text>
+            </FloatingLabel>
+            {/* </Col>
+          <Col md={3}> */}
             <FloatingLabel controlId="precio" label="Precio*" className="mb-3">
               <Form.Control
-                type="number"
+                type="text"
                 autoComplete="off"
                 placeholder="Precio*"
                 minLength={2}
@@ -285,8 +302,8 @@ const EditarJuego = () => {
                 {...register("descripcion", {
                   required: "la descripcion es obligatoria",
                   maxLength: {
-                    value: 450,
-                    message: "limite de 450 caracteres",
+                    value: 600,
+                    message: "limite de 600 caracteres",
                   },
                 })}
               ></Form.Control>
@@ -446,7 +463,7 @@ const EditarJuego = () => {
               </Form.Text>
             </FloatingLabel>
           </Col>
-          <h4 className="fs-4 fw-light text-start ps-5 pb-3">
+          <h4 className="fs-4 fw-light text-center pb-3">
             Capturas del juego 🎯
           </h4>
           <Col md={2} className=" my-2">
@@ -557,7 +574,7 @@ const EditarJuego = () => {
               ></Form.Control>
             </FloatingLabel>
           </Col>
-          <h4 className="fs-4 fw-light text-start ps-5 pb-3">
+          <h4 className="fs-4 fw-light text-center pb-3">
             Trailer del juego 🎥
           </h4>
           <Col md={12} className="pt-2 my-2">

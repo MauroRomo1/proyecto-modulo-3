@@ -2,18 +2,12 @@
   "juegos": [
     {
       "nombre": "Red Dead Redemption 2",
+      "moneda": "USD",
       "precio": 59.99,
-      "categoria": [
-        "Acción",
-        "Mundo abierto"
-      ],
-      "urlPortada": "https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png",
-      "capturas": {
-        "url1": "https://media.rockstargames.com/rockstargames-newsite/uploads/c0cc88f41d10ff2bfafcc43d4356303c1fcaba43.jpg",
-        "url2": "https://media.rockstargames.com/rockstargames-newsite/uploads/10402b7c7c4a3faea439166ea0df0520d8ab1865.jpg",
-        "url3": "https://media.rockstargames.com/rockstargames-newsite/uploads/3bd96e9640bf85015ea24970957ff8deab3e211d.jpg",
-        "url4": "https://media.rockstargames.com/rockstargames-newsite/uploads/f924a7858cf5bbf0cb990f252a2fa8efb7919bec.jpg"
-      },
+      "categoria": "Aventura",
+      "desarrolladora": "Rockstar Games",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "editora": "Rockstar Games",
       "descripcion": "América, 1899. Arthur Morgan y la banda de Van der Linde se ven obligados a huir. Con agentes federales y los mejores cazarrecompensas de la nación pisándoles los talones, la banda deberá atracar, robar y luchar, para sobrevivir en su camino por el escabroso territorio del corazón de América. Mientras las divisiones internas aumentan y amenazan con separarlos a todos, Arthur deberá elegir entre sus propios ideales y la lealtad a la banda que lo vio crecer.",
       "requisitos": {
         "minimos": {
@@ -31,26 +25,24 @@
           "almacenamiento": "150 GB"
         }
       },
-      "desarrolladora": "Rockstar Games",
-      "editora": "Rockstar Games",
-      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "urlPortada": "https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png",
+      "capturas": {
+        "url1": "https://media.rockstargames.com/rockstargames-newsite/uploads/c0cc88f41d10ff2bfafcc43d4356303c1fcaba43.jpg",
+        "url2": "https://media.rockstargames.com/rockstargames-newsite/uploads/10402b7c7c4a3faea439166ea0df0520d8ab1865.jpg",
+        "url3": "https://media.rockstargames.com/rockstargames-newsite/uploads/3bd96e9640bf85015ea24970957ff8deab3e211d.jpg",
+        "url4": "https://media.rockstargames.com/rockstargames-newsite/uploads/f924a7858cf5bbf0cb990f252a2fa8efb7919bec.jpg"
+      },
       "urlTrailer": "https://www.youtube.com/watch?v=SXvQ1nK4oxk&ab_channel=RockstarGames",
       "id": 1
     },
     {
       "nombre": "Hogwarts Legacy",
-      "precio": 49.99,
-      "categoria": [
-        "Acción",
-        "Aventura"
-      ],
-      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202208/0921/dR9KJAKDW2izPbptHQbh3rnj.png",
-      "capturas": {
-        "url1": "https://sm.ign.com/t/ign_latam/screenshot/default/screenshot-15-1600287822654_6r3d.1080.jpg",
-        "url2": "https://sm.ign.com/t/ign_latam/screenshot/default/screenshot-20-1600287832362_f2qh.1080.jpg",
-        "url3": "https://sm.ign.com/t/ign_latam/screenshot/default/screenshot-19-1600287830096_yfqg.1080.jpg",
-        "url4": "https://sm.ign.com/t/ign_latam/screenshot/default/screenshot-22-1600287836034_jw93.1080.jpg"
-      },
+      "moneda": "USD",
+      "precio": "49.99",
+      "categoria": "Aventura",
+      "desarrolladora": "Avalanche Software",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Teen_SP.svg",
+      "editora": "Warner Bros. Games",
       "descripcion": "Hogwarts Legacy es un RPG envolvente de acción en un mundo abierto ambientado en el universo de los libros de Harry Potter. Ahora puedes tomar el control de la acción y ser el centro de tu propia aventura en el mundo mágico. Tú defines tu legado. Vive la historia nunca escrita.",
       "requisitos": {
         "minimos": {
@@ -68,9 +60,13 @@
           "almacenamiento": "85 GB"
         }
       },
-      "desarrolladora": "Avalanche Software",
-      "editora": "Warner Bros. Games",
-      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Teen_SP.svg",
+      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202208/0921/dR9KJAKDW2izPbptHQbh3rnj.png",
+      "capturas": {
+        "url1": "https://sm.ign.com/t/ign_latam/screenshot/default/screenshot-15-1600287822654_6r3d.1080.jpg",
+        "url2": "https://sm.ign.com/t/ign_latam/screenshot/default/screenshot-20-1600287832362_f2qh.1080.jpg",
+        "url3": "https://sm.ign.com/t/ign_latam/screenshot/default/screenshot-19-1600287830096_yfqg.1080.jpg",
+        "url4": "https://sm.ign.com/t/ign_latam/screenshot/default/screenshot-22-1600287836034_jw93.1080.jpg"
+      },
       "urlTrailer": "https://www.youtube.com/watch?v=S6GTl_vPRvU&ab_channel=PlayStationEspa%C3%B1a",
       "id": 2
     },
@@ -405,7 +401,8 @@
     },
     {
       "nombre": "call of duty",
-      "precio": "30",
+      "moneda": "ARS",
+      "precio": "20.000",
       "categoria": "Accion/Shooter",
       "desarrolladora": "activision",
       "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
