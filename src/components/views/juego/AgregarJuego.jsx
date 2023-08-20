@@ -39,6 +39,7 @@ const AgregarJuego = () => {
             >
               <Form.Control
                 type="text"
+                autoComplete="off"
                 autoFocus
                 placeholder="Nombre del juego*"
                 minLength={2}
@@ -65,6 +66,7 @@ const AgregarJuego = () => {
             <FloatingLabel controlId="precio" label="Precio*" className="mb-3">
               <Form.Control
                 type="number"
+                autoComplete="off"
                 placeholder="Precio*"
                 minLength={2}
                 maxLength={7}
@@ -122,6 +124,7 @@ const AgregarJuego = () => {
             >
               <Form.Control
                 type="text"
+                autoComplete="off"
                 placeholder="Desarrolladora"
                 {...register("desarrolladora", {
                   maxLength: {
@@ -172,6 +175,7 @@ const AgregarJuego = () => {
             <FloatingLabel controlId="editora" label="Editora" className="mb-3">
               <Form.Control
                 type="text"
+                autoComplete="off"
                 placeholder="Editora"
                 {...register("editora", {
                   maxLength: {
@@ -191,6 +195,7 @@ const AgregarJuego = () => {
               <Form.Control
                 as="textarea"
                 placeholder="Descripcion"
+                autoComplete="off"
                 {...register("descripcion", {
                   required: "la descripcion es obligatoria",
                   maxLength: {
@@ -217,6 +222,7 @@ const AgregarJuego = () => {
               </InputGroup.Text>
               <Form.Control
                 aria-label="Sistema Operativo"
+                autoComplete="off"
                 aria-describedby="inputGroup-sizing-sm"
                 {...register("requisitos.minimos.sistemaOperativo")}
               />
@@ -225,6 +231,7 @@ const AgregarJuego = () => {
               <InputGroup.Text id="procesador">Procesador</InputGroup.Text>
               <Form.Control
                 aria-label="Procesador"
+                autoComplete="off"
                 aria-describedby="inputGroup-sizing-sm"
                 {...register("requisitos.minimos.procesador")}
               />
@@ -233,6 +240,7 @@ const AgregarJuego = () => {
               <InputGroup.Text id="memoria">Memoria</InputGroup.Text>
               <Form.Control
                 aria-label="Memoria"
+                autoComplete="off"
                 aria-describedby="inputGroup-sizing-sm"
                 {...register("requisitos.minimos.memoria")}
               />
@@ -243,6 +251,7 @@ const AgregarJuego = () => {
               </InputGroup.Text>
               <Form.Control
                 aria-label="Tarjeta Grafica"
+                autoComplete="off"
                 aria-describedby="inputGroup-sizing-sm"
                 {...register("requisitos.minimos.tarjetaGrafica")}
               />
@@ -253,6 +262,7 @@ const AgregarJuego = () => {
               </InputGroup.Text>
               <Form.Control
                 aria-label="Almacenamiento"
+                autoComplete="off"
                 aria-describedby="inputGroup-sizing-sm"
                 {...register("requisitos.minimos.almacenamiento")}
               />
@@ -268,6 +278,7 @@ const AgregarJuego = () => {
               </InputGroup.Text>
               <Form.Control
                 aria-label="Sistema Operativo"
+                autoComplete="off"
                 aria-describedby="inputGroup-sizing-sm"
                 {...register("requisitos.recomendado.sistemaOperativo")}
               />
@@ -276,6 +287,7 @@ const AgregarJuego = () => {
               <InputGroup.Text id="procesador">Procesador</InputGroup.Text>
               <Form.Control
                 aria-label="Procesador"
+                autoComplete="off"
                 aria-describedby="inputGroup-sizing-sm"
                 {...register("requisitos.recomendado.procesador")}
               />
@@ -284,6 +296,7 @@ const AgregarJuego = () => {
               <InputGroup.Text id="memoria">Memoria</InputGroup.Text>
               <Form.Control
                 aria-label="Memoria"
+                autoComplete="off"
                 aria-describedby="inputGroup-sizing-sm"
                 {...register("requisitos.recomendado.memoria")}
               />
@@ -294,6 +307,7 @@ const AgregarJuego = () => {
               </InputGroup.Text>
               <Form.Control
                 aria-label="Tarjeta Grafica"
+                autoComplete="off"
                 aria-describedby="inputGroup-sizing-sm"
                 {...register("requisitos.recomendado.tarjetaGrafica")}
               />
@@ -304,6 +318,7 @@ const AgregarJuego = () => {
               </InputGroup.Text>
               <Form.Control
                 aria-label="Almacenamiento"
+                autoComplete="off"
                 aria-describedby="inputGroup-sizing-sm"
                 {...register("requisitos.recomendado.almacenamiento")}
               />
@@ -330,6 +345,7 @@ const AgregarJuego = () => {
             >
               <Form.Control
                 type="text"
+                autoComplete="off"
                 placeholder="URL imagen de portada*"
                 {...register("urlPortada", {
                   required: "La Url de la portada es obligatoria",
@@ -344,6 +360,9 @@ const AgregarJuego = () => {
               </Form.Text>
             </FloatingLabel>
           </Col>
+          <h4 className="fs-4 fw-light text-start ps-5 pb-3">
+            Capturas del juego 🎯
+          </h4>
           <Col md={2} className=" my-2">
             <Image
               src="https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
@@ -353,15 +372,12 @@ const AgregarJuego = () => {
             ></Image>
           </Col>
           <Col md={10} className="pt-2 my-2">
-            <FloatingLabel
-              controlId="urlImg2"
-              label="URL imagen 2"
-              className="mb-3"
-            >
+            <FloatingLabel controlId="1" label="URL captura 1" className="mb-3">
               <Form.Control
                 type="text"
-                placeholder="URL imagen 2"
-                {...register("imgExtras.urlImg2", {
+                autoComplete="off"
+                placeholder="URL captura 1"
+                {...register("capturas.1", {
                   pattern: {
                     value: /^https?:\/\/[\w\-]+(\.[\w\-]+)+[/#?]?.*$/,
                     message: "La Url debe ser valida",
@@ -379,15 +395,12 @@ const AgregarJuego = () => {
             ></Image>
           </Col>
           <Col md={10} className="pt-2 my-2">
-            <FloatingLabel
-              controlId="urlImg3"
-              label="URL imagen 3"
-              className="mb-3"
-            >
+            <FloatingLabel controlId="2" label="URL captura 2" className="mb-3">
               <Form.Control
                 type="text"
-                placeholder="URL imagen 3"
-                {...register("imgExtras.urlImg3", {
+                autoComplete="off"
+                placeholder="URL captura 2"
+                {...register("capturas.2", {
                   pattern: {
                     value: /^https?:\/\/[\w\-]+(\.[\w\-]+)+[/#?]?.*$/,
                     message: "La Url debe ser valida",
@@ -405,15 +418,57 @@ const AgregarJuego = () => {
             ></Image>
           </Col>
           <Col md={10} className="pt-2 my-2">
+            <FloatingLabel controlId="3" label="URL captura 3" className="mb-3">
+              <Form.Control
+                type="text"
+                autoComplete="off"
+                placeholder="URL captura 3"
+                {...register("capturas.3", {
+                  pattern: {
+                    value: /^https?:\/\/[\w\-]+(\.[\w\-]+)+[/#?]?.*$/,
+                    message: "La Url debe ser valida",
+                  },
+                })}
+              ></Form.Control>
+            </FloatingLabel>
+          </Col>
+          <Col md={2} className=" my-2">
+            <Image
+              src="https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
+              alt="imagen-del-juego"
+              rounded
+              style={{ width: "80px", height: "80px" }}
+            ></Image>
+          </Col>
+          <Col md={10} className="pt-2 my-2">
+            <FloatingLabel controlId="4" label="URL captura 4" className="mb-3">
+              <Form.Control
+                type="text"
+                autoComplete="off"
+                placeholder="URL captura 4"
+                {...register("capturas.4", {
+                  pattern: {
+                    value: /^https?:\/\/[\w\-]+(\.[\w\-]+)+[/#?]?.*$/,
+                    message: "La Url debe ser valida",
+                  },
+                })}
+              ></Form.Control>
+            </FloatingLabel>
+          </Col>
+          <h4 className="fs-4 fw-light text-start ps-5 pb-3">
+            Trailer del juego 🎥
+          </h4>
+          <Col md={12} className="pt-2 my-2">
             <FloatingLabel
-              controlId="urlImg4"
-              label="URL imagen 4"
+              controlId="urlTrailer"
+              label="URL Trailer del juego"
               className="mb-3"
             >
               <Form.Control
                 type="text"
-                placeholder="URL imagen 4"
-                {...register("imgExtras.urlImg", {
+                autoComplete="off"
+                placeholder="URL Trailer del juego"
+                {...register("urlTrailer", {
                   pattern: {
                     value: /^https?:\/\/[\w\-]+(\.[\w\-]+)+[/#?]?.*$/,
                     message: "La Url debe ser valida",
