@@ -2,7 +2,7 @@
   "juegos": [
     {
       "nombre": "Red Dead Redemption 2",
-      "moneda": "USD",
+      "moneda": "ARS",
       "precio": "49.99",
       "categoria": "Aventura",
       "desarrolladora": "Rockstar Games",
@@ -367,7 +367,8 @@
     },
     {
       "nombre": "Good of War: Ragnarok",
-      "precio": "50",
+      "moneda": "USD",
+      "precio": "50.99",
       "categoria": "Aventura",
       "desarrolladora": "SIE Santa Monica",
       "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",

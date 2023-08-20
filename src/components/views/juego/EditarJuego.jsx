@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Button,
   Col,
@@ -11,18 +11,24 @@ import {
   Row,
 } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import Swal from "sweetalert2";
 import { editarJuego, obtenerJuego } from "../../helpers/queries";
 
 const EditarJuego = () => {
   const { id } = useParams();
   const detalleJuego = useNavigate();
+  const [urlPortada, setUrlPortada] = useState("");
+  const [url1, setUrl1] = useState("");
+  const [url2, setUrl2] = useState("");
+  const [url3, setUrl3] = useState("");
+  const [url4, setUrl4] = useState("");
 
   const {
     register,
     handleSubmit,
     formState: { errors },
+    getValues,
     setValue,
     reset,
   } = useForm();
@@ -34,6 +40,7 @@ const EditarJuego = () => {
           setValue("nombre", resp.nombre);
           setValue("precio", resp.precio);
           setValue("categoria", resp.categoria);
+          setValue("moneda", resp.moneda);
           setValue("desarrolladora", resp.desarrolladora);
           setValue("clasificacionImg", resp.clasificacionImg);
           setValue("editora", resp.editora);
@@ -84,10 +91,15 @@ const EditarJuego = () => {
           setValue("capturas.url3", resp.capturas.url3);
           setValue("capturas.url4", resp.capturas.url4);
           setValue("urlTrailer", resp.urlTrailer);
+          setUrlPortada(resp.urlPortada);
+          setUrl1(resp.capturas.url1);
+          setUrl2(resp.capturas.url2);
+          setUrl3(resp.capturas.url3);
+          setUrl4(resp.capturas.url4);
         }
       })
       .catch((error) => console.log(error));
-  }, []);
+  }, [urlPortada]);
 
   const onSubmit = (juego) => {
     editarJuego(id, juego)
@@ -297,6 +309,7 @@ const EditarJuego = () => {
                 as="textarea"
                 placeholder="Descripcion"
                 autoComplete="off"
+                style={{ height: "180px" }}
                 {...register("descripcion", {
                   required: "la descripcion es obligatoria",
                   maxLength: {
@@ -432,7 +445,11 @@ const EditarJuego = () => {
           </h4>
           <Col md={2} className=" my-2">
             <Image
-              src="https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
+              src={
+                urlPortada === ""
+                  ? "https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
+                  : urlPortada
+              }
               alt="imagen-del-juego"
               rounded
               style={{ width: "80px", height: "80px" }}
@@ -466,7 +483,11 @@ const EditarJuego = () => {
           </h4>
           <Col md={2} className=" my-2">
             <Image
-              src="https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
+              src={
+                url1 === ""
+                  ? "https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
+                  : url1
+              }
               alt="imagen-del-juego"
               rounded
               style={{ width: "80px", height: "80px" }}
@@ -493,7 +514,11 @@ const EditarJuego = () => {
           </Col>
           <Col md={2} className="my-2">
             <Image
-              src="https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
+              src={
+                url2 === ""
+                  ? "https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
+                  : url2
+              }
               alt="imagen-del-juego"
               rounded
               style={{ width: "80px", height: "80px" }}
@@ -520,7 +545,11 @@ const EditarJuego = () => {
           </Col>
           <Col md={2} className=" my-2">
             <Image
-              src="https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
+              src={
+                url3 === ""
+                  ? "https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
+                  : url3
+              }
               alt="imagen-del-juego"
               rounded
               style={{ width: "80px", height: "80px" }}
@@ -547,7 +576,11 @@ const EditarJuego = () => {
           </Col>
           <Col md={2} className=" my-2">
             <Image
-              src="https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
+              src={
+                url4 === ""
+                  ? "https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
+                  : url4
+              }
               alt="imagen-del-juego"
               rounded
               style={{ width: "80px", height: "80px" }}
@@ -596,6 +629,9 @@ const EditarJuego = () => {
           </Col>
         </Row>
         <div className="text-end mb-5">
+          <Link to={"/Administracion"} className="btn btn-lg btn-primary me-4">
+            Volver
+          </Link>
           <Button variant="success" size="lg" type="submit">
             Guardar Cambios
           </Button>

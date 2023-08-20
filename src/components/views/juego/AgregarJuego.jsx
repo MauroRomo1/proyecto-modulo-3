@@ -17,10 +17,12 @@ import { useNavigate } from "react-router-dom";
 
 const AgregarJuego = () => {
   const detalleJuego = useNavigate();
+
   const {
     register,
     handleSubmit,
     formState: { errors },
+
     reset,
   } = useForm();
 
@@ -233,11 +235,12 @@ const AgregarJuego = () => {
                 as="textarea"
                 placeholder="Descripcion"
                 autoComplete="off"
+                style={{ height: "180px" }}
                 {...register("descripcion", {
                   required: "la descripcion es obligatoria",
                   maxLength: {
-                    value: 450,
-                    message: "limite de 450 caracteres",
+                    value: 600,
+                    message: "limite de 600 caracteres",
                   },
                 })}
               ></Form.Control>
@@ -427,7 +430,7 @@ const AgregarJuego = () => {
               ></Form.Control>
             </FloatingLabel>
           </Col>
-          <Col md={2} className=" my-2">
+          <Col md={2} className="my-2">
             <Image
               src="https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
               alt="imagen-del-juego"
