@@ -27,3 +27,16 @@ export const agregarJuegos = async(juego) => {
         return null;
     }
 }
+
+
+
+export const obtenerJuego = async(id) => {
+    try {
+        const respuesta = await fetch(`${dbJuegos}/${id}`);
+        const data = await respuesta.json();
+        return data;
+    } catch (error) {
+        console.log(error);
+        return null;
+    }
+}
