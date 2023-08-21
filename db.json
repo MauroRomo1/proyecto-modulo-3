@@ -243,6 +243,12 @@
       "precio": 59.99,
       "categoria": ["Rol", "Acción"],
       "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202110/2000/aGhopp3MHppi7kooGE2Dtt8C.png",
+      "capturas": {
+        "url1": "https://p325k7wa.twic.pics/high/elden-ring/elden-ring/02-screenshots/elden-ring-newscreen04.png",
+        "url2": "https://p325k7wa.twic.pics/high/elden-ring/elden-ring/02-screenshots/elden-ring-newscreen02.png",
+        "url3": "https://p325k7wa.twic.pics/high/elden-ring/elden-ring/02-screenshots/elden-ring-newscreen01.png",
+        "url4": "https://p325k7wa.twic.pics/high/elden-ring/elden-ring/02-screenshots/elden-ring-newscreen06.png"
+      },
       "descripcion": "Elden Ring es el nuevo videojuego de FromSoftware, creadores de Dark Souls, Sekiro o Bloodborne. Se trata del nuevo título de acción y rol para un jugador ideado por Hidetaka Miyazaki, que en esta ocasión, estrenará un mundo abierto más grande y ambicioso. Su argumento y mitología están firmados por George R.R. Martin, autor de Canción de hielo y fuego.",
       "requisitos": {
         "minimos": {
