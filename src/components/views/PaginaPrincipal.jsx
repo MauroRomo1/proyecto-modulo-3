@@ -1,15 +1,31 @@
 import "../../css/PaginaPrincipal.css";
 import { useState } from "react";
-import {
-  Carousel,
-  Container,
-  DropdownButton,
-  Form,
-  Image,
-} from "react-bootstrap";
+import { Container, DropdownButton, Form, Image } from "react-bootstrap";
 import DropdownItem from "react-bootstrap/esm/DropdownItem";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import CarruselInicio from "./inicio/CarruselInicio";
 
 const PaginaPrincipal = () => {
+  const responsive = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+
   const [filtrarJuegos, setFiltrarJuegos] = useState(false);
   return (
     <>
@@ -35,19 +51,12 @@ const PaginaPrincipal = () => {
           </Form>
         </div>
       </section>
-      <section className="">
-        <Carousel>
-          <Carousel.Item>
-            <Image
-              src="https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
-              alt="imgen no encontrada"
-              className="imgCarrusel"
-            ></Image>
-            <Carousel.Caption className="text-start">
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
+      <section>
+        <Carousel responsive={responsive}>
+          <CarruselInicio></CarruselInicio>
+          <CarruselInicio></CarruselInicio>
+          <CarruselInicio></CarruselInicio>
+          <CarruselInicio></CarruselInicio>
         </Carousel>
       </section>
       <Container>

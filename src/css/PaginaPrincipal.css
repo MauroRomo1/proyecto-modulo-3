@@ -2,3 +2,7 @@
   height: 25rem;
   width: 100%;
 }
+
+.cardCarruselInicio {
+  max-width: 540px;
+}
