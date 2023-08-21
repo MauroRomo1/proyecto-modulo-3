@@ -1,3 +1,5 @@
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { Button } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
@@ -30,7 +32,11 @@ const Header = () => {
             </NavLink>
             {usuario.email === "jose@32" ? (
               <>
-                <NavDropdown title="usuario" id="basic-nav-dropdown">
+                <NavDropdown
+                  title={<FontAwesomeIcon icon={faUser} />}
+                  id="basic-nav-dropdown"
+                >
+                  <NavDropdown.Item href="#action/3.1"></NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.1">
                     Mi lista de juegos
                   </NavDropdown.Item>
