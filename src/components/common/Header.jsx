@@ -1,11 +1,23 @@
+import { useState } from "react";
+import { Button } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 const Header = () => {
-  // const usuario = { nombre: "jose", email: "jose@32", rol: "administrador" };
-  const usuario = null;
+  const navegacion = useNavigate();
+  const [usuario, setUsuario] = useState({
+    nombre: "jose",
+    email: "jose@32",
+    rol: "administrador",
+  });
+  const logout = () => {
+    setUsuario({ nombre: "", email: "", rol: "" });
+    //  sessionStorage.removeItem("usuarioLogeado");
+    navegacion("/");
+  };
+  // const usuario = null;
   return (
     <Navbar expand="lg" className=" bg-body-tertiary ">
       <Container>
@@ -16,7 +28,7 @@ const Header = () => {
             <NavLink end to={"/"} className="nav-link">
               inicio
             </NavLink>
-            {usuario ? (
+            {usuario.email === "jose@32" ? (
               <>
                 <NavDropdown title="usuario" id="basic-nav-dropdown">
                   <NavDropdown.Item href="#action/3.1">
@@ -36,9 +48,9 @@ const Header = () => {
                     </NavDropdown.Item>
                   )}
                   <NavDropdown.Item>
-                    <NavLink end to={"/hsdhs"} className="nav-link">
+                    <Button variant="dark" onClick={logout}>
                       cerrar sesion
-                    </NavLink>
+                    </Button>
                   </NavDropdown.Item>
                 </NavDropdown>
               </>
