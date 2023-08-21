@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Button, Image } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import { borrarJuego } from "../../helpers/queries";
@@ -31,7 +30,7 @@ const ItemJuego = ({ juego }) => {
           src={juego.urlPortada}
           alt={juego.nombre}
           rounded
-          style={{ width: "80px", height: "80px", cursor: "pointer" }}
+          className="imgItem"
           onClick={() => detalleJuego(`/detalle-juego/${juego.id}`)}
         ></Image>
       </td>
@@ -46,7 +45,9 @@ const ItemJuego = ({ juego }) => {
       <td>
         <p className="text-break">{juego.categoria}</p>
       </td>
-      <td>⭐4.3</td>
+      <td>
+        <p className="fw-light text-success">Muy recomendable</p>
+      </td>
       <td>
         <div className="d-flex flex-column">
           <Link

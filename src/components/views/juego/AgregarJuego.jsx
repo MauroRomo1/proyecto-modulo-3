@@ -5,7 +5,6 @@ import {
   Container,
   FloatingLabel,
   Form,
-  FormGroup,
   Image,
   InputGroup,
   Row,
@@ -22,8 +21,6 @@ const AgregarJuego = () => {
     register,
     handleSubmit,
     formState: { errors },
-
-    reset,
   } = useForm();
 
   const onSubmit = (juego) => {
@@ -94,7 +91,7 @@ const AgregarJuego = () => {
                   required: "Este dato es obligatorio",
                 })}
               >
-                <option value="">Elije la moneda</option>
+                <option disabled>Elije la moneda</option>
                 <option value="USD">Dolares</option>
                 <option value="ARS">Pesos Argentinos</option>
               </Form.Select>
@@ -134,7 +131,7 @@ const AgregarJuego = () => {
                   required: "La categoria es obligatoria",
                 })}
               >
-                <option value="">Elige una categoria</option>
+                <option disabled>Elige una categoria</option>
                 <option value="Aventura">Aventura</option>
                 <option value="Accion/Shooter">Accion/Shooter</option>
                 <option value="Sandbox">SandBox</option>
@@ -185,7 +182,7 @@ const AgregarJuego = () => {
                   required: "La clasificación es obligatoria",
                 })}
               >
-                <option value="">Elige una clasificación</option>
+                <option disabled>Elige una clasificación</option>
                 <option value="https://www.esrb.org/wp-content/uploads/2019/05/Everyone_SP.svg">
                   E (Todas las edades)
                 </option>
@@ -235,7 +232,7 @@ const AgregarJuego = () => {
                 as="textarea"
                 placeholder="Descripcion"
                 autoComplete="off"
-                style={{ height: "180px" }}
+                className="h-75"
                 {...register("descripcion", {
                   required: "la descripcion es obligatoria",
                   maxLength: {
@@ -374,7 +371,7 @@ const AgregarJuego = () => {
               src="https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
               alt="imagen-del-juego"
               rounded
-              style={{ width: "80px", height: "80px" }}
+              className="imgFormAdministracion"
             ></Image>
           </Col>
           <Col md={10} className="pt-2 my-2">
@@ -408,7 +405,7 @@ const AgregarJuego = () => {
               src="https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
               alt="imagen-del-juego"
               rounded
-              style={{ width: "80px", height: "80px" }}
+              className="imgFormAdministracion"
             ></Image>
           </Col>
           <Col md={10} className="pt-2 my-2">
@@ -435,7 +432,7 @@ const AgregarJuego = () => {
               src="https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
               alt="imagen-del-juego"
               rounded
-              style={{ width: "80px", height: "80px" }}
+              className="imgFormAdministracion"
             ></Image>
           </Col>
           <Col md={10} className="pt-2 my-2">
@@ -462,7 +459,7 @@ const AgregarJuego = () => {
               src="https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
               alt="imagen-del-juego"
               rounded
-              style={{ width: "80px", height: "80px" }}
+              className="imgFormAdministracion"
             ></Image>
           </Col>
           <Col md={10} className="pt-2 my-2">
@@ -489,7 +486,7 @@ const AgregarJuego = () => {
               src="https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
               alt="imagen-del-juego"
               rounded
-              style={{ width: "80px", height: "80px" }}
+              className="imgFormAdministracion"
             ></Image>
           </Col>
           <Col md={10} className="pt-2 my-2">

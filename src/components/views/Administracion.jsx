@@ -1,4 +1,5 @@
-import { Button, Table } from "react-bootstrap";
+import "../../css/Administracion.css";
+import { Table } from "react-bootstrap";
 import ItemJuego from "./Juego/ItemJuego";
 import { Link } from "react-router-dom";
 import { listarJuegos } from "../helpers/queries";

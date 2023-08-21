@@ -2,7 +2,7 @@
   "juegos": [
     {
       "nombre": "Red Dead Redemption 2",
-      "moneda": "ARS",
+      "moneda": "USD",
       "precio": "49.99",
       "categoria": "Aventura",
       "desarrolladora": "Rockstar Games",
@@ -72,17 +72,12 @@
     },
     {
       "nombre": "FIFA 23",
+      "moneda": "USD",
       "precio": 69.99,
-      "categoria": [
-        "Simulación"
-      ],
-      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202301/0312/yM0eeJui8AFByeP5BC5XV5j9.png",
-      "capturas": {
-        "url1": "https://uvejuegos.com/img/juegos/68679/WANDAMETROPOLITANO_23_16X9_WM_LORES.jpg",
-        "url2": "https://uvejuegos.com/img/juegos/68679/Mbappe_Lores_WM_16x9.jpg",
-        "url3": "https://uvejuegos.com/img/juegos/68679/Copy-of-Kelly_Hero_Hires_WM_16x9.jpg",
-        "url4": "https://uvejuegos.com/img/juegos/68679/FIFA-23_20221008015817.jpg"
-      },
+      "categoria": "Deportes",
+      "desarrolladora": "EA Canada",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Everyone_SP.svg",
+      "editora": "Electronic Arts",
       "descripcion": "FIFA 23 nos acerca a The World's Game con la tecnología HyperMotion2, la FIFA World Cup™ masculina y femenina disponibles durante la temporada, clubes femeninos, función de juego cruzado* y mucho más.",
       "requisitos": {
         "minimos": {
@@ -100,26 +95,24 @@
           "almacenamiento": "100 GB"
         }
       },
-      "desarrolladora": "EA Canada",
-      "editora": "Electronic Arts",
-      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Everyone_SP.svg",
+      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202301/0312/yM0eeJui8AFByeP5BC5XV5j9.png",
+      "capturas": {
+        "url1": "https://uvejuegos.com/img/juegos/68679/WANDAMETROPOLITANO_23_16X9_WM_LORES.jpg",
+        "url2": "https://uvejuegos.com/img/juegos/68679/Mbappe_Lores_WM_16x9.jpg",
+        "url3": "https://uvejuegos.com/img/juegos/68679/Copy-of-Kelly_Hero_Hires_WM_16x9.jpg",
+        "url4": "https://uvejuegos.com/img/juegos/68679/FIFA-23_20221008015817.jpg"
+      },
       "urlTrailer": "https://www.youtube.com/watch?v=zMyeAFzCTM0&ab_channel=PlayStationLatinoam%C3%A9rica",
       "id": 3
     },
     {
       "nombre": "Grand Theft Auto V",
+      "moneda": "USD",
       "precio": 29.99,
-      "categoria": [
-        "Acción",
-        "Mundo abierto"
-      ],
-      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202202/2816/K6mmm89oNII1iI1aqaClO0wh.png",
-      "capturas": {
-        "url1": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_2.jpg",
-        "url2": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_12.jpg",
-        "url3": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_5.jpg",
-        "url4": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_3.jpg"
-      },
+      "categoria": "Sandbox",
+      "desarrolladora": "Rockstar North",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "editora": "Rockstar Games",
       "descripcion": "Cuando un joven estafador callejero, un ladrón de bancos retirado y un psicópata aterrador se ven involucrados con lo peor y más desquiciado del mundo criminal, del gobierno de los EE. UU. y de la industria del espectáculo, tendrán que llevar a cabo una serie de peligrosos golpes para sobrevivir en una ciudad implacable en la que no pueden confiar en nadie. Y mucho menos los unos en los otros.",
       "requisitos": {
         "minimos": {
@@ -137,26 +130,24 @@
           "almacenamiento": "72 GB"
         }
       },
-      "desarrolladora": "Rockstar North",
-      "editora": "Rockstar Games",
-      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202202/2816/K6mmm89oNII1iI1aqaClO0wh.png",
+      "capturas": {
+        "url1": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_2.jpg",
+        "url2": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_12.jpg",
+        "url3": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_5.jpg",
+        "url4": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_3.jpg"
+      },
       "urlTrailer": "https://www.youtube.com/watch?v=QkkoHAzjnUs&ab_channel=RockstarGames",
       "id": 4
     },
     {
       "nombre": "Assassin's Creed Valhalla",
+      "moneda": "USD",
       "precio": 32.99,
-      "categoria": [
-        "Acción",
-        "Mundo abierto"
-      ],
-      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202006/1520/EDtkdijFRwbmGKk1G9lrDoEF.png",
-      "capturas": {
-        "url1": "https://sm.ign.com/t/ign_latam/screenshot/default/ack-dlc-01-coronation-257625609339d99889e3-50289465-16208381_wew2.1080.jpg",
-        "url2": "https://sm.ign.com/t/ign_latam/screenshot/default/ack-dlc-25-barid-257625609339d5055600-70353614-1620838198682_gw61.1080.jpg",
-        "url3": "https://sm.ign.com/t/ign_latam/screenshot/default/ack-dlc-06-asfinnhut-257625609339e0cd8019-59668505-162083819_f2xk.1080.jpg",
-        "url4": "https://sm.ign.com/t/ign_latam/screenshot/default/ack-dlc-11-doondaven-257625609339c5d59a18-08993957-162083819_9ghd.1080.jpg"
-      },
+      "categoria": "Sandbox",
+      "desarrolladora": "Ubisoft Montreal",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "editora": "Ubisoft",
       "descripcion": "Ponte en la piel de una leyenda vikinga en busca de gloria. Saquea a tus enemigos, haz prosperar tu asentamiento y consolida tu poder político.",
       "requisitos": {
         "minimos": {
@@ -174,26 +165,24 @@
           "almacenamiento": "50 GB"
         }
       },
-      "desarrolladora": "Ubisoft Montreal",
-      "editora": "Ubisoft",
-      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202006/1520/EDtkdijFRwbmGKk1G9lrDoEF.png",
+      "capturas": {
+        "url1": "https://sm.ign.com/t/ign_latam/screenshot/default/ack-dlc-01-coronation-257625609339d99889e3-50289465-16208381_wew2.1080.jpg",
+        "url2": "https://sm.ign.com/t/ign_latam/screenshot/default/ack-dlc-25-barid-257625609339d5055600-70353614-1620838198682_gw61.1080.jpg",
+        "url3": "https://sm.ign.com/t/ign_latam/screenshot/default/ack-dlc-06-asfinnhut-257625609339e0cd8019-59668505-162083819_f2xk.1080.jpg",
+        "url4": "https://sm.ign.com/t/ign_latam/screenshot/default/ack-dlc-11-doondaven-257625609339c5d59a18-08993957-162083819_9ghd.1080.jpg"
+      },
       "urlTrailer": "https://www.youtube.com/watch?v=1Z7mIKGzowQ&t=22s&ab_channel=UbisoftLatinoam%C3%A9rica",
       "id": 5
     },
     {
       "nombre": "Dead Island 2",
+      "moneda": "USD",
       "precio": 44.99,
-      "categoria": [
-        "Acción",
-        "Terror"
-      ],
-      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1012/SyX3pwXDmPfzSY6KsdCU6dfk.jpg",
-      "capturas": {
-        "url1": "https://sm.ign.com/t/ign_es/screenshot/default/dead-island-2-20230404150747_sueq.1080.jpg",
-        "url2": "https://sm.ign.com/t/ign_es/screenshot/default/dead-island-2-20230404151004_asxy.1080.jpg",
-        "url3": "https://sm.ign.com/t/ign_es/screenshot/default/dead-island-2-20230404165511_15yw.1080.jpg",
-        "url4": "https://sm.ign.com/t/ign_es/screenshot/default/dead-island-2-20230404170252_91ya.1080.jpg"
-      },
+      "categoria": "Terror",
+      "desarrolladora": "Deep Silver Dambuster Studios",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "editora": "Deep Silver",
       "descripcion": "Un virus mortal se extiende por Los Ángeles y está convirtiendo a sus habitantes en zombis. Te han mordido e infectado, pero tu cuerpo es inmune. Descubre la verdad tras el brote y quién (o qué) eres.",
       "requisitos": {
         "minimos": {
@@ -211,26 +200,24 @@
           "almacenamiento": "70 GB"
         }
       },
-      "desarrolladora": "Deep Silver Dambuster Studios",
-      "editora": "Deep Silver",
-      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1012/SyX3pwXDmPfzSY6KsdCU6dfk.jpg",
+      "capturas": {
+        "url1": "https://sm.ign.com/t/ign_es/screenshot/default/dead-island-2-20230404150747_sueq.1080.jpg",
+        "url2": "https://sm.ign.com/t/ign_es/screenshot/default/dead-island-2-20230404151004_asxy.1080.jpg",
+        "url3": "https://sm.ign.com/t/ign_es/screenshot/default/dead-island-2-20230404165511_15yw.1080.jpg",
+        "url4": "https://sm.ign.com/t/ign_es/screenshot/default/dead-island-2-20230404170252_91ya.1080.jpg"
+      },
       "urlTrailer": "https://www.youtube.com/watch?v=bX66ibydpjk&ab_channel=PlayStationEspa%C3%B1a",
       "id": 6
     },
     {
       "nombre": "Resident Evil 4",
+      "moneda": "USD",
       "precio": 59.99,
-      "categoria": [
-        "Acción",
-        "Terror"
-      ],
-      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202210/0706/EVWyZD63pahuh95eKloFaJuC.png",
-      "capturas": {
-        "url1": "https://sm.ign.com/t/ign_es/screenshot/default/unknown-2023-03-09-16-42-45_tpbf.1080.jpg",
-        "url2": "https://sm.ign.com/t/ign_es/screenshot/default/unknown-2023-03-09-16-48-43_nqw7.1080.jpg",
-        "url3": "https://sm.ign.com/t/ign_es/screenshot/default/unknown-2023-03-09-17-29-59_cuw7.1080.jpg",
-        "url4": "https://sm.ign.com/t/ign_es/screenshot/default/unknown-2023-03-09-16-45-24_qy46.1080.jpg"
-      },
+      "categoria": "Terror",
+      "desarrolladora": "Capcom",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "editora": "Capcom",
       "descripcion": "Seis años después de la catástrofe biológica en Raccoon City, el agente Leon S. Kennedy, uno de los supervivientes del desastre, ha sido enviado a rescatar a la hija del presidente, a quien han secuestrado. Siguiendo su rastro, llega a una apartada población europea, donde sus habitantes sufren un mal terrible. Así comienza esta historia de un arriesgado rescate y terror escalofriante donde se cruzan la vida y la muerte, y el miedo y la catarsis.",
       "requisitos": {
         "minimos": {
@@ -248,27 +235,25 @@
           "almacenamiento": "51 GB"
         }
       },
-      "desarrolladora": "Capcom",
-      "editora": "Capcom",
-      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202210/0706/EVWyZD63pahuh95eKloFaJuC.png",
+      "capturas": {
+        "url1": "https://sm.ign.com/t/ign_es/screenshot/default/unknown-2023-03-09-16-42-45_tpbf.1080.jpg",
+        "url2": "https://sm.ign.com/t/ign_es/screenshot/default/unknown-2023-03-09-16-48-43_nqw7.1080.jpg",
+        "url3": "https://sm.ign.com/t/ign_es/screenshot/default/unknown-2023-03-09-17-29-59_cuw7.1080.jpg",
+        "url4": "https://sm.ign.com/t/ign_es/screenshot/default/unknown-2023-03-09-16-45-24_qy46.1080.jpg"
+      },
       "urlTrailer": "https://www.youtube.com/watch?v=bX66ibydpjk&ab_channel=PlayStationEspa%C3%B1a",
       "id": 7
     },
     {
       "nombre": "ELDEN RING",
+      "moneda": "USD",
       "precio": 59.99,
-      "categoria": [
-        "Rol",
-        "Acción"
-      ],
-      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202110/2000/aGhopp3MHppi7kooGE2Dtt8C.png",
+      "categoria": "RPG",
+      "desarrolladora": "FromSoftware Inc.",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "editora": "FromSoftware Inc.",
       "descripcion": "Elden Ring es el nuevo videojuego de FromSoftware, creadores de Dark Souls, Sekiro o Bloodborne. Se trata del nuevo título de acción y rol para un jugador ideado por Hidetaka Miyazaki, que en esta ocasión, estrenará un mundo abierto más grande y ambicioso. Su argumento y mitología están firmados por George R.R. Martin, autor de Canción de hielo y fuego.",
-      "capturas": {
-        "url1": "",
-        "url2": "",
-        "url3": "",
-        "url4": ""
-      },
       "requisitos": {
         "minimos": {
           "sistemaOperativo": "Windows 10",
@@ -285,26 +270,24 @@
           "almacenamiento": "60 GB"
         }
       },
-      "desarrolladora": "FromSoftware Inc.",
-      "editora": "FromSoftware Inc.",
-      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202110/2000/aGhopp3MHppi7kooGE2Dtt8C.png",
+      "capturas": {
+        "url1": "https://p325k7wa.twic.pics/high/elden-ring/elden-ring/02-screenshots/elden-ring-newscreen04.png",
+        "url2": "https://p325k7wa.twic.pics/high/elden-ring/elden-ring/02-screenshots/elden-ring-newscreen02.png",
+        "url3": "https://p325k7wa.twic.pics/high/elden-ring/elden-ring/02-screenshots/elden-ring-newscreen01.png",
+        "url4": "https://p325k7wa.twic.pics/high/elden-ring/elden-ring/02-screenshots/elden-ring-newscreen06.png"
+      },
       "urlTrailer": "https://www.youtube.com/watch?v=E3Huy2cdih0&ab_channel=BANDAINAMCOEurope",
       "id": 8
     },
     {
       "nombre": "DOOM Eternal",
+      "moneda": "USD",
       "precio": 39.99,
-      "categoria": [
-        "Acción",
-        "Sangriento"
-      ],
-      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202010/0114/ERNPc4gFqeRDG1tYQIfOKQtM.png",
-      "capturas": {
-        "url1": "https://sm.ign.com/t/ign_es/screenshot/default/chainsaw-1559900183-1579287070267_3j9z.1080.jpg",
-        "url2": "https://sm.ign.com/t/ign_es/screenshot/default/cyber-mancubus-1579287083266_yxrt.1080.jpg",
-        "url3": "https://sm.ign.com/t/ign_es/screenshot/default/doom-eternal-fire-baron-1533718919-1579287218145_fxvw.1080.jpg",
-        "url4": "https://sm.ign.com/t/ign_es/screenshot/default/marauder-1559925215-1579287352523_h3e6.1080.jpg"
-      },
+      "categoria": "Accion/Shooter",
+      "desarrolladora": "id Software",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "editora": "Bethesda Softworks",
       "descripcion": "Los ejércitos del infierno han invadido la Tierra. Ponte en la piel del Slayer en una épica campaña para un jugador y cruza dimensiones aniquilando demonios para detener la destrucción definitiva de la humanidad.",
       "requisitos": {
         "minimos": {
@@ -322,26 +305,24 @@
           "almacenamiento": "80 GB"
         }
       },
-      "desarrolladora": "id Software",
-      "editora": "Bethesda Softworks",
-      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202010/0114/ERNPc4gFqeRDG1tYQIfOKQtM.png",
+      "capturas": {
+        "url1": "https://sm.ign.com/t/ign_es/screenshot/default/chainsaw-1559900183-1579287070267_3j9z.1080.jpg",
+        "url2": "https://sm.ign.com/t/ign_es/screenshot/default/cyber-mancubus-1579287083266_yxrt.1080.jpg",
+        "url3": "https://sm.ign.com/t/ign_es/screenshot/default/doom-eternal-fire-baron-1533718919-1579287218145_fxvw.1080.jpg",
+        "url4": "https://sm.ign.com/t/ign_es/screenshot/default/marauder-1559925215-1579287352523_h3e6.1080.jpg"
+      },
       "urlTrailer": "https://www.youtube.com/watch?v=-fsz6b3IBJY&ab_channel=BethesdaSoftworksES",
       "id": 9
     },
     {
       "nombre": "Forza Horizon 5",
+      "moneda": "USD",
       "precio": 59.99,
-      "categoria": [
-        "Carreras",
-        "Simulación"
-      ],
-      "urlPortada": "https://www.ultimagame.es/forza-horizon-5/imagen-i18351-pge.jpg",
-      "capturas": {
-        "url1": "https://sm.ign.com/t/ign_es/gallery/f/forza-hori/forza-horizon-5-gamescom-screenshots_3eck.1080.jpg",
-        "url2": "https://sm.ign.com/t/ign_es/photo/default/forzahorizon5-gamescom-01-16x9-wm-1629828784351_xmgk.1080.jpg",
-        "url3": "https://sm.ign.com/t/ign_es/photo/default/forzahorizon5-gamescom-02-16x9-wm-1629828784352_ys1g.1080.jpg",
-        "url4": "https://sm.ign.com/t/ign_es/photo/default/forzahorizon5-gamescom-03-16x9-wm-1629828784353_s4cm.1080.jpg"
-      },
+      "categoria": "Carreras",
+      "desarrolladora": "Playground Games",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Everyone_SP.svg",
+      "editora": "Xbox Game Studios",
       "descripcion": "Explora los vibrantes paisajes del mundo abierto de México y disfruta de una diversión sin límites al volante de los mejores coches del mundo. Conquista la escarpada Sierra Nueva en la experiencia definitiva del rally de Horizon.",
       "requisitos": {
         "minimos": {
@@ -359,9 +340,13 @@
           "almacenamiento": "110 GB"
         }
       },
-      "desarrolladora": "Playground Games",
-      "editora": "Xbox Game Studios",
-      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Everyone_SP.svg",
+      "urlPortada": "https://www.ultimagame.es/forza-horizon-5/imagen-i18351-pge.jpg",
+      "capturas": {
+        "url1": "https://sm.ign.com/t/ign_es/gallery/f/forza-hori/forza-horizon-5-gamescom-screenshots_3eck.1080.jpg",
+        "url2": "https://sm.ign.com/t/ign_es/photo/default/forzahorizon5-gamescom-01-16x9-wm-1629828784351_xmgk.1080.jpg",
+        "url3": "https://sm.ign.com/t/ign_es/photo/default/forzahorizon5-gamescom-02-16x9-wm-1629828784352_ys1g.1080.jpg",
+        "url4": "https://sm.ign.com/t/ign_es/photo/default/forzahorizon5-gamescom-03-16x9-wm-1629828784353_s4cm.1080.jpg"
+      },
       "urlTrailer": "https://www.youtube.com/watch?v=FYH9n37B7Yw&ab_channel=Xbox",
       "id": 10
     },
@@ -376,26 +361,26 @@
       "descripcion": "Fimbulvetr ya está en camino. Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo. En el camino explorarán paisajes increíbles y míticos, y se enfrentarán a aterradores enemigos en la forma de dioses nórdicos y monstruos. La amenaza del Ragnarök cada vez está más cerca. ",
       "requisitos": {
         "minimos": {
-          "sistemaOperativo": "Windows 7",
-          "procesador": "intel i3 / amd atlom ",
-          "memoria": "8gb",
-          "tarjetaGrafica": "nvidia gtx1050/amd rx480",
-          "almacenamiento": "80gb"
+          "sistemaOperativo": "Windows 10",
+          "procesador": "Intel i5-2500k / AMD Ryzen 3 1200",
+          "memoria": "16 GB",
+          "tarjetaGrafica": "NVIDIA GTX 960 / AMD R9 290X",
+          "almacenamiento": "70 GB"
         },
         "recomendado": {
           "sistemaOperativo": "windows 10",
-          "procesador": "intel i5 / amd ryzen 3",
+          "procesador": "Intel i5 6600k / AMD Ryzen 5 2400",
           "memoria": "16gb",
-          "tarjetaGrafica": "nvidia rtx 2060",
-          "almacenamiento": "80gb"
+          "tarjetaGrafica": "NVIDIA GTX1060 / AMD RX570",
+          "almacenamiento": "70gb"
         }
       },
-      "urlPortada": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcjFJP2mK1iDUyBq9-zN4tHKqKiBFrxBCHyA&usqp=CAU",
+      "urlPortada": "https://sm.ign.com/t/ign_es/game/g/god-of-war/god-of-war-ragnarok_tgde.300.jpg",
       "capturas": {
-        "url1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx0q8K3iDxNmyc24eGrdFFRxRwAdaa-INu0Q&usqp=CAU",
-        "url2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEev8kQdKdEFVn9En5HD2bIorN_1PSRzETVw&usqp=CAU",
-        "url3": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHyGYEUaIzWH5Y2NJel_GsodIGiK2PtuT75g&usqp=CAU",
-        "url4": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtyyV-4wsppuYCMcvWTBoVo9IYGm_2sQD3lRH4iGlQ5zuTZDVX7ppdtKajEnxdhTemYFg&usqp=CAU"
+        "url1": "https://sm.ign.com/t/ign_es/gallery/g/god-of-war/god-of-war-ragnarok-preview_2tqs.1080.jpg",
+        "url2": "https://sm.ign.com/t/ign_es/photo/default/gowr-preview-screenshot-18-1666368017375_gryr.1080.jpg",
+        "url3": "https://sm.ign.com/t/ign_es/photo/default/gowr-preview-screenshot-14-1666368017377_3jcd.1080.jpg",
+        "url4": "https://sm.ign.com/t/ign_es/photo/default/gowr-preview-screenshot-12-1666368017378_8fnn.1080.jpg"
       },
       "urlTrailer": "https://youtu.be/EE-4GvjKcfs",
       "id": 11
