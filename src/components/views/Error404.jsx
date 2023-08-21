@@ -1,5 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button } from "react-bootstrap";
+import "../../css/error404.css";
+import { Link } from "react-router-dom";
 
 const Error404 = () => {
   return (
@@ -17,7 +19,7 @@ const Error404 = () => {
           src="https://assets.codepen.io/1538474/spaceship.svg"
           class="spaceship"
         />
-        <Button variant="danger" className="mb-5">
+        <Button variant="danger" className="mb-5" as={Link} to={"/"}>
           Volver al Inicio
         </Button>
       </div>
