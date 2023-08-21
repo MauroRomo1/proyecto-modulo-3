@@ -83,22 +83,7 @@ const AgregarJuego = () => {
               </Form.Text>
             </FloatingLabel>
           </Col>
-          <Col md={6} className="d-flex justify-content-evenly">
-            <FloatingLabel controlId="moneda" label="Moneda*" className="mb-3">
-              <Form.Select
-                aria-label="Moneda*"
-                {...register("moneda", {
-                  required: "Este dato es obligatorio",
-                })}
-              >
-                <option disabled>Elije la moneda</option>
-                <option value="USD">Dolares</option>
-                <option value="ARS">Pesos Argentinos</option>
-              </Form.Select>
-              <Form.Text className="text-danger ps-2">
-                {errors.moneda?.message}
-              </Form.Text>
-            </FloatingLabel>
+          <Col md={6}>
             <FloatingLabel controlId="precio" label="Precio*" className="mb-3">
               <Form.Control
                 type="text"

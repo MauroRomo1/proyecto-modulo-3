@@ -38,9 +38,7 @@ const ItemJuego = ({ juego }) => {
         <p className="text-break fw-medium">{juego.nombre}</p>
       </td>
       <td className="text-">
-        <p>
-          {juego.moneda === "USD" ? "Usd" : "Ars"}$ {juego.precio}
-        </p>
+        <p>$ {juego.precio}</p>
       </td>
       <td>
         <p className="text-break">{juego.categoria}</p>

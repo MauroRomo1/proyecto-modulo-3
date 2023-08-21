@@ -2,7 +2,6 @@
   "juegos": [
     {
       "nombre": "Red Dead Redemption 2",
-      "moneda": "USD",
       "precio": "49.99",
       "categoria": "Aventura",
       "desarrolladora": "Rockstar Games",
@@ -37,7 +36,7 @@
     },
     {
       "nombre": "Hogwarts Legacy",
-      "moneda": "USD",
+
       "precio": "49.99",
       "categoria": "Aventura",
       "desarrolladora": "Avalanche Software",
@@ -72,8 +71,7 @@
     },
     {
       "nombre": "FIFA 23",
-      "moneda": "USD",
-      "precio": 69.99,
+      "precio": "69.99",
       "categoria": "Deportes",
       "desarrolladora": "EA Canada",
       "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Everyone_SP.svg",
@@ -107,7 +105,7 @@
     },
     {
       "nombre": "Grand Theft Auto V",
-      "moneda": "USD",
+
       "precio": 29.99,
       "categoria": "Sandbox",
       "desarrolladora": "Rockstar North",
@@ -142,7 +140,7 @@
     },
     {
       "nombre": "Assassin's Creed Valhalla",
-      "moneda": "USD",
+
       "precio": 32.99,
       "categoria": "Sandbox",
       "desarrolladora": "Ubisoft Montreal",
@@ -177,7 +175,7 @@
     },
     {
       "nombre": "Dead Island 2",
-      "moneda": "USD",
+
       "precio": 44.99,
       "categoria": "Terror",
       "desarrolladora": "Deep Silver Dambuster Studios",
@@ -212,7 +210,7 @@
     },
     {
       "nombre": "Resident Evil 4",
-      "moneda": "USD",
+
       "precio": 59.99,
       "categoria": "Terror",
       "desarrolladora": "Capcom",
@@ -247,7 +245,7 @@
     },
     {
       "nombre": "ELDEN RING",
-      "moneda": "USD",
+
       "precio": 59.99,
       "categoria": "RPG",
       "desarrolladora": "FromSoftware Inc.",
@@ -282,7 +280,7 @@
     },
     {
       "nombre": "DOOM Eternal",
-      "moneda": "USD",
+
       "precio": 39.99,
       "categoria": "Accion/Shooter",
       "desarrolladora": "id Software",
@@ -317,7 +315,7 @@
     },
     {
       "nombre": "Forza Horizon 5",
-      "moneda": "USD",
+
       "precio": 59.99,
       "categoria": "Carreras",
       "desarrolladora": "Playground Games",
@@ -352,7 +350,7 @@
     },
     {
       "nombre": "Good of War: Ragnarok",
-      "moneda": "USD",
+
       "precio": "50.99",
       "categoria": "Aventura",
       "desarrolladora": "SIE Santa Monica",
