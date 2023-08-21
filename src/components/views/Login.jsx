@@ -7,7 +7,7 @@ import Form from 'react-bootstrap/Form';
 const Login = () => {
   return (
     <>
-      <div className="d-flex justify-content-center bg-secondary" style={{ minHeight: '100vh', paddingTop: '4vh' }}>
+      <div className="d-flex justify-content-center bg-secondary bgLogin" style={{ minHeight: '100vh', paddingTop: '4vh' }}>
         <Container className="bg-light mb-auto rounded-4 shadow" style={{ maxWidth: '452px', padding: '30px 52px 29px' }}>
           <h4 className="fw-bold titulo-page-login">
             Acceder o crear una cuenta

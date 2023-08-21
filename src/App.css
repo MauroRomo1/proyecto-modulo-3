@@ -30,3 +30,10 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+.bgLogin{
+  background-image: url(/public/fondoLogin.png);
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+}
