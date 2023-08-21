@@ -1,8 +1,39 @@
-.imgCarrusel {
-  height: 25rem;
+.imgCardCarrusel {
   width: 100%;
+  height: 30rem;
 }
 
 .cardCarruselInicio {
-  max-width: 540px;
+  margin: 1.5rem;
+}
+
+.shadowCarrusel {
+  box-shadow: 100%;
+}
+
+.bg-card-carrusel {
+  background-color: black;
+  border: gray 1px solid;
+  opacity: 95%;
+  border-radius: 10px;
+  padding: 20px;
+  transition: 1s;
+}
+
+.bg-card-carrusel:hover {
+  opacity: 25%;
+  cursor: pointer;
+}
+
+.cardCarouselJuegos {
+  margin: 0.5rem;
+}
+
+.hoverCardJuego {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.hoverCardJuego:hover {
+  opacity: 50%;
 }
