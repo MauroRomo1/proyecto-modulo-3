@@ -7,3 +7,26 @@
 footer {
   margin-top: auto;
 }
+
+.titulo-page-login {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+}
+
+.subtitulo-page-login {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+.fuente-boton-social{
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  color: #757575 !important
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
