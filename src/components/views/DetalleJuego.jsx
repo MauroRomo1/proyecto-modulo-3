@@ -14,8 +14,6 @@ const DetalleJuego = () => {
       .then((resp) => {
         if (resp) {
           setJuego(resp);
-          console.log(resp);
-          console.log(juego);
         }
       })
       .catch((error) => {
