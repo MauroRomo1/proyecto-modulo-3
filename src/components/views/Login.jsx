@@ -4,6 +4,7 @@ import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form"
+import { login } from "../helpers/queries";
 
 
 const Login = () => {
@@ -15,6 +16,7 @@ const Login = () => {
 
   const onSubmit = (usuario) => {
     console.log('Los Datos del Formulario cumplen las validaciones.')
+    login(usuario)
   }
 
   return (
@@ -83,13 +85,13 @@ const Login = () => {
                 </Col>
                 <Col xs={12} md={4} lg={4} className="text-center px-1">
                   <Button as={Link} to={"/error404"} variant="light" type="submit" className="fuente-boton-social shadow" style={{ width: '100%', paddingRight: '0', paddingLeft: '0' }}>
-                    <img src="/public/facebook.svg" alt="logo google" style={{ paddingRight: '8px' }}></img>
+                    <img src="/public/facebook.svg" alt="logo facebook" style={{ paddingRight: '8px' }}></img>
                     Facebook
                   </Button>
                 </Col>
                 <Col xs={12} md={4} lg={4} className="text-center px-1">
                   <Button as={Link} to={"/error404"} variant="light" type="submit" className="fuente-boton-social shadow" style={{ width: '100%', paddingRight: '0', paddingLeft: '0' }}>
-                    <img src="/public/paypal.svg" alt="logo google" style={{ paddingRight: '8px' }}></img>
+                    <img src="/public/paypal.svg" alt="logo paypal" style={{ paddingRight: '8px' }}></img>
                     PayPal
                   </Button>
                 </Col>
@@ -98,19 +100,19 @@ const Login = () => {
               <Row className="gx-3 py-1 gy-2 justify-content-center">
                 <Col xs={12} md={4} lg={4} className="text-center px-1">
                   <Button as={Link} to={"/error404"} variant="light" type="submit" className="fuente-boton-social border-light-subtle shadow" style={{ width: '100%', paddingRight: '0', paddingLeft: '0' }}>
-                    <img src="/public/tiktok.svg" alt="logo google" style={{ paddingRight: '8px' }}></img>
+                    <img src="/public/tiktok.svg" alt="logo tiktok" style={{ paddingRight: '8px' }}></img>
                     TikTok
                   </Button>
                 </Col>
                 <Col xs={12} md={4} lg={4} className="text-center px-1">
                   <Button as={Link} to={"/error404"} variant="light" type="submit" className="fuente-boton-social border-light-subtle shadow" style={{ width: '100%', paddingRight: '0', paddingLeft: '0' }}>
-                    <img src="/public/twitch.svg" alt="logo google" style={{ paddingRight: '8px' }}></img>
+                    <img src="/public/twitch.svg" alt="logo twitch" style={{ paddingRight: '8px' }}></img>
                     Twitch
                   </Button>
                 </Col>
                 <Col xs={12} md={4} lg={4} className="text-center px-1">
                   <Button as={Link} to={"/error404"} variant="light" type="submit" className="fuente-boton-social border-light-subtle shadow" style={{ width: '100%', paddingRight: '0', paddingLeft: '0' }}>
-                    <img src="/public/twitter.svg" alt="logo google" style={{ paddingRight: '8px' }}></img>
+                    <img src="/public/twitter.svg" alt="logo twitter" style={{ paddingRight: '8px' }}></img>
                     Twitter
                   </Button>
                 </Col>
@@ -119,13 +121,13 @@ const Login = () => {
               <Row className="gx-3 py-1 gy-2 justify-content-center">
                 <Col xs={12} md={4} lg={4} className="text-center px-1">
                   <Button as={Link} to={"/error404"} variant="light" type="submit" className="fuente-boton-social border-light-subtle shadow" style={{ width: '100%', paddingRight: '0', paddingLeft: '0' }}>
-                    <img src="/public/apple.svg" alt="logo google" style={{ paddingRight: '8px' }}></img>
+                    <img src="/public/apple.svg" alt="logo apple" style={{ paddingRight: '8px' }}></img>
                     Apple
                   </Button>
                 </Col>
                 <Col xs={12} md={8} lg={8} className="text-center px-1">
                   <Button as={Link} to={"/error404"} variant="light" type="submit" className="fuente-boton-social border-light-subtle shadow" style={{ width: '100%', paddingRight: '0', paddingLeft: '0' }}>
-                    <img src="/public/telefono.svg" alt="logo google" style={{ paddingRight: '8px' }}></img>
+                    <img src="/public/telefono.svg" alt="logo telefono" style={{ paddingRight: '8px' }}></img>
                     Teléfono-sólo vendedores
                   </Button>
                 </Col>
