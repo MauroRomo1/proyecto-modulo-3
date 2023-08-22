@@ -19,7 +19,7 @@ const Header = () => {
     //  sessionStorage.removeItem("usuarioLogeado");
     navegacion("/");
   };
-  // const usuario = null;
+  
   return (
     <Navbar expand="lg" className=" bg-body-tertiary ">
       <Container>
