@@ -38,7 +38,7 @@ function App() {
           />
           <Route
             exact
-            path="/detalle-juego"
+            path="/detalle-juego/:id"
             element={<DetalleJuego></DetalleJuego>}
           />
           <Route
