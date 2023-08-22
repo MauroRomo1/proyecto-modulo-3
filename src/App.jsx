@@ -11,30 +11,33 @@ import Login from "./components/views/Login";
 import Administracion from "./components/views/Administracion";
 import DetalleJuego from "./components/views/DetalleJuego";
 import AcercaDeNosotros from "./components/views/AcercaDeNosotros";
+import { useState } from "react";
 
 function App() {
+  //Intento obtener el usuario logueado y almacenado en session storage, sino se provee un objeto vacio:
+  const usuarioEnlinea = JSON.parse(sessionStorage.getItem('usuarioLogueado')) || {};
+
+  const [usuarioActivo, setUsuarioActivo] = useState(usuarioEnlinea)
+
   return (
     <>
       <BrowserRouter>
-        <Header></Header>
+        <Header usuarioActivo={usuarioActivo} setUsuarioActivo={setUsuarioActivo}></Header>
         <Routes>
           <Route exact path="/" element={<PaginaPrincipal></PaginaPrincipal>} />
           <Route
-            exact
-            path="/administracion"
+            exact path="/administracion"
             element={<Administracion></Administracion>}
           />
           <Route
-            exact
-            path="/detalle-juego"
+            exact path="/detalle-juego"
             element={<DetalleJuego></DetalleJuego>}
           />
           <Route
-            exact
-            path="/acerca-de-nosotros"
+            exact path="/acerca-de-nosotros"
             element={<AcercaDeNosotros></AcercaDeNosotros>}
           />
-          <Route exact path="/login" element={<Login></Login>} />
+          <Route exact path="/login" element={<Login setUsuarioActivo={setUsuarioActivo}></Login>} />
           <Route exact path="*" element={<Error404></Error404>} />
         </Routes>
         <Footer></Footer>

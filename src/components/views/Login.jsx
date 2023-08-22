@@ -9,7 +9,7 @@ import Swal from "sweetalert2";
 
 
 
-const Login = () => {
+const Login = ({ setUsuarioActivo }) => {
   const {
     register,
     handleSubmit,
@@ -27,7 +27,9 @@ const Login = () => {
           'success'
         )
         //Guardo email usuarios en el sesion storage.
-        sessionStorage.setItem('usuarioLogueado', JSON.stringify(respuesta))
+        sessionStorage.setItem('usuarioLogueado', JSON.stringify(respuesta));
+        //Almaceno en el State lo mismo que en el session storage.
+        setUsuarioActivo(respuesta);
         //Envio al usuario Logueado con exito a la pagina Principal
 
       } else {
