@@ -13,7 +13,7 @@ const Login = () => {
     formState: { errors }
   } = useForm();
 
-  const onSubmit = (usuarioValidado) => {
+  const onSubmit = (usuario) => {
     console.log('Los Datos del Formulario cumplen las validaciones.')
   }
 
