@@ -25,6 +25,8 @@ const Login = () => {
           'Te logueaste correctamente!',
           'success'
         )
+        //Guardo email usuarios en el sesion storage.
+        sessionStorage.setItem('usuarioLogueado', JSON.stringify(respuesta))
       } else {
         Swal.fire(
           'Oops!',
