@@ -2,14 +2,16 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Col, Container, Row, } from "react-bootstrap";
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { login } from "../helpers/queries";
 import Swal from "sweetalert2";
 
 
-
 const Login = ({ setUsuarioActivo }) => {
+  //Hook de React-Router-Dom para redireccionar a otras paginas
+  const navegacion = useNavigate();
+
   const {
     register,
     handleSubmit,
@@ -18,6 +20,7 @@ const Login = ({ setUsuarioActivo }) => {
 
   const onSubmit = (usuario) => {
     console.log('Los Datos del Formulario cumplen las validaciones.')
+    
     login(usuario).then((respuesta) => {
       console.log(respuesta)
       if (respuesta) {
@@ -31,7 +34,7 @@ const Login = ({ setUsuarioActivo }) => {
         //Almaceno en el State lo mismo que en el session storage.
         setUsuarioActivo(respuesta);
         //Envio al usuario Logueado con exito a la pagina Principal
-
+        navegacion('/');
       } else {
         Swal.fire(
           'Oops!',
@@ -39,7 +42,6 @@ const Login = ({ setUsuarioActivo }) => {
           'error'
         )
       }
-
     })
   }
 
