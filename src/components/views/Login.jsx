@@ -8,6 +8,7 @@ import { login } from "../helpers/queries";
 import Swal from "sweetalert2";
 
 
+
 const Login = () => {
   const {
     register,
@@ -27,6 +28,8 @@ const Login = () => {
         )
         //Guardo email usuarios en el sesion storage.
         sessionStorage.setItem('usuarioLogueado', JSON.stringify(respuesta))
+        //Envio al usuario Logueado con exito a la pagina Principal
+
       } else {
         Swal.fire(
           'Oops!',
