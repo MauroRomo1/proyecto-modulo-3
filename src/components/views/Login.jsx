@@ -3,8 +3,9 @@ import { Button, Col, Container, Row, } from "react-bootstrap";
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import { Link } from "react-router-dom";
-import { useForm } from "react-hook-form"
+import { useForm } from "react-hook-form";
 import { login } from "../helpers/queries";
+import Swal from "sweetalert2";
 
 
 const Login = () => {
@@ -16,7 +17,23 @@ const Login = () => {
 
   const onSubmit = (usuario) => {
     console.log('Los Datos del Formulario cumplen las validaciones.')
-    login(usuario)
+    login(usuario).then((respuesta) => {
+      console.log(respuesta)
+      if (respuesta) {
+        Swal.fire(
+          '¡Bienvenido ' + respuesta.nombreUsuario + '!',
+          'Te logueaste correctamente!',
+          'success'
+        )
+      } else {
+        Swal.fire(
+          'Oops!',
+          'Hay algun error en los datos ingresados!',
+          'error'
+        )
+      }
+
+    })
   }
 
   return (
