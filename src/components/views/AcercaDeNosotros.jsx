@@ -6,7 +6,7 @@ import "../../css/acercaDeNosotros.css";
 const AcercaDeNosotros = () => {
   return (
     <>
-      <Row xs={1} md={5} className="g-4 p-3">
+      {/* <Row xs={1} md={5} className="g-4 p-3">
         {Array.from({ length: 4 }).map((_, idx) => (
           <Col key={idx}>
             <Card>
@@ -25,7 +25,7 @@ const AcercaDeNosotros = () => {
             </Card>
           </Col>
         ))}
-      </Row>
+      </Row> */}
     </>
   );
 };
