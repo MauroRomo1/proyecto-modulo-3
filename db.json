@@ -1,1 +1,8 @@
-{}
+{"usuarios":[
+    {
+        "nombreUsuario": "Admin",
+        "email": "admin@gamestore.com",
+        "password" : "Admin123",
+        "id":1
+    }
+]}
