@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Button, Col, Container, Row, } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import { Link, useNavigate } from "react-router-dom";
@@ -42,13 +42,11 @@ const AltaUsuario = () => {
 
   return (
     <>
-      <div className="d-flex justify-content-center bg-secondary bgLogin" style={{ minHeight: '100vh', paddingTop: '4vh' }}>
-        <Container className="bg-light mb-auto rounded-4 shadow" style={{ maxWidth: '452px', padding: '30px 52px 29px' }}>
-
+      <div className="d-flex justify-content-center bgLogin place-login">
+        <Container className="bg-light mb-auto rounded-4 shadow cont-login">
           <h4 className="fw-bold titulo-page-login">
             Cree una cuenta con nosotros:
           </h4>
-
           <form onSubmit={handleSubmit(onSubmit)} className="mt-3">
             <FloatingLabel label="Nombre de usuario" className="mb-3">
               <Form.Control
@@ -106,11 +104,12 @@ const AltaUsuario = () => {
                 {errors.password?.message}
               </Form.Text>
             </FloatingLabel>
-
-            <Button variant="primary" type="submit" style={{ display: 'block', width: '100%' }} className="shadow">
+            <Button variant="primary" type="submit" className="btn-access shadow">
               Crear cuenta!
             </Button>
-
+            <div className="text-end">
+              <Link as={Link} to={"/login"}>Ir a Login</Link>
+            </div>
           </form>
         </Container>
       </div >
