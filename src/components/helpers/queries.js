@@ -5,7 +5,8 @@ export const login = async (usuario) =>{
     try{
         //pedir la lista de usuarios a json-server:
         //chequear por qué no funciona al reemplazar por uriUsuario
-        const respuesta = await fetch('http://localhost:3004/usuarios');
+        //Temporalmente sigo usando 'http://localhost:3004/usuarios'
+        const respuesta = await fetch(uriUsuario);
         const listaUsuarios = await respuesta.json();
         console.log(listaUsuarios);
         
@@ -15,7 +16,7 @@ export const login = async (usuario) =>{
             //Si la coincidencia es correcta (usuario y password):
             if(usuarioBuscado.password === usuario.password){
                 console.log('usuario verificado');
-                return usuarioBuscado
+                return usuarioBuscado;
             }else{
                 console.log('password incorrecto');
                 return null;
@@ -25,8 +26,7 @@ export const login = async (usuario) =>{
             console.log('Usuario no registrado');
             return null;
         }
-
-    }catch(error){
+    }catch (error) {
         console.log(error);
     }
-}
+};

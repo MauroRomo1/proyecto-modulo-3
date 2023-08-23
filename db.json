@@ -1,19 +1,19 @@
-{   "usuarios":[
+{
+  "usuarios": [
     {
-        "nombreUsuario": "admin",
-        "email": "admin@gamestore.com",
-        "password" : "Admin123",
-        "id":1
+      "nombreUsuario": "admin",
+      "email": "admin@gamestore.com",
+      "password": "Admin123",
+      "id": 1
     },
     {
-        "nombreUsuario": "usuario1",
-        "email": "usuario1@gamestore.com",
-        "password" : "usuario123",
-        "id":2
+      "nombreUsuario": "usuario1",
+      "email": "usuario1@gamestore.com",
+      "password": "Usuario123",
+      "id": 2
     }
-    ],
-    
-    "juegos": [
+  ],    
+  "juegos": [
     {
       "nombre": "Red Dead Redemption 2",
       "precio": "49.99",
