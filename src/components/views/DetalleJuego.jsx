@@ -42,7 +42,7 @@ const DetalleJuego = () => {
                     <div className="col-lg-4">
                       <img
                         src={juego?.urlPortada}
-                        className="img-fluid rounded-start portadaJuego"
+                        className="img-fluid h-100 rounded-start portadaJuego"
                         alt={juego?.nombre}
                       />
                     </div>
