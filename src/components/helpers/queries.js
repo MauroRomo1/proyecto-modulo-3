@@ -1,8 +1,11 @@
+//protegiendo rutas:
+const uriUsuario = import.meta.env.VITE_API_USUARIO;
 //el parametro de la funcion es el usuario de onSubmit en Login.
 export const login = async (usuario) =>{
     try{
         //pedir la lista de usuarios a json-server:
-        const respuesta = await fetch('http://localhost:3004/usuarios')
+        //chequear por qué no funciona al reemplazar por uriUsuario
+        const respuesta = await fetch('http://localhost:3004/usuarios');
         const listaUsuarios = await respuesta.json();
         console.log(listaUsuarios);
         
@@ -11,19 +14,19 @@ export const login = async (usuario) =>{
         if(usuarioBuscado) {
             //Si la coincidencia es correcta (usuario y password):
             if(usuarioBuscado.password === usuario.password){
-                console.log('usuario verificado')
+                console.log('usuario verificado');
                 return usuarioBuscado
             }else{
-                console.log('password incorrecto')
+                console.log('password incorrecto');
                 return null;
             }
         }else{
             //si la coincidencia no es correcta.
-            console.log('Usuario no registrado')
+            console.log('Usuario no registrado');
             return null;
         }
 
     }catch(error){
-        console.log(error)
+        console.log(error);
     }
 }

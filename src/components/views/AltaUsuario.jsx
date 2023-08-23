@@ -11,7 +11,7 @@ import Swal from "sweetalert2";
 const AltaUsuario = () => {
   //Hook de React-Router-Dom para redireccionar a otras paginas
   const navegacion = useNavigate();
-
+  //Utilizo el state de React Hook Form, useForm.
   const {
     register,
     handleSubmit,
@@ -20,6 +20,8 @@ const AltaUsuario = () => {
 
   const onSubmit = () => {
     console.log('Los Datos del Formulario cumplen las validaciones.')
+
+    //Funcion que llamo desde queries.js
     login(usuarioNuevo).then((respuestaNueva) => {
       console.log(respuestaNueva)
       if (respuestaNueva) {
