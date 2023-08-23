@@ -37,7 +37,7 @@ const CardJuego = () => {
 
             <Link
               to={"/detalle-juego"}
-              className="btn btn-primary btn-sm rounded-pill fs-5 px-3"
+              className="btn btn-primary btn-sm rounded-pill fs-5 px-md-3"
             >
               Ver Juego!
             </Link>

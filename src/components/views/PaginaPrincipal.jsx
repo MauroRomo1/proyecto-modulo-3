@@ -96,13 +96,13 @@ const PaginaPrincipal = () => {
       <section className="carrusel">
         <Row className="d-flex align-items-center">
           <Col lg={4}>
-            <div className="d-none d-lg-flex rounded shadow-lg flex-column justify-content-evenly align-items-center p-3 bg-TLimitado-Carrusel">
-              <div className="d-flex align-items-center justify-content-between">
+            <div className="d-none d-lg-flex rounded shadow-lg flex-column justify-content-evenly align-items-center pt-1 px-2 bg-TLimitado-Carrusel">
+              <div className="d-flex align-items-center justify-content-between  flex-column">
                 <div className="pe-3 text-center">
                   <p className="fs-4 text-white">Oferta de Tiempo Limitado!</p>
                 </div>
                 <div>
-                  <CardGroup className="border border-secondary rounded card-Contador">
+                  <CardGroup className="border border-secondary rounded card-Contador d-flex">
                     <Card className="border border-white">
                       <Card.Body className="p-0 d-flex justify-content-center align-items-center">
                         <Card.Text className="fs-4 text-center">00 :</Card.Text>
@@ -138,7 +138,7 @@ const PaginaPrincipal = () => {
                   </CardGroup>
                 </div>
               </div>
-              <div className="my-2">
+              <div className="my-3">
                 <JuegoTiempoLimitado></JuegoTiempoLimitado>
               </div>
             </div>
@@ -198,6 +198,53 @@ const PaginaPrincipal = () => {
             </CardGroup>
           </div>
           <div>
+            <JuegoTiempoLimitado></JuegoTiempoLimitado>
+          </div>
+        </div>
+        <div className="d-flex d-md-none d-lg-none shadow-lg rounded justify-content-center align-items-center flex-column  bg-TLimitado-sm">
+          <div className="d-flex flex-column align-items-center">
+            <div className="pe-3">
+              <p className="fs-5 text-white">Oferta de Tiempo Limitado!</p>
+              <p className="fw-light text-center text-white">
+                especial dia del niño
+              </p>
+            </div>
+            <CardGroup className="rounded d-flex">
+              <Card className="border border-white">
+                <Card.Body>
+                  <Card.Text className="fs-4 text-center">00</Card.Text>
+                </Card.Body>
+                <Card.Footer className="boder border-white p-1">
+                  <Card.Text className="text-center fs-6">Dias</Card.Text>
+                </Card.Footer>
+              </Card>
+              <Card className="border border-white">
+                <Card.Body>
+                  <Card.Text className="fs-4 text-center">00</Card.Text>
+                </Card.Body>
+                <Card.Footer className="boder border-white p-1">
+                  <Card.Text className="text-center">Horas</Card.Text>
+                </Card.Footer>
+              </Card>
+              <Card className="border border-white">
+                <Card.Body>
+                  <Card.Text className="fs-4 text-center">00</Card.Text>
+                </Card.Body>
+                <Card.Footer className="boder border-white p-1">
+                  <Card.Text className="text-center fs-6">Min</Card.Text>
+                </Card.Footer>
+              </Card>
+              <Card className="border border-white">
+                <Card.Body>
+                  <Card.Text className="fs-4 text-center">00</Card.Text>
+                </Card.Body>
+                <Card.Footer className="boder border-white p-1">
+                  <Card.Text className="text-center fs-6">Seg</Card.Text>
+                </Card.Footer>
+              </Card>
+            </CardGroup>
+          </div>
+          <div className="mt-2">
             <JuegoTiempoLimitado></JuegoTiempoLimitado>
           </div>
         </div>
