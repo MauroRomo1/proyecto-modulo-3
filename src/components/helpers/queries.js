@@ -30,3 +30,21 @@ export const login = async (usuario) =>{
         console.log(error);
     }
 };
+
+export const altaUsuario = async (usuarioNuevo) => {
+
+    try {
+        //Ahora utilizo la segunda propiedad del fetch
+        const resp = await fetch(uriUsuario, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(usuarioNuevo)
+        }) ;
+        return resp;
+
+    } catch (error) {
+        console.log(error);
+    }
+}

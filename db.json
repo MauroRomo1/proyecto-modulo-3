@@ -11,8 +11,14 @@
       "email": "usuario1@gamestore.com",
       "password": "Usuario123",
       "id": 2
+    },
+    {
+      "nombreUsuario": "usuario2",
+      "email": "usuario2@gamestore.com",
+      "password": "Usuario123",
+      "id": 3
     }
-  ],    
+  ],
   "juegos": [
     {
       "nombre": "Red Dead Redemption 2",

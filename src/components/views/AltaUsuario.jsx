@@ -4,7 +4,7 @@ import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import { login } from "../helpers/queries";
+import { altaUsuario } from "../helpers/queries";
 import Swal from "sweetalert2";
 
 
@@ -18,19 +18,19 @@ const AltaUsuario = () => {
     formState: { errors }
   } = useForm();
 
-  const onSubmit = () => {
-    console.log('Los Datos del Formulario cumplen las validaciones.')
-
+  const onSubmit = (usuarioNUevo) => {
+    console.log(usuarioNUevo);
     //Funcion que llamo desde queries.js
-    login(usuarioNuevo).then((respuestaNueva) => {
-      console.log(respuestaNueva)
-      if (respuestaNueva) {
+    altaUsuario(usuarioNUevo).then((resp) => {
+
+      console.log(resp);
+      if (resp.status === 201) {
         Swal.fire(
-          '¡Felicitaciones ' + respuestaNueva.nombreUsuario + '!',
+          '¡Felicitaciones ' + usuarioNUevo.nombreUsuario + '!',
           'Ya eres parte de nuestro Team!',
           'success'
-        )
-        //Envio al usuario nuevo a Login:
+        );
+        //Envio al usuario Logueado con exito a la pagina Principal
         navegacion('/login');
       } else {
         Swal.fire(
@@ -38,9 +38,12 @@ const AltaUsuario = () => {
           'Hay algun error en los datos ingresados. Prueba nuevamente!',
           'error'
         )
-      }
-    })
-  }
+      };
+
+    }).catch((error) => {
+      console.log(error);
+    });
+  };
 
   return (
     <>
