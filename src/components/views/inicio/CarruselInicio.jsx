@@ -3,8 +3,8 @@ import { Badge, Card } from "react-bootstrap";
 
 const CarruselInicio = () => {
   return (
-    <div className="pb-4">
-      <Card className="text-white m-3 shadow-lg">
+    <div className="pb-4 p-0">
+      <Card className="text-white mt-3 shadow">
         <Card.Img
           src="https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png"
           alt="Card image"

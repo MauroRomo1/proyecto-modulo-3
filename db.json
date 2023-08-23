@@ -36,7 +36,6 @@
     },
     {
       "nombre": "Hogwarts Legacy",
-
       "precio": "49.99",
       "categoria": "Aventura",
       "desarrolladora": "Avalanche Software",
@@ -105,7 +104,6 @@
     },
     {
       "nombre": "Grand Theft Auto V",
-
       "precio": 29.99,
       "categoria": "Sandbox",
       "desarrolladora": "Rockstar North",
@@ -140,7 +138,6 @@
     },
     {
       "nombre": "Assassin's Creed Valhalla",
-
       "precio": 32.99,
       "categoria": "Sandbox",
       "desarrolladora": "Ubisoft Montreal",
@@ -175,7 +172,6 @@
     },
     {
       "nombre": "Dead Island 2",
-
       "precio": 44.99,
       "categoria": "Terror",
       "desarrolladora": "Deep Silver Dambuster Studios",
@@ -210,7 +206,6 @@
     },
     {
       "nombre": "Resident Evil 4",
-
       "precio": 59.99,
       "categoria": "Terror",
       "desarrolladora": "Capcom",
@@ -245,7 +240,6 @@
     },
     {
       "nombre": "ELDEN RING",
-
       "precio": 59.99,
       "categoria": "RPG",
       "desarrolladora": "FromSoftware Inc.",
@@ -280,7 +274,6 @@
     },
     {
       "nombre": "DOOM Eternal",
-
       "precio": 39.99,
       "categoria": "Accion/Shooter",
       "desarrolladora": "id Software",
@@ -315,7 +308,6 @@
     },
     {
       "nombre": "Forza Horizon 5",
-
       "precio": 59.99,
       "categoria": "Carreras",
       "desarrolladora": "Playground Games",
@@ -350,7 +342,6 @@
     },
     {
       "nombre": "Good of War: Ragnarok",
-
       "precio": "50.99",
       "categoria": "Aventura",
       "desarrolladora": "SIE Santa Monica",
