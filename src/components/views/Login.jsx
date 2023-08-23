@@ -48,15 +48,12 @@ const Login = ({ setUsuarioActivo }) => {
 
   return (
     <>
-      <div className="d-flex justify-content-center bg-secondary bgLogin" style={{ minHeight: '100vh', paddingTop: '4vh' }}>
-        <Container className="bg-light mb-auto rounded-4 shadow" style={{ maxWidth: '452px', padding: '30px 52px 29px' }}>
-
-          <h4 className="fw-bold titulo-page-login">
+      <div className="d-flex justify-content-center bgLogin place-login">
+        <Container className="bg-light mb-auto rounded-4 shadow cont-login">
+          <h4 className="fw-bold title-page-login">
             Acceder o crear una cuenta
           </h4>
-
           <form onSubmit={handleSubmit(onSubmit)} className="mt-3">
-
             <FloatingLabel label="Correo electronico" className="mb-3">
               <Form.Control
                 type="email"
@@ -94,34 +91,34 @@ const Login = ({ setUsuarioActivo }) => {
                 {errors.password?.message}
               </Form.Text>
             </FloatingLabel>
-            <Button variant="primary" type="submit" style={{ display: 'block', width: '100%' }} className="shadow">
+            <Button variant="primary" type="submit" className="btn-access shadow">
               Acceder
             </Button>
             <div className="text-end">
               <Link as={Link} to={"/altausuario"}>Crear cuenta</Link>
             </div>
 
-            <h5 className="mt-4 mb-3 subtitulo-page-login">
+            <h5 className="mt-4 mb-3 subtitle-page-login">
               Acceso rapido con:
             </h5>
 
             <div className="conteiner px-3 py-1">
               <Row className="gx-3 py-1 gy-2 justify-content-center">
                 <Col xs={12} md={4} lg={4} className="text-center px-1">
-                  <Button as={Link} to={"/error404"} variant="light" type="submit" className="fuente-boton-social border-light-subtle shadow" style={{ width: '100%', paddingRight: '0', paddingLeft: '0' }}>
-                    <img src="/public/google.svg" alt="logo google" style={{ paddingRight: '8px' }}></img>
+                  <Button as={Link} to={"/error404"} variant="light" type="submit" className="font-btn-social border-light-subtle shadow btn-social">
+                    <img src="/public/google.svg" alt="logo google" className="logo-btn-social"></img>
                     Google
                   </Button>
                 </Col>
                 <Col xs={12} md={4} lg={4} className="text-center px-1">
-                  <Button as={Link} to={"/error404"} variant="light" type="submit" className="fuente-boton-social shadow" style={{ width: '100%', paddingRight: '0', paddingLeft: '0' }}>
-                    <img src="/public/facebook.svg" alt="logo facebook" style={{ paddingRight: '8px' }}></img>
+                  <Button as={Link} to={"/error404"} variant="light" type="submit" className="font-btn-social shadow btn-social">
+                    <img src="/public/facebook.svg" alt="logo facebook" className="logo-btn-social"></img>
                     Facebook
                   </Button>
                 </Col>
                 <Col xs={12} md={4} lg={4} className="text-center px-1">
-                  <Button as={Link} to={"/error404"} variant="light" type="submit" className="fuente-boton-social shadow" style={{ width: '100%', paddingRight: '0', paddingLeft: '0' }}>
-                    <img src="/public/paypal.svg" alt="logo paypal" style={{ paddingRight: '8px' }}></img>
+                  <Button as={Link} to={"/error404"} variant="light" type="submit" className="font-btn-social shadow btn-social">
+                    <img src="/public/paypal.svg" alt="logo paypal" className="logo-btn-social"></img>
                     PayPal
                   </Button>
                 </Col>
@@ -129,20 +126,20 @@ const Login = ({ setUsuarioActivo }) => {
 
               <Row className="gx-3 py-1 gy-2 justify-content-center">
                 <Col xs={12} md={4} lg={4} className="text-center px-1">
-                  <Button as={Link} to={"/error404"} variant="light" type="submit" className="fuente-boton-social border-light-subtle shadow" style={{ width: '100%', paddingRight: '0', paddingLeft: '0' }}>
-                    <img src="/public/tiktok.svg" alt="logo tiktok" style={{ paddingRight: '8px' }}></img>
+                  <Button as={Link} to={"/error404"} variant="light" type="submit" className="font-btn-social border-light-subtle shadow btn-social">
+                    <img src="/public/tiktok.svg" alt="logo tiktok" className="logo-btn-social"></img>
                     TikTok
                   </Button>
                 </Col>
                 <Col xs={12} md={4} lg={4} className="text-center px-1">
-                  <Button as={Link} to={"/error404"} variant="light" type="submit" className="fuente-boton-social border-light-subtle shadow" style={{ width: '100%', paddingRight: '0', paddingLeft: '0' }}>
-                    <img src="/public/twitch.svg" alt="logo twitch" style={{ paddingRight: '8px' }}></img>
+                  <Button as={Link} to={"/error404"} variant="light" type="submit" className="font-btn-social border-light-subtle shadow btn-social">
+                    <img src="/public/twitch.svg" alt="logo twitch" className="logo-btn-social"></img>
                     Twitch
                   </Button>
                 </Col>
                 <Col xs={12} md={4} lg={4} className="text-center px-1">
-                  <Button as={Link} to={"/error404"} variant="light" type="submit" className="fuente-boton-social border-light-subtle shadow" style={{ width: '100%', paddingRight: '0', paddingLeft: '0' }}>
-                    <img src="/public/twitter.svg" alt="logo twitter" style={{ paddingRight: '8px' }}></img>
+                  <Button as={Link} to={"/error404"} variant="light" type="submit" className="font-btn-social border-light-subtle shadow btn-social">
+                    <img src="/public/twitter.svg" alt="logo twitter" className="logo-btn-social"></img>
                     Twitter
                   </Button>
                 </Col>
@@ -150,14 +147,14 @@ const Login = ({ setUsuarioActivo }) => {
 
               <Row className="gx-3 py-1 gy-2 justify-content-center">
                 <Col xs={12} md={4} lg={4} className="text-center px-1">
-                  <Button as={Link} to={"/error404"} variant="light" type="submit" className="fuente-boton-social border-light-subtle shadow" style={{ width: '100%', paddingRight: '0', paddingLeft: '0' }}>
-                    <img src="/public/apple.svg" alt="logo apple" style={{ paddingRight: '8px' }}></img>
+                  <Button as={Link} to={"/error404"} variant="light" type="submit" className="font-btn-social border-light-subtle shadow btn-social">
+                    <img src="/public/apple.svg" alt="logo apple" className="logo-btn-social"></img>
                     Apple
                   </Button>
                 </Col>
                 <Col xs={12} md={8} lg={8} className="text-center px-1">
-                  <Button as={Link} to={"/error404"} variant="light" type="submit" className="fuente-boton-social border-light-subtle shadow" style={{ width: '100%', paddingRight: '0', paddingLeft: '0' }}>
-                    <img src="/public/telefono.svg" alt="logo telefono" style={{ paddingRight: '8px' }}></img>
+                  <Button as={Link} to={"/error404"} variant="light" type="submit" className="font-btn-social border-light-subtle shadow btn-social">
+                    <img src="/public/telefono.svg" alt="logo telefono" className="logo-btn-social"></img>
                     Teléfono-sólo vendedores
                   </Button>
                 </Col>
