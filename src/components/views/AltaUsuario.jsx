@@ -15,7 +15,8 @@ const AltaUsuario = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors }
+    formState: { errors },
+    reset,
   } = useForm();
 
   const onSubmit = (usuarioNUevo) => {
@@ -30,6 +31,7 @@ const AltaUsuario = () => {
           'Ya eres parte de nuestro Team!',
           'success'
         );
+        reset()
         //Envio al usuario Logueado con exito a la pagina Principal
         navegacion('/login');
       } else {

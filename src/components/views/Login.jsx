@@ -15,7 +15,8 @@ const Login = ({ setUsuarioActivo }) => {
   const {
     register,
     handleSubmit,
-    formState: { errors }
+    formState: { errors },
+    reset,
   } = useForm();
 
   const onSubmit = (usuario) => {
@@ -34,6 +35,7 @@ const Login = ({ setUsuarioActivo }) => {
         sessionStorage.setItem('usuarioLogueado', JSON.stringify(respuesta));
         //Almaceno en el State lo mismo que en el session storage.
         setUsuarioActivo(respuesta);
+        reset();
         //Envio al usuario Logueado con exito a la pagina Principal
         navegacion('/');
       } else {
@@ -41,7 +43,8 @@ const Login = ({ setUsuarioActivo }) => {
           'Oops!',
           'Hay algun error en los datos ingresados!',
           'error'
-        )
+        );
+        reset()
       }
     })
   }

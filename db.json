@@ -17,6 +17,12 @@
       "email": "usuario2@gamestore.com",
       "password": "Usuario123",
       "id": 3
+    },
+    {
+      "nombreUsuario": "usuario3",
+      "email": "usuario3@gamestore.com",
+      "password": "Usuario123",
+      "id": 4
     }
   ],
   "juegos": [
