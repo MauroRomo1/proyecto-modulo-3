@@ -1,292 +1,105 @@
 import "../../css/PaginaPrincipal.css";
-import {
-  Card,
-  CardGroup,
-  Col,
-  Container,
-  DropdownButton,
-  Form,
-  Row,
-} from "react-bootstrap";
-import DropdownItem from "react-bootstrap/esm/DropdownItem";
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import CarruselInicio from "./inicio/CarruselInicio";
-import CardJuego from "./inicio/CardJuego";
-import { Link } from "react-router-dom";
-import JuegoTiempoLimitado from "./inicio/JuegoTiempoLimitado";
+import { Form } from "react-bootstrap";
+import { useState } from "react";
+import ListaJuegos from "./inicio/ListaJuegos";
+import { useForm } from "react-hook-form";
+import CarruselYOferta from "./inicio/CarruselYOferta";
+import ListaJuegosFiltrados from "./inicio/ListaJuegosFiltrados";
 
 const PaginaPrincipal = () => {
-  const responsiveCarruselInicio = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 1,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 1,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 1,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
+  const [filtro, setFiltro] = useState({});
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (filtros) => {
+    setFiltro(filtros);
   };
-  const responsiveCarruselCards = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 4,
-      slidesToSlide: 4,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-      slidesToSlide: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-      slidesToSlide: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-      slidesToSlide: 1,
-    },
-  };
+
   return (
     <>
       <section className="bg-dark d-flex justify-content-between align-items-center pt-2 py-2">
         <div className="px-2">
-          <DropdownButton
-            id="categoriaInicio"
-            title="Categorias"
-            variant="warning"
-          >
-            <DropdownItem disabled>Elige una categoria</DropdownItem>
-            <DropdownItem value="Aventura">Aventura</DropdownItem>
-            <DropdownItem value="Accion/Shooter">Accion/Shooter</DropdownItem>
-            <DropdownItem value="Sandbox">SandBox</DropdownItem>
-            <DropdownItem value="Construcción">Construcción</DropdownItem>
-            <DropdownItem value="Simulacion">Simulacion</DropdownItem>
-            <DropdownItem value="Deportes">Deportes</DropdownItem>
-            <DropdownItem value="Carreras">Carreras</DropdownItem>
-            <DropdownItem value="Estrategia">Estrategia</DropdownItem>
-            <DropdownItem value="Arcade">Arcade</DropdownItem>
-            <DropdownItem value="RPG">RPG</DropdownItem>
-            <DropdownItem value="Terror">Terror</DropdownItem>
-            <DropdownItem value="Lucha">Lucha</DropdownItem>
-            <DropdownItem value="Puzle">Puzle</DropdownItem>
-            <DropdownItem value="Casual">Casual</DropdownItem>
-          </DropdownButton>
+          <Form onChange={handleSubmit(onSubmit)}>
+            <Form.Group controlId="catSeleccionada">
+              <Form.Select
+                aria-label="Categorias"
+                className="bg-warning fs-5 fw-light"
+                {...register("catSeleccionada")}
+              >
+                <option value="">Elige una categoria</option>
+                <option value="Aventura" className="fw-light fs-5 rounded ">
+                  Aventura
+                </option>
+                <option
+                  value="Accion/Shooter"
+                  className="fw-light fs-5 rounded "
+                >
+                  Accion/Shooter
+                </option>
+                <option value="Sandbox" className="fw-light fs-5 rounded ">
+                  SandBox
+                </option>
+                <option value="Construcción" className="fw-light fs-5 rounded ">
+                  Construcción
+                </option>
+                <option value="Simulacion" className="fw-light fs-5 rounded ">
+                  Simulacion
+                </option>
+                <option value="Deportes" className="fw-light fs-5 rounded ">
+                  Deportes
+                </option>
+                <option value="Carreras" className="fw-light fs-5 rounded ">
+                  Carreras
+                </option>
+                <option value="Estrategia" className="fw-light fs-5 rounded ">
+                  Estrategia
+                </option>
+                <option value="Arcade" className="fw-light fs-5 rounded ">
+                  Arcade
+                </option>
+                <option value="RPG" className="fw-light fs-5 rounded ">
+                  RPG
+                </option>
+                <option value="Terror" className="fw-light fs-5 rounded ">
+                  Terror
+                </option>
+                <option value="Lucha" className="fw-light fs-5 rounded ">
+                  Lucha
+                </option>
+                <option value="Puzle" className="fw-light fs-5 rounded ">
+                  Puzle
+                </option>
+                <option value="Casual" className="fw-light fs-5 rounded ">
+                  Casual
+                </option>
+              </Form.Select>
+            </Form.Group>
+          </Form>
         </div>
         <div className="w-50 px-2">
-          <Form>
-            <Form.Control
-              type="text"
-              placeholder="🔍 Buscar por nombre"
-              className="mr-sm-2"
-            ></Form.Control>
+          <Form onChange={handleSubmit(onSubmit)}>
+            <Form.Group controlId="busqueda">
+              <Form.Control
+                type="text"
+                placeholder="🔍 Buscar por nombre"
+                className="mr-sm-2"
+                {...register("busqueda")}
+              ></Form.Control>
+            </Form.Group>
           </Form>
         </div>
       </section>
-      <section className="carrusel">
-        <Row className="d-flex align-items-center">
-          <Col lg={4}>
-            <div className="d-none d-lg-flex rounded shadow-lg flex-column justify-content-evenly align-items-center pt-1 px-2 bg-TLimitado-Carrusel">
-              <div className="d-flex align-items-center justify-content-between  flex-column">
-                <div className="pe-3 text-center">
-                  <p className="fs-4 text-white">Oferta de Tiempo Limitado!</p>
-                </div>
-                <div>
-                  <CardGroup className="border border-secondary rounded card-Contador d-flex">
-                    <Card className="border border-white">
-                      <Card.Body className="p-0 d-flex justify-content-center align-items-center">
-                        <Card.Text className="fs-4 text-center">00 :</Card.Text>
-                      </Card.Body>
-                      <Card.Footer className="boder border-white p-1">
-                        <Card.Text className="text-center">Dias</Card.Text>
-                      </Card.Footer>
-                    </Card>
-                    <Card className="border border-white">
-                      <Card.Body className="p-0 d-flex justify-content-center align-items-center">
-                        <Card.Text className="fs-4 text-center">00 :</Card.Text>
-                      </Card.Body>
-                      <Card.Footer className="boder border-white p-1">
-                        <Card.Text className="text-center">Hs</Card.Text>
-                      </Card.Footer>
-                    </Card>
-                    <Card className="border border-white">
-                      <Card.Body className="p-0 d-flex justify-content-center align-items-center">
-                        <Card.Text className="fs-4 text-center">00 :</Card.Text>
-                      </Card.Body>
-                      <Card.Footer className="boder border-white p-1">
-                        <Card.Text className="text-center fs-6">Min</Card.Text>
-                      </Card.Footer>
-                    </Card>
-                    <Card className="border border-white">
-                      <Card.Body className="p-0 d-flex justify-content-center align-items-center">
-                        <Card.Text className="fs-4 text-center">00</Card.Text>
-                      </Card.Body>
-                      <Card.Footer className="boder border-white p-1">
-                        <Card.Text className="text-center fs-6">Seg</Card.Text>
-                      </Card.Footer>
-                    </Card>
-                  </CardGroup>
-                </div>
-              </div>
-              <div className="my-3">
-                <JuegoTiempoLimitado></JuegoTiempoLimitado>
-              </div>
-            </div>
-          </Col>
-          <Col md={12} lg={8} className="p-0">
-            <Carousel responsive={responsiveCarruselInicio}>
-              <CarruselInicio></CarruselInicio>
-              <CarruselInicio></CarruselInicio>
-              <CarruselInicio></CarruselInicio>
-              <CarruselInicio></CarruselInicio>
-            </Carousel>
-          </Col>
-        </Row>
-      </section>
-      <section className="p-3">
-        <div className="d-none d-md-flex d-lg-none shadow-lg rounded d-flex justify-content-evenly p-3 bg-TLimitado">
-          <div className="d-flex align-items-center">
-            <div className="pe-3">
-              <p className="fs-5 text-white">Oferta de Tiempo Limitado!</p>
-              <p className="fw-light text-center text-white">
-                especial dia del niño
-              </p>
-            </div>
-            <CardGroup className="border border-secondary rounded ">
-              <Card className="border border-white">
-                <Card.Body>
-                  <Card.Text className="fs-4 text-center">00</Card.Text>
-                </Card.Body>
-                <Card.Footer className="boder border-white p-1">
-                  <Card.Text className="text-center fs-6">Dias</Card.Text>
-                </Card.Footer>
-              </Card>
-              <Card className="border border-white">
-                <Card.Body>
-                  <Card.Text className="fs-4 text-center">00</Card.Text>
-                </Card.Body>
-                <Card.Footer className="boder border-white p-1">
-                  <Card.Text className="text-center">Horas</Card.Text>
-                </Card.Footer>
-              </Card>
-              <Card className="border border-white">
-                <Card.Body>
-                  <Card.Text className="fs-4 text-center">00</Card.Text>
-                </Card.Body>
-                <Card.Footer className="boder border-white p-1">
-                  <Card.Text className="text-center fs-6">Min</Card.Text>
-                </Card.Footer>
-              </Card>
-              <Card className="border border-white">
-                <Card.Body>
-                  <Card.Text className="fs-4 text-center">00</Card.Text>
-                </Card.Body>
-                <Card.Footer className="boder border-white p-1">
-                  <Card.Text className="text-center fs-6">Seg</Card.Text>
-                </Card.Footer>
-              </Card>
-            </CardGroup>
-          </div>
-          <div>
-            <JuegoTiempoLimitado></JuegoTiempoLimitado>
-          </div>
-        </div>
-        <div className="d-flex d-md-none d-lg-none shadow-lg rounded justify-content-center align-items-center flex-column  bg-TLimitado-sm">
-          <div className="d-flex flex-column align-items-center">
-            <div className="pe-3">
-              <p className="fs-5 text-white">Oferta de Tiempo Limitado!</p>
-              <p className="fw-light text-center text-white">
-                especial dia del niño
-              </p>
-            </div>
-            <CardGroup className="rounded d-flex">
-              <Card className="border border-white">
-                <Card.Body>
-                  <Card.Text className="fs-4 text-center">00</Card.Text>
-                </Card.Body>
-                <Card.Footer className="boder border-white p-1">
-                  <Card.Text className="text-center fs-6">Dias</Card.Text>
-                </Card.Footer>
-              </Card>
-              <Card className="border border-white">
-                <Card.Body>
-                  <Card.Text className="fs-4 text-center">00</Card.Text>
-                </Card.Body>
-                <Card.Footer className="boder border-white p-1">
-                  <Card.Text className="text-center">Horas</Card.Text>
-                </Card.Footer>
-              </Card>
-              <Card className="border border-white">
-                <Card.Body>
-                  <Card.Text className="fs-4 text-center">00</Card.Text>
-                </Card.Body>
-                <Card.Footer className="boder border-white p-1">
-                  <Card.Text className="text-center fs-6">Min</Card.Text>
-                </Card.Footer>
-              </Card>
-              <Card className="border border-white">
-                <Card.Body>
-                  <Card.Text className="fs-4 text-center">00</Card.Text>
-                </Card.Body>
-                <Card.Footer className="boder border-white p-1">
-                  <Card.Text className="text-center fs-6">Seg</Card.Text>
-                </Card.Footer>
-              </Card>
-            </CardGroup>
-          </div>
-          <div className="mt-2">
-            <JuegoTiempoLimitado></JuegoTiempoLimitado>
-          </div>
-        </div>
-      </section>
-      <section className="mx-5 my-3 shadow rounded bg-sectionInicio">
-        <div className="mt-3 mb-5">
-          <Link
-            to={`/lista-juegos`}
-            className="text-decoration-none display-3 fw-light ps-md-5 ps-1 text-dark"
-          >
-            Todos Los juegos
-          </Link>
-        </div>
-        <Carousel responsive={responsiveCarruselCards}>
-          <CardJuego></CardJuego>
-          <CardJuego></CardJuego>
-          <CardJuego></CardJuego>
-          <CardJuego></CardJuego>
-          <CardJuego></CardJuego>
-          <CardJuego></CardJuego>
-          <CardJuego></CardJuego>
-        </Carousel>
-      </section>
-      <section className="mx-5 my-3 shadow rounded bg-sectionInicio">
-        <div className="mt-3 mb-5">
-          <Link
-            to={`/lista-juegos`}
-            className="text-decoration-none display-3 fw-light ps-5 text-dark"
-          >
-            Aventuras
-          </Link>
-        </div>
-        <Carousel responsive={responsiveCarruselCards}>
-          <CardJuego></CardJuego>
-          <CardJuego></CardJuego>
-          <CardJuego></CardJuego>
-          <CardJuego></CardJuego>
-          <CardJuego></CardJuego>
-          <CardJuego></CardJuego>
-          <CardJuego></CardJuego>
-        </Carousel>
-      </section>
+      {filtro.catSeleccionada || filtro.busqueda ? (
+        <ListaJuegosFiltrados {...filtro}></ListaJuegosFiltrados>
+      ) : (
+        <CarruselYOferta></CarruselYOferta>
+      )}
+      <ListaJuegos></ListaJuegos>
     </>
   );
 };

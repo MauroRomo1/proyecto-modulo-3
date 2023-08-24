@@ -1,43 +1,48 @@
 import React from "react";
-import { Badge, Card, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Badge, Card } from "react-bootstrap";
+import { Link, useNavigate } from "react-router-dom";
 
-const CardJuego = () => {
+const CardJuego = ({ urlPortada, categoria, nombre, precio, id }) => {
+  const detalleJuego = useNavigate();
   return (
     <div className="cardCarouselJuegos shadow">
-      <Card className="hoverCardJuego">
+      <Card
+        className="hoverCardJuego"
+        onClick={() => detalleJuego(`/detalle-juego/${id}`)}
+      >
         <Card.Img
           variant="top"
-          src="https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png"
+          src={urlPortada}
           alt="imagen-receta"
+          className="imgCardJuego"
         />
         <Card.ImgOverlay className="pb-0 d-flex justify-content-between">
           <p>
-            <Badge bg="warning">Categoria</Badge>
+            <Badge bg="warning">{categoria}</Badge>
           </p>
         </Card.ImgOverlay>
       </Card>
-      <Card className="rounded-top-0">
-        <Card.Body>
+      <Card className="rounded-top-0 cardJuego">
+        <Card.Body className="d-flex flex-column pb-0 ">
           <Card.Title className="fs-2 fw-light">
             <div className="d-flex justify-content-between">
-              <p> Red Dead Redemption 2 </p>
+              <p className="text-break">{nombre}</p>
               <Link className="text-decoration-none fs-2">
                 <i className="fa-solid fa-heart favIcon"></i>
               </Link>
             </div>
-
+          </Card.Title>
+          <Card.Text>
             <Badge bg="success" className="fs-6">
               Muy Recomendable
             </Badge>
-          </Card.Title>
-          <Card.Text></Card.Text>
-          <div className="d-flex justify-content-between align-items-center pt-3">
-            <p className="display-5 fw-light">$49.99</p>
+          </Card.Text>
+          <div className="d-flex justify-content-between mt-auto  pt-3">
+            <p className="display-5 fw-light">${precio}</p>
 
             <Link
-              to={"/detalle-juego"}
-              className="btn btn-primary btn-sm rounded-pill fs-5 px-md-3"
+              to={"/detalle-juego/" + id}
+              className="btn btn-primary btn-sm rounded-pill fs-5 px-0 p-md-3 my-2"
             >
               Ver Juego!
             </Link>

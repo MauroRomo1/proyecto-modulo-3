@@ -5,7 +5,6 @@ const dbJuegos =
 export const listarJuegos = async() => {
     try {
         const respuesta = await fetch(dbJuegos)
-        console.log(respuesta);
         const listaJuegos = await respuesta.json();
         return listaJuegos;
     } catch (error) {

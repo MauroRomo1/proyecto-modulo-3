@@ -1,10 +1,15 @@
 import React from "react";
 import { Card } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const JuegoTiempoLimitado = () => {
+  const detalleJuego = useNavigate();
   return (
     <div>
-      <Card className="cardJuegoTLimitado">
+      <Card
+        className="cardJuegoTLimitado"
+        onClick={() => detalleJuego(`/detalle-juego/1`)}
+      >
         <Card.Img
           variant="top"
           src="https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png"
