@@ -9,8 +9,8 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-light py-3 text-center">
-      <div className="row py-5">
+    <footer className=" bg-dark text-light py-3 text-center">
+      <div className="row py-5 m-0">
         <div className="col-12 col-md-4">
           <img
             src="https://static.vecteezy.com/system/resources/thumbnails/004/739/197/small_2x/icon-broken-image-1-long-shadow-style-simple-illustration-editable-stroke-free-vector.jpg"
@@ -26,7 +26,7 @@ const Footer = () => {
             </NavLink>
           </div>
           <div className="my-4">
-            <NavLink className="nav-link" end to="/error">
+            <NavLink className="nav-link " end to="/error">
               Atencion al cliente
             </NavLink>
           </div>
@@ -51,7 +51,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="mt-5">
+      <div className="mt-5 text-secondary">
         <h6>&copy;Todos los derechos reservados 2023.</h6>
       </div>
     </footer>
