@@ -22,7 +22,7 @@ const PaginaPrincipal = () => {
 
   return (
     <>
-      <section className="bg-dark d-flex justify-content-between align-items-center pt-2 py-2">
+      <section className="bg-headerPP d-flex justify-content-between align-items-center pt-2 py-2">
         <div className="px-2">
           <Form onChange={handleSubmit(onSubmit)}>
             <Form.Group controlId="catSeleccionada">

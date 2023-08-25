@@ -1,17 +1,52 @@
 import React, { useEffect, useState } from "react";
 import { Card, CardGroup, Col, Row } from "react-bootstrap";
-
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import JuegoTiempoLimitado from "./JuegoTiempoLimitado";
 import CarruselInicio from "./CarruselInicio";
-import CuentaAtras from "./CuentaAtras";
 
 const CarruselYOferta = () => {
-  const [dia, setDia] = useState("05");
-  const [hs, setHs] = useState("60");
-  const [min, setMin] = useState("60");
-  const [seg, setSeg] = useState("60");
+  const fechaObjetivo = new Date();
+  fechaObjetivo.setDate(fechaObjetivo.getDate() + 4);
+  fechaObjetivo.setHours(0, 0, 0, 0);
+
+  const calcularTiempoRestante = () => {
+    const ahora = new Date();
+    const diferencia = fechaObjetivo - ahora;
+
+    if (diferencia <= 0) {
+      return {
+        dias: 0,
+        hs: 0,
+        min: 0,
+        seg: 0,
+      };
+    }
+
+    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+    const hs = Math.floor(
+      (diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const min = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+    const seg = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+    return {
+      dias,
+      hs,
+      min,
+      seg,
+    };
+  };
+
+  const [tiempoRestante, setTiempoRestante] = useState(
+    calcularTiempoRestante()
+  );
+
+  useEffect(() => {
+    const temporizador = setInterval(() => {
+      setTiempoRestante(calcularTiempoRestante());
+    }, 1000);
+  }, []);
 
   const responsiveCarruselInicio = {
     superLargeDesktop: {
@@ -34,7 +69,6 @@ const CarruselYOferta = () => {
   return (
     <>
       <section className="carrusel">
-        <CuentaAtras></CuentaAtras>
         <Row className="d-flex align-items-center">
           <Col lg={4}>
             <div className="d-none d-lg-flex rounded shadow-lg flex-column justify-content-evenly align-items-center pt-1 px-2 bg-TLimitado-Carrusel">
@@ -47,7 +81,10 @@ const CarruselYOferta = () => {
                     <Card className="border border-white">
                       <Card.Body className="p-0 d-flex justify-content-center align-items-center">
                         <Card.Text className="fs-4 text-center">
-                          {dia} :
+                          {tiempoRestante.dias < 10
+                            ? "0" + tiempoRestante.dias
+                            : tiempoRestante.dias}
+                          :
                         </Card.Text>
                       </Card.Body>
                       <Card.Footer className="boder border-white p-1">
@@ -57,7 +94,10 @@ const CarruselYOferta = () => {
                     <Card className="border border-white">
                       <Card.Body className="p-0 d-flex justify-content-center align-items-center">
                         <Card.Text className="fs-4 text-center">
-                          {hs} :
+                          {tiempoRestante.hs < 10
+                            ? "0" + tiempoRestante.hs
+                            : tiempoRestante.hs}
+                          :
                         </Card.Text>
                       </Card.Body>
                       <Card.Footer className="boder border-white p-1">
@@ -67,7 +107,10 @@ const CarruselYOferta = () => {
                     <Card className="border border-white">
                       <Card.Body className="p-0 d-flex justify-content-center align-items-center">
                         <Card.Text className="fs-4 text-center">
-                          {min} :
+                          {tiempoRestante.min < 10
+                            ? "0" + tiempoRestante.min
+                            : tiempoRestante.min}
+                          :
                         </Card.Text>
                       </Card.Body>
                       <Card.Footer className="boder border-white p-1">
@@ -77,7 +120,9 @@ const CarruselYOferta = () => {
                     <Card className="border border-white">
                       <Card.Body className="p-0 d-flex justify-content-center align-items-center">
                         <Card.Text className="fs-4 text-center">
-                          {seg}
+                          {tiempoRestante.seg < 10
+                            ? "0" + tiempoRestante.seg
+                            : tiempoRestante.seg}
                         </Card.Text>
                       </Card.Body>
                       <Card.Footer className="boder border-white p-1">
@@ -114,7 +159,11 @@ const CarruselYOferta = () => {
             <CardGroup className="border border-secondary rounded ">
               <Card className="border border-white">
                 <Card.Body>
-                  <Card.Text className="fs-4 text-center">00</Card.Text>
+                  <Card.Text className="fs-4 text-center">
+                    {tiempoRestante.dias < 10
+                      ? "0" + tiempoRestante.dias
+                      : tiempoRestante.dias}
+                  </Card.Text>
                 </Card.Body>
                 <Card.Footer className="boder border-white p-1">
                   <Card.Text className="text-center fs-6">Dias</Card.Text>
@@ -122,7 +171,11 @@ const CarruselYOferta = () => {
               </Card>
               <Card className="border border-white">
                 <Card.Body>
-                  <Card.Text className="fs-4 text-center">00</Card.Text>
+                  <Card.Text className="fs-4 text-center">
+                    {tiempoRestante.hs < 10
+                      ? "0" + tiempoRestante.hs
+                      : tiempoRestante.hs}
+                  </Card.Text>
                 </Card.Body>
                 <Card.Footer className="boder border-white p-1">
                   <Card.Text className="text-center">Horas</Card.Text>
@@ -130,7 +183,11 @@ const CarruselYOferta = () => {
               </Card>
               <Card className="border border-white">
                 <Card.Body>
-                  <Card.Text className="fs-4 text-center">00</Card.Text>
+                  <Card.Text className="fs-4 text-center">
+                    {tiempoRestante.min < 10
+                      ? "0" + tiempoRestante.min
+                      : tiempoRestante.min}
+                  </Card.Text>
                 </Card.Body>
                 <Card.Footer className="boder border-white p-1">
                   <Card.Text className="text-center fs-6">Min</Card.Text>
@@ -138,7 +195,11 @@ const CarruselYOferta = () => {
               </Card>
               <Card className="border border-white">
                 <Card.Body>
-                  <Card.Text className="fs-4 text-center">00</Card.Text>
+                  <Card.Text className="fs-4 text-center">
+                    {tiempoRestante.seg < 10
+                      ? "0" + tiempoRestante.seg
+                      : tiempoRestante.seg}
+                  </Card.Text>
                 </Card.Body>
                 <Card.Footer className="boder border-white p-1">
                   <Card.Text className="text-center fs-6">Seg</Card.Text>
@@ -161,7 +222,12 @@ const CarruselYOferta = () => {
             <CardGroup className="rounded d-flex">
               <Card className="border border-white">
                 <Card.Body>
-                  <Card.Text className="fs-4 text-center">00</Card.Text>
+                  <Card.Text className="fs-4 text-center">
+                    {tiempoRestante.dias < 10
+                      ? "0" + tiempoRestante.dias
+                      : tiempoRestante.dias}
+                    :
+                  </Card.Text>
                 </Card.Body>
                 <Card.Footer className="boder border-white p-1">
                   <Card.Text className="text-center fs-6">Dias</Card.Text>
@@ -169,7 +235,12 @@ const CarruselYOferta = () => {
               </Card>
               <Card className="border border-white">
                 <Card.Body>
-                  <Card.Text className="fs-4 text-center">00</Card.Text>
+                  <Card.Text className="fs-4 text-center">
+                    {tiempoRestante.hs < 10
+                      ? "0" + tiempoRestante.hs
+                      : tiempoRestante.hs}
+                    :
+                  </Card.Text>
                 </Card.Body>
                 <Card.Footer className="boder border-white p-1">
                   <Card.Text className="text-center">Horas</Card.Text>
@@ -177,7 +248,12 @@ const CarruselYOferta = () => {
               </Card>
               <Card className="border border-white">
                 <Card.Body>
-                  <Card.Text className="fs-4 text-center">00</Card.Text>
+                  <Card.Text className="fs-4 text-center">
+                    {tiempoRestante.min < 10
+                      ? "0" + tiempoRestante.min
+                      : tiempoRestante.min}
+                    :
+                  </Card.Text>
                 </Card.Body>
                 <Card.Footer className="boder border-white p-1">
                   <Card.Text className="text-center fs-6">Min</Card.Text>
@@ -185,7 +261,11 @@ const CarruselYOferta = () => {
               </Card>
               <Card className="border border-white">
                 <Card.Body>
-                  <Card.Text className="fs-4 text-center">00</Card.Text>
+                  <Card.Text className="fs-4 text-center">
+                    {tiempoRestante.seg < 10
+                      ? "0" + tiempoRestante.seg
+                      : tiempoRestante.seg}
+                  </Card.Text>
                 </Card.Body>
                 <Card.Footer className="boder border-white p-1">
                   <Card.Text className="text-center fs-6">Seg</Card.Text>

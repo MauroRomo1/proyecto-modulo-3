@@ -32,14 +32,13 @@ const CardJuego = ({ urlPortada, categoria, nombre, precio, id }) => {
               </Link>
             </div>
           </Card.Title>
-          <Card.Text>
+          <Card.Text className="d-none d-md-flex">
             <Badge bg="success" className="fs-6">
               Muy Recomendable
             </Badge>
           </Card.Text>
-          <div className="d-flex justify-content-between mt-auto  pt-3">
+          <div className="d-flex flex-column flex-md-row justify-content-between mt-auto pt-3">
             <p className="display-5 fw-light">${precio}</p>
-
             <Link
               to={"/detalle-juego/" + id}
               className="btn btn-primary btn-sm rounded-pill fs-5 px-0 p-md-3 my-2"
