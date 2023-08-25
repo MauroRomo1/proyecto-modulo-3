@@ -1,9 +1,46 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Badge, Card } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
+import { agregarJuegoFav } from "../../helpers/queries";
 
 const CardJuego = ({ urlPortada, categoria, nombre, precio, id }) => {
   const detalleJuego = useNavigate();
+  const user = {
+    nombreUsuario: "admin",
+    email: "admin@gamestore.com",
+    password: "Admin123",
+    id: 1,
+    juegosFavoritos: [],
+  };
+
+  const listaFavoritos =
+    JSON.parse(localStorage.getItem("listaFavoritos")) || [];
+
+  const [listaJuegosFavoritos, setListaJuegosFavoritos] =
+    useState(listaFavoritos);
+
+  useEffect(() => {
+    localStorage.setItem(
+      "listaFavoritos",
+      JSON.stringify(listaJuegosFavoritos)
+    );
+  }, [listaJuegosFavoritos]);
+
+  const agregarJuegoFavorito = () => {
+    user.juegosFavoritos.push(...listaJuegosFavoritos, id);
+    setListaJuegosFavoritos([...listaJuegosFavoritos, id]);
+    agregarJuegoFav(user.id, user);
+  };
+
+  const iconAction = () => {
+    if (listaJuegosFavoritos.find((juego) => juego === id)) {
+      return "fa-solid fa-heart favIconActive";
+    } else {
+      return "fa-solid fa-heart favIcon";
+    }
+  };
+
   return (
     <div className="cardCarouselJuegos shadow">
       <Card
@@ -27,9 +64,20 @@ const CardJuego = ({ urlPortada, categoria, nombre, precio, id }) => {
           <Card.Title className="fs-2 fw-light">
             <div className="d-flex justify-content-between">
               <p className="text-break">{nombre}</p>
-              <Link className="text-decoration-none fs-2">
-                <i className="fa-solid fa-heart favIcon"></i>
-              </Link>
+              <button
+                className="fs-2 border border-white decoration-none bg-white"
+                onClick={() => {
+                  listaJuegosFavoritos.find((juegos) => juegos === id)
+                    ? Swal.fire(
+                        `ya tienes el juego en Favoritos`,
+                        `si quieres eliminar el juego buscalo en tus favoritos`,
+                        `info`
+                      )
+                    : agregarJuegoFavorito();
+                }}
+              >
+                <i className={iconAction()}></i>
+              </button>
             </div>
           </Card.Title>
           <Card.Text className="d-none d-md-flex">

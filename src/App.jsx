@@ -13,6 +13,7 @@ import DetalleJuego from "./components/views/DetalleJuego";
 import AcercaDeNosotros from "./components/views/AcercaDeNosotros";
 import AgregarJuego from "./components/views/juego/AgregarJuego";
 import EditarJuego from "./components/views/juego/EditarJuego";
+import JuegosFavoritos from "./components/views/JuegosFavoritos";
 
 function App() {
   return (
@@ -40,6 +41,11 @@ function App() {
             exact
             path="/detalle-juego/:id"
             element={<DetalleJuego></DetalleJuego>}
+          />
+          <Route
+            exact
+            path="/juegos-favoritos"
+            element={<JuegosFavoritos></JuegosFavoritos>}
           />
           <Route
             exact

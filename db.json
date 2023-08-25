@@ -34,7 +34,8 @@
       "urlTrailer": "https://www.youtube.com/watch?v=SXvQ1nK4oxk&ab_channel=RockstarGames",
       "id": 1,
       "calificacion": {
-        "idUser": "",
+        "userId": "",
+        "userName": "",
         "calificacionJuego": "",
         "reseña": ""
       }
@@ -73,7 +74,8 @@
       "urlTrailer": "https://www.youtube.com/watch?v=S6GTl_vPRvU&ab_channel=PlayStationEspa%C3%B1a",
       "id": 2,
       "calificacion": {
-        "idUser": "",
+        "userId": "",
+        "userName": "",
         "calificacionJuego": "",
         "reseña": ""
       }
@@ -112,7 +114,8 @@
       "urlTrailer": "https://www.youtube.com/watch?v=zMyeAFzCTM0&ab_channel=PlayStationLatinoam%C3%A9rica",
       "id": 3,
       "calificacion": {
-        "idUser": "",
+        "userId": "",
+        "userName": "",
         "calificacionJuego": "",
         "reseña": ""
       }
@@ -151,7 +154,8 @@
       "urlTrailer": "https://www.youtube.com/watch?v=QkkoHAzjnUs&ab_channel=RockstarGames",
       "id": 4,
       "calificacion": {
-        "idUser": "",
+        "userId": "",
+        "userName": "",
         "calificacionJuego": "",
         "reseña": ""
       }
@@ -190,7 +194,8 @@
       "urlTrailer": "https://www.youtube.com/watch?v=1Z7mIKGzowQ&t=22s&ab_channel=UbisoftLatinoam%C3%A9rica",
       "id": 5,
       "calificacion": {
-        "idUser": "",
+        "userId": "",
+        "userName": "",
         "calificacionJuego": "",
         "reseña": ""
       }
@@ -229,7 +234,8 @@
       "urlTrailer": "https://www.youtube.com/watch?v=bX66ibydpjk&ab_channel=PlayStationEspa%C3%B1a",
       "id": 6,
       "calificacion": {
-        "idUser": "",
+        "userId": "",
+        "userName": "",
         "calificacionJuego": "",
         "reseña": ""
       }
@@ -268,7 +274,8 @@
       "urlTrailer": "https://www.youtube.com/watch?v=bX66ibydpjk&ab_channel=PlayStationEspa%C3%B1a",
       "id": 7,
       "calificacion": {
-        "idUser": "",
+        "userId": "",
+        "userName": "",
         "calificacionJuego": "",
         "reseña": ""
       }
@@ -307,7 +314,8 @@
       "urlTrailer": "https://www.youtube.com/watch?v=E3Huy2cdih0&ab_channel=BANDAINAMCOEurope",
       "id": 8,
       "calificacion": {
-        "idUser": "",
+        "userId": "",
+        "userName": "",
         "calificacionJuego": "",
         "reseña": ""
       }
@@ -346,7 +354,8 @@
       "urlTrailer": "https://www.youtube.com/watch?v=-fsz6b3IBJY&ab_channel=BethesdaSoftworksES",
       "id": 9,
       "calificacion": {
-        "idUser": "",
+        "userId": "",
+        "userName": "",
         "calificacionJuego": "",
         "reseña": ""
       }
@@ -385,7 +394,8 @@
       "urlTrailer": "https://www.youtube.com/watch?v=FYH9n37B7Yw&ab_channel=Xbox",
       "id": 10,
       "calificacion": {
-        "idUser": "",
+        "userId": "",
+        "userName": "",
         "calificacionJuego": "",
         "reseña": ""
       }
@@ -424,7 +434,8 @@
       "urlTrailer": "https://youtu.be/EE-4GvjKcfs",
       "id": 11,
       "calificacion": {
-        "idUser": "",
+        "userId": "",
+        "userName": "",
         "calificacionJuego": "",
         "reseña": ""
       }
@@ -436,9 +447,7 @@
       "email": "admin@gamestore.com",
       "password": "Admin123",
       "id": 1,
-      "juegosFavoritos": [
-        1
-      ]
+      "juegosFavoritos": [5, 3, 9, 11, 4, 1, 6]
     },
     {
       "nombreUsuario": "usuario1",
