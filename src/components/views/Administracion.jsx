@@ -16,7 +16,7 @@ const Administracion = () => {
       } else {
         Swal.fire(
           "ocurrio un error!",
-          "la emos pifiado, venite mas tarde",
+          "No pudimos encontrar los datos",
           "error"
         );
       }
