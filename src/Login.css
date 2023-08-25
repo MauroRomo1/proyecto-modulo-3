@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 /* Estilos Originales de Rama Dev */
 #root {
   display: flex;
@@ -10,6 +12,7 @@ footer {
 }
 
 /* Estilos Particulares de Pagina Login */
+
 .place-login {
   min-height: 100vh; 
   padding-top: 4vh
