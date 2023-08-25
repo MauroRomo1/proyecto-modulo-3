@@ -32,7 +32,12 @@
         "url4": "https://media.rockstargames.com/rockstargames-newsite/uploads/f924a7858cf5bbf0cb990f252a2fa8efb7919bec.jpg"
       },
       "urlTrailer": "https://www.youtube.com/watch?v=SXvQ1nK4oxk&ab_channel=RockstarGames",
-      "id": 1
+      "id": 1,
+      "calificacion": {
+        "idUser": "",
+        "calificacionJuego": "",
+        "reseña": ""
+      }
     },
     {
       "nombre": "Hogwarts Legacy",
@@ -66,7 +71,12 @@
         "url4": "https://sm.ign.com/t/ign_latam/screenshot/default/screenshot-22-1600287836034_jw93.1080.jpg"
       },
       "urlTrailer": "https://www.youtube.com/watch?v=S6GTl_vPRvU&ab_channel=PlayStationEspa%C3%B1a",
-      "id": 2
+      "id": 2,
+      "calificacion": {
+        "idUser": "",
+        "calificacionJuego": "",
+        "reseña": ""
+      }
     },
     {
       "nombre": "FIFA 23",
@@ -100,7 +110,12 @@
         "url4": "https://uvejuegos.com/img/juegos/68679/FIFA-23_20221008015817.jpg"
       },
       "urlTrailer": "https://www.youtube.com/watch?v=zMyeAFzCTM0&ab_channel=PlayStationLatinoam%C3%A9rica",
-      "id": 3
+      "id": 3,
+      "calificacion": {
+        "idUser": "",
+        "calificacionJuego": "",
+        "reseña": ""
+      }
     },
     {
       "nombre": "Grand Theft Auto V",
@@ -134,7 +149,12 @@
         "url4": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_3.jpg"
       },
       "urlTrailer": "https://www.youtube.com/watch?v=QkkoHAzjnUs&ab_channel=RockstarGames",
-      "id": 4
+      "id": 4,
+      "calificacion": {
+        "idUser": "",
+        "calificacionJuego": "",
+        "reseña": ""
+      }
     },
     {
       "nombre": "Assassin's Creed Valhalla",
@@ -168,7 +188,12 @@
         "url4": "https://sm.ign.com/t/ign_latam/screenshot/default/ack-dlc-11-doondaven-257625609339c5d59a18-08993957-162083819_9ghd.1080.jpg"
       },
       "urlTrailer": "https://www.youtube.com/watch?v=1Z7mIKGzowQ&t=22s&ab_channel=UbisoftLatinoam%C3%A9rica",
-      "id": 5
+      "id": 5,
+      "calificacion": {
+        "idUser": "",
+        "calificacionJuego": "",
+        "reseña": ""
+      }
     },
     {
       "nombre": "Dead Island 2",
@@ -202,7 +227,12 @@
         "url4": "https://sm.ign.com/t/ign_es/screenshot/default/dead-island-2-20230404170252_91ya.1080.jpg"
       },
       "urlTrailer": "https://www.youtube.com/watch?v=bX66ibydpjk&ab_channel=PlayStationEspa%C3%B1a",
-      "id": 6
+      "id": 6,
+      "calificacion": {
+        "idUser": "",
+        "calificacionJuego": "",
+        "reseña": ""
+      }
     },
     {
       "nombre": "Resident Evil 4",
@@ -236,7 +266,12 @@
         "url4": "https://sm.ign.com/t/ign_es/screenshot/default/unknown-2023-03-09-16-45-24_qy46.1080.jpg"
       },
       "urlTrailer": "https://www.youtube.com/watch?v=bX66ibydpjk&ab_channel=PlayStationEspa%C3%B1a",
-      "id": 7
+      "id": 7,
+      "calificacion": {
+        "idUser": "",
+        "calificacionJuego": "",
+        "reseña": ""
+      }
     },
     {
       "nombre": "ELDEN RING",
@@ -270,7 +305,12 @@
         "url4": "https://p325k7wa.twic.pics/high/elden-ring/elden-ring/02-screenshots/elden-ring-newscreen06.png"
       },
       "urlTrailer": "https://www.youtube.com/watch?v=E3Huy2cdih0&ab_channel=BANDAINAMCOEurope",
-      "id": 8
+      "id": 8,
+      "calificacion": {
+        "idUser": "",
+        "calificacionJuego": "",
+        "reseña": ""
+      }
     },
     {
       "nombre": "DOOM Eternal",
@@ -304,7 +344,12 @@
         "url4": "https://sm.ign.com/t/ign_es/screenshot/default/marauder-1559925215-1579287352523_h3e6.1080.jpg"
       },
       "urlTrailer": "https://www.youtube.com/watch?v=-fsz6b3IBJY&ab_channel=BethesdaSoftworksES",
-      "id": 9
+      "id": 9,
+      "calificacion": {
+        "idUser": "",
+        "calificacionJuego": "",
+        "reseña": ""
+      }
     },
     {
       "nombre": "Forza Horizon 5",
@@ -338,7 +383,12 @@
         "url4": "https://sm.ign.com/t/ign_es/photo/default/forzahorizon5-gamescom-03-16x9-wm-1629828784353_s4cm.1080.jpg"
       },
       "urlTrailer": "https://www.youtube.com/watch?v=FYH9n37B7Yw&ab_channel=Xbox",
-      "id": 10
+      "id": 10,
+      "calificacion": {
+        "idUser": "",
+        "calificacionJuego": "",
+        "reseña": ""
+      }
     },
     {
       "nombre": "Good of War: Ragnarok",
@@ -372,7 +422,30 @@
         "url4": "https://sm.ign.com/t/ign_es/photo/default/gowr-preview-screenshot-12-1666368017378_8fnn.1080.jpg"
       },
       "urlTrailer": "https://youtu.be/EE-4GvjKcfs",
-      "id": 11
+      "id": 11,
+      "calificacion": {
+        "idUser": "",
+        "calificacionJuego": "",
+        "reseña": ""
+      }
+    }
+  ],
+  "usuarios": [
+    {
+      "nombreUsuario": "admin",
+      "email": "admin@gamestore.com",
+      "password": "Admin123",
+      "id": 1,
+      "juegosFavoritos": [
+        1
+      ]
+    },
+    {
+      "nombreUsuario": "usuario1",
+      "email": "usuario1@gamestore.com",
+      "password": "Usuario123",
+      "id": 2,
+      "juegosFavoritos": {}
     }
   ]
 }

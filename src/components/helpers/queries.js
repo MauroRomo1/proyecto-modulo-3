@@ -1,6 +1,9 @@
 const dbJuegos =
     import.meta.env.VITE_API_JUEGOS;
 
+const dbUsuarios =
+    import.meta.env.VITE_API_USUARIOS;
+
 
 export const listarJuegos = async() => {
     try {
@@ -57,6 +60,18 @@ export const borrarJuego = async(id) => {
     try {
         const respuesta = await fetch(`${dbJuegos}/${id}`, { method: 'DELETE' })
         return respuesta
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+export const agregarJuegoFav = async(idUser, juegoFav) => {
+    try {
+        const respuesta = await fetch(`${dbUsuarios}/${idUser}`, {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(juegoFav)
+        })
     } catch (error) {
         console.log(error);
     }
