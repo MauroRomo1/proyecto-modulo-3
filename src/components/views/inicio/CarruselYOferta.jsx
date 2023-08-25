@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Card, CardGroup, Col, Row } from "react-bootstrap";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import JuegoTiempoLimitado from "./JuegoTiempoLimitado";
 import CarruselInicio from "./CarruselInicio";
+import CuentaAtras from "./CuentaAtras";
 
 const CarruselYOferta = () => {
+  const [dia, setDia] = useState("05");
+  const [hs, setHs] = useState("60");
+  const [min, setMin] = useState("60");
+  const [seg, setSeg] = useState("60");
+
   const responsiveCarruselInicio = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -28,6 +34,7 @@ const CarruselYOferta = () => {
   return (
     <>
       <section className="carrusel">
+        <CuentaAtras></CuentaAtras>
         <Row className="d-flex align-items-center">
           <Col lg={4}>
             <div className="d-none d-lg-flex rounded shadow-lg flex-column justify-content-evenly align-items-center pt-1 px-2 bg-TLimitado-Carrusel">
@@ -39,7 +46,9 @@ const CarruselYOferta = () => {
                   <CardGroup className="border border-secondary rounded card-Contador d-flex">
                     <Card className="border border-white">
                       <Card.Body className="p-0 d-flex justify-content-center align-items-center">
-                        <Card.Text className="fs-4 text-center">00 :</Card.Text>
+                        <Card.Text className="fs-4 text-center">
+                          {dia} :
+                        </Card.Text>
                       </Card.Body>
                       <Card.Footer className="boder border-white p-1">
                         <Card.Text className="text-center">Dias</Card.Text>
@@ -47,7 +56,9 @@ const CarruselYOferta = () => {
                     </Card>
                     <Card className="border border-white">
                       <Card.Body className="p-0 d-flex justify-content-center align-items-center">
-                        <Card.Text className="fs-4 text-center">00 :</Card.Text>
+                        <Card.Text className="fs-4 text-center">
+                          {hs} :
+                        </Card.Text>
                       </Card.Body>
                       <Card.Footer className="boder border-white p-1">
                         <Card.Text className="text-center">Hs</Card.Text>
@@ -55,7 +66,9 @@ const CarruselYOferta = () => {
                     </Card>
                     <Card className="border border-white">
                       <Card.Body className="p-0 d-flex justify-content-center align-items-center">
-                        <Card.Text className="fs-4 text-center">00 :</Card.Text>
+                        <Card.Text className="fs-4 text-center">
+                          {min} :
+                        </Card.Text>
                       </Card.Body>
                       <Card.Footer className="boder border-white p-1">
                         <Card.Text className="text-center fs-6">Min</Card.Text>
@@ -63,7 +76,9 @@ const CarruselYOferta = () => {
                     </Card>
                     <Card className="border border-white">
                       <Card.Body className="p-0 d-flex justify-content-center align-items-center">
-                        <Card.Text className="fs-4 text-center">00</Card.Text>
+                        <Card.Text className="fs-4 text-center">
+                          {seg}
+                        </Card.Text>
                       </Card.Body>
                       <Card.Footer className="boder border-white p-1">
                         <Card.Text className="text-center fs-6">Seg</Card.Text>

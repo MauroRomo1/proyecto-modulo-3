@@ -6,7 +6,7 @@ const CarruselInicio = () => {
     <div className="pb-4 p-0">
       <Card className="text-white mt-3 shadow">
         <Card.Img
-          src="https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png"
+          src="https://www.ultimagame.es/forza-horizon-5/imagen-i18351-pge.jpg"
           alt="Card image"
           className="imgCardCarrusel"
         />
