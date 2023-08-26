@@ -18,13 +18,9 @@ const DetalleJuego = () => {
 
   const [listaJuegosFavoritos, setListaJuegosFavoritos] =
     useState(listaFavoritos);
-  const user = {
-    nombreUsuario: "admin",
-    email: "admin@gamestore.com",
-    password: "Admin123",
-    id: 1,
-    juegosFavoritos: [],
-  };
+  const usuarioLog =
+    JSON.parse(sessionStorage.getItem("usuarioLogueado")) || [];
+  const [user, setUser] = useState(usuarioLog);
 
   const [juego, setJuego] = useState(null);
 
