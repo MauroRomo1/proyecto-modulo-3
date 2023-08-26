@@ -88,7 +88,7 @@ const CardJuego = ({ urlPortada, categoria, nombre, precio, id }) => {
             <div className="d-flex justify-content-between">
               <p className="text-break">{nombre}</p>
               <button
-                className="fs-2 border border-white decoration-none bg-white"
+                className="fs-2 border border-white decoration-none bg-white text-center"
                 onClick={() => {
                   listaJuegosFavoritos.find((juegos) => juegos === id)
                     ? Swal.fire(
