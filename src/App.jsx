@@ -18,7 +18,7 @@ import EditarJuego from "./components/views/juego/EditarJuego";
 
 function App() {
   const usuarioEnlinea =
-    JSON.parse(sessionStorage.getItem("usuarioLogueado")) || {};
+    JSON.parse(sessionStorage.getItem("usuarioLogueado")) || null;
 
   const [usuarioActivo, setUsuarioActivo] = useState(usuarioEnlinea);
 
