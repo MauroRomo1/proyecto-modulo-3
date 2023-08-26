@@ -14,6 +14,8 @@ import DetalleJuego from "./components/views/DetalleJuego";
 import AcercaDeNosotros from "./components/views/AcercaDeNosotros";
 import { useState } from "react";
 import AltaUsuario from "./components/views/AltaUsuario";
+import AgregarJuego from "./components/views/juego/AgregarJuego";
+import EditarJuego from "./components/views/juego/EditarJuego";
 
 function App() {
   //Intento obtener el usuario logueado y almacenado en session storage, sino se provee un objeto vacio:
@@ -34,7 +36,20 @@ function App() {
             element={<Administracion></Administracion>}
           />
           <Route
+
             exact path="/detalle-juego"
+            exact
+            path="/agregar-juego"
+            element={<AgregarJuego></AgregarJuego>}
+          />
+          <Route
+            exact
+            path="/editar-juego/:id"
+            element={<EditarJuego></EditarJuego>}
+          />
+          <Route
+            exact
+            path="/detalle-juego/:id"
             element={<DetalleJuego></DetalleJuego>}
           />
           <Route
