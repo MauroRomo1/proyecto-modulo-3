@@ -9,13 +9,10 @@ import { faHeartCirclePlus } from "@fortawesome/free-solid-svg-icons";
 const CardJuego = ({ urlPortada, categoria, nombre, precio, id }) => {
   const [calificacion, setCalificacion] = useState("");
   const detalleJuego = useNavigate();
-  const user = {
-    nombreUsuario: "admin",
-    email: "admin@gamestore.com",
-    password: "Admin123",
-    id: 1,
-    juegosFavoritos: [],
-  };
+
+  const usuarioLog =
+    JSON.parse(sessionStorage.getItem("usuarioLogueado")) || [];
+  const [user, setUser] = useState(usuarioLog);
 
   const listaFavoritos =
     JSON.parse(localStorage.getItem("listaFavoritos")) || [];
@@ -79,7 +76,9 @@ const CardJuego = ({ urlPortada, categoria, nombre, precio, id }) => {
           className="imgCardJuego"
         />
         <Card.ImgOverlay className="pb-0 d-flex justify-content-between">
-          <p>{categoria}</p>
+          <p>
+            <Badge bg="warning">{categoria}</Badge>
+          </p>
         </Card.ImgOverlay>
       </Card>
       <Card className="rounded-top-0 cardJuego">
