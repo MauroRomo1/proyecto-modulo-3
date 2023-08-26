@@ -1,38 +1,70 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Badge, Card } from "react-bootstrap";
+import { calificarJuego, obtenerJuego } from "../../helpers/queries";
 
-const CarruselInicio = () => {
+const CarruselInicio = ({ id }) => {
+  const [juego, setJuego] = useState({});
+  const [calificacion, setCalificacion] = useState("");
+
+  useEffect(() => {
+    obtenerJuego(id)
+      .then((resp) => {
+        if (resp) {
+          setJuego(resp);
+          setMostrarSpinner(false);
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
+  useEffect(() => {
+    let prom = 0;
+    calificarJuego(id)
+      .then((resp) => {
+        if (resp) {
+          prom = resp;
+          if (prom > 0 && prom <= 20) {
+            setCalificacion("Malo");
+          } else if (prom > 20 && prom <= 40) {
+            setCalificacion("Regular");
+          } else if (prom > 40 && prom <= 60) {
+            setCalificacion("Bueno");
+          } else if (prom > 60 && prom <= 80) {
+            setCalificacion("Muy Bueno");
+          } else if (prom > 80 && prom <= 100) {
+            setCalificacion("Exelente");
+          }
+        }
+      })
+      .catch((err) => console.log(err));
+  }, []);
+
   return (
     <div className="pb-4 p-0">
       <Card className="text-white mt-3 shadow">
         <Card.Img
-          src="https://www.ultimagame.es/forza-horizon-5/imagen-i18351-pge.jpg"
-          alt="Card image"
+          src={juego.urlPortada}
+          alt={juego.nombre}
           className="imgCardCarrusel"
         />
         <Card.ImgOverlay className="d-flex justify-content-start align-items-end">
           <div className="d-flex flex-column bg-card-carrusel p-2">
             <Card.Title>
               <div className="d-flex justify-content-between align-items-center">
-                <p className="pt-3">Red Dead Redemption 2</p>
-                <span className="text-warning ms-3 fs-3">$49.99!</span>
+                <p className="pt-3">{juego.nombre}</p>
+                <span className="text-warning ms-3 fs-3">${juego.precio}!</span>
               </div>
             </Card.Title>
             <p>
-              <Badge bg="success">Muy Recomendable</Badge>
+              <Badge bg="success">{calificacion}</Badge>
               <Badge bg="warning" className="ms-2">
-                Categoria
+                {juego.categoria}
               </Badge>
             </p>
             <Card.Text className="d-none d-md-flex">
-              América, 1899. Arthur Morgan y la banda de Van der Linde se ven
-              obligados a huir. Con agentes federales y los mejores
-              cazarrecompensas de la nación pisándoles los talones, la banda
-              deberá atracar, robar y luchar, para sobrevivir en su camino por
-              el escabroso territorio del corazón de América. Mientras las
-              divisiones internas aumentan y amenazan con separarlos a todos,
-              Arthur deberá elegir entre sus propios ideales y la lealtad a la
-              banda que lo vio crecer.
+              {juego.descripcion}
             </Card.Text>
           </div>
         </Card.ImgOverlay>

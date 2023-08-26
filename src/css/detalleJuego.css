@@ -1,3 +1,13 @@
 .portadaJuego {
   object-fit: revert;
 }
+
+.itemReseña {
+  background-color: white;
+  opacity: 80%;
+}
+
+.itemReseña:hover {
+  background-color: whitesmoke;
+  opacity: 100%;
+}

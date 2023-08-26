@@ -33,12 +33,14 @@
       },
       "urlTrailer": "https://www.youtube.com/watch?v=SXvQ1nK4oxk&ab_channel=RockstarGames",
       "id": 1,
-      "calificacion": {
-        "userId": "",
-        "userName": "",
-        "calificacionJuego": "",
-        "reseña": ""
-      }
+      "calificacion": [
+        {
+          "userId": 1,
+          "userName": "admin",
+          "calificacionJuego": "1",
+          "comentario": "muy buen juego\n"
+        }
+      ]
     },
     {
       "nombre": "Hogwarts Legacy",
@@ -73,12 +75,14 @@
       },
       "urlTrailer": "https://www.youtube.com/watch?v=S6GTl_vPRvU&ab_channel=PlayStationEspa%C3%B1a",
       "id": 2,
-      "calificacion": {
-        "userId": "",
-        "userName": "",
-        "calificacionJuego": "",
-        "reseña": ""
-      }
+      "calificacion": [
+        {
+          "userId": 1,
+          "userName": "admin",
+          "calificacionJuego": "1",
+          "comentario": "muy buen juego"
+        }
+      ]
     },
     {
       "nombre": "FIFA 23",
@@ -113,12 +117,14 @@
       },
       "urlTrailer": "https://www.youtube.com/watch?v=zMyeAFzCTM0&ab_channel=PlayStationLatinoam%C3%A9rica",
       "id": 3,
-      "calificacion": {
-        "userId": "",
-        "userName": "",
-        "calificacionJuego": "",
-        "reseña": ""
-      }
+      "calificacion": [
+        {
+          "userId": 1,
+          "userName": "admin",
+          "calificacionJuego": "0",
+          "comentario": "igual que los de mas\n"
+        }
+      ]
     },
     {
       "nombre": "Grand Theft Auto V",
@@ -153,12 +159,7 @@
       },
       "urlTrailer": "https://www.youtube.com/watch?v=QkkoHAzjnUs&ab_channel=RockstarGames",
       "id": 4,
-      "calificacion": {
-        "userId": "",
-        "userName": "",
-        "calificacionJuego": "",
-        "reseña": ""
-      }
+      "calificacion": []
     },
     {
       "nombre": "Assassin's Creed Valhalla",
@@ -193,12 +194,7 @@
       },
       "urlTrailer": "https://www.youtube.com/watch?v=1Z7mIKGzowQ&t=22s&ab_channel=UbisoftLatinoam%C3%A9rica",
       "id": 5,
-      "calificacion": {
-        "userId": "",
-        "userName": "",
-        "calificacionJuego": "",
-        "reseña": ""
-      }
+      "calificacion": []
     },
     {
       "nombre": "Dead Island 2",
@@ -233,12 +229,7 @@
       },
       "urlTrailer": "https://www.youtube.com/watch?v=bX66ibydpjk&ab_channel=PlayStationEspa%C3%B1a",
       "id": 6,
-      "calificacion": {
-        "userId": "",
-        "userName": "",
-        "calificacionJuego": "",
-        "reseña": ""
-      }
+      "calificacion": []
     },
     {
       "nombre": "Resident Evil 4",
@@ -273,12 +264,7 @@
       },
       "urlTrailer": "https://www.youtube.com/watch?v=bX66ibydpjk&ab_channel=PlayStationEspa%C3%B1a",
       "id": 7,
-      "calificacion": {
-        "userId": "",
-        "userName": "",
-        "calificacionJuego": "",
-        "reseña": ""
-      }
+      "calificacion": []
     },
     {
       "nombre": "ELDEN RING",
@@ -313,12 +299,7 @@
       },
       "urlTrailer": "https://www.youtube.com/watch?v=E3Huy2cdih0&ab_channel=BANDAINAMCOEurope",
       "id": 8,
-      "calificacion": {
-        "userId": "",
-        "userName": "",
-        "calificacionJuego": "",
-        "reseña": ""
-      }
+      "calificacion": []
     },
     {
       "nombre": "DOOM Eternal",
@@ -353,12 +334,7 @@
       },
       "urlTrailer": "https://www.youtube.com/watch?v=-fsz6b3IBJY&ab_channel=BethesdaSoftworksES",
       "id": 9,
-      "calificacion": {
-        "userId": "",
-        "userName": "",
-        "calificacionJuego": "",
-        "reseña": ""
-      }
+      "calificacion": []
     },
     {
       "nombre": "Forza Horizon 5",
@@ -393,12 +369,7 @@
       },
       "urlTrailer": "https://www.youtube.com/watch?v=FYH9n37B7Yw&ab_channel=Xbox",
       "id": 10,
-      "calificacion": {
-        "userId": "",
-        "userName": "",
-        "calificacionJuego": "",
-        "reseña": ""
-      }
+      "calificacion": []
     },
     {
       "nombre": "Good of War: Ragnarok",
@@ -433,12 +404,7 @@
       },
       "urlTrailer": "https://youtu.be/EE-4GvjKcfs",
       "id": 11,
-      "calificacion": {
-        "userId": "",
-        "userName": "",
-        "calificacionJuego": "",
-        "reseña": ""
-      }
+      "calificacion": []
     }
   ],
   "usuarios": [
@@ -447,7 +413,10 @@
       "email": "admin@gamestore.com",
       "password": "Admin123",
       "id": 1,
-      "juegosFavoritos": [5, 3, 9, 11, 4, 1, 6]
+      "juegosFavoritos": [
+        2,
+        1
+      ]
     },
     {
       "nombreUsuario": "usuario1",

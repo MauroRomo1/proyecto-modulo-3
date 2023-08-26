@@ -4,7 +4,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import JuegoTiempoLimitado from "./JuegoTiempoLimitado";
 import CarruselInicio from "./CarruselInicio";
-
 const CarruselYOferta = () => {
   const fechaObjetivo = new Date();
   fechaObjetivo.setDate(fechaObjetivo.getDate() + 4);
@@ -139,10 +138,10 @@ const CarruselYOferta = () => {
           </Col>
           <Col md={12} lg={8} className="p-0">
             <Carousel responsive={responsiveCarruselInicio}>
-              <CarruselInicio></CarruselInicio>
-              <CarruselInicio></CarruselInicio>
-              <CarruselInicio></CarruselInicio>
-              <CarruselInicio></CarruselInicio>
+              <CarruselInicio id={4}></CarruselInicio>
+              <CarruselInicio id={3}></CarruselInicio>
+              <CarruselInicio id={5}></CarruselInicio>
+              <CarruselInicio id={6}></CarruselInicio>
             </Carousel>
           </Col>
         </Row>

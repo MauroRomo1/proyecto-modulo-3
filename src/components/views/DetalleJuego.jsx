@@ -8,29 +8,16 @@ import LoaderCard from "./detalle-juego/LoaderCard";
 import CarouselCapturas from "./detalle-juego/carouselCapturas";
 import RequisitosSistema from "./detalle-juego/RequisitosSistema";
 import Swal from "sweetalert2";
-import { Button, Form, FormGroup, Modal } from "react-bootstrap";
-import { useForm } from "react-hook-form";
+import Reseñas from "./detalle-juego/Reseñas";
 
 const DetalleJuego = () => {
   const { id } = useParams();
-
-  const {
-    register,
-    handleSubmit,
-    formState: { error },
-    reset,
-  } = useForm();
 
   const listaFavoritos =
     JSON.parse(localStorage.getItem("listaFavoritos")) || [];
 
   const [listaJuegosFavoritos, setListaJuegosFavoritos] =
     useState(listaFavoritos);
-
-  const [mostrarModal, setMostrarModal] = useState(false);
-  const handleClose = () => setMostrarModal(false);
-  const handleMostrar = () => setMostrarModal(true);
-
   const user = {
     nombreUsuario: "admin",
     email: "admin@gamestore.com",
@@ -62,10 +49,6 @@ const DetalleJuego = () => {
       JSON.stringify(listaJuegosFavoritos)
     );
   }, [listaJuegosFavoritos]);
-
-  const calificarJuego = () => {
-    setMostrarModal(false);
-  };
 
   const agregarJuegoFavorito = () => {
     user.juegosFavoritos.push(...listaJuegosFavoritos, juego.id);
@@ -166,58 +149,11 @@ const DetalleJuego = () => {
             <RequisitosSistema requisitos={juego?.requisitos} />
           </section>
           <section className="container mb-4 bg-white shadow">
-            <CarouselCapturas capturas={juego?.capturas} />
-            <RequisitosSistema requisitos={juego?.requisitos} />
+            <h4 className="my-3">Reseñas</h4>
+            <div>
+              <Reseñas juego={juego}></Reseñas>
+            </div>
           </section>
-
-          <Modal show={mostrarModal} onHide={handleClose}>
-            <Modal.Header closeButton>
-              <Modal.Title>Califica El Juego!</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-              <Form>
-                <div className="d-flex flex-row justify-content-center">
-                  <FormGroup className="mx-2 border border-primary rounded p-2 shadow">
-                    <Form.Check
-                      inline
-                      name="grupo1"
-                      type="radio"
-                      aria-label="like"
-                      value={1}
-                    ></Form.Check>
-                    <Form.Label>
-                      <i className="fa-solid fa-thumbs-up fs-2 text-primary"></i>
-                    </Form.Label>
-                  </FormGroup>
-                  <Form.Group className="mx-2 border border-danger rounded p-2 shadow">
-                    <Form.Check
-                      inline
-                      name="grupo1"
-                      type="radio"
-                      aria-label="notLike"
-                      value={0}
-                    ></Form.Check>
-                    <Form.Label>
-                      <i className="fa-solid fa-thumbs-down fs-2 text-danger"></i>
-                    </Form.Label>
-                  </Form.Group>
-                </div>
-              </Form>
-            </Modal.Body>
-            <Modal.Footer>
-              <Button variant="secondary" onClick={handleClose}>
-                Close
-              </Button>
-              <Button
-                variant="primary"
-                onClick={() => {
-                  calificarJuego(juego);
-                }}
-              >
-                Save Changes
-              </Button>
-            </Modal.Footer>
-          </Modal>
         </>
       )}
     </>

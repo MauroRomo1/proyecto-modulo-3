@@ -2,9 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Badge, Card } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
-import { agregarJuegoFav } from "../../helpers/queries";
+import { agregarJuegoFav, calificarJuego } from "../../helpers/queries";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeartCirclePlus } from "@fortawesome/free-solid-svg-icons";
 
 const CardJuego = ({ urlPortada, categoria, nombre, precio, id }) => {
+  const [calificacion, setCalificacion] = useState("");
   const detalleJuego = useNavigate();
   const user = {
     nombreUsuario: "admin",
@@ -41,6 +44,28 @@ const CardJuego = ({ urlPortada, categoria, nombre, precio, id }) => {
     }
   };
 
+  useEffect(() => {
+    let prom = 0;
+    calificarJuego(id)
+      .then((resp) => {
+        if (resp) {
+          prom = resp;
+          if (prom > 0 && prom <= 20) {
+            setCalificacion("Malo");
+          } else if (prom > 20 && prom <= 40) {
+            setCalificacion("Regular");
+          } else if (prom > 40 && prom <= 60) {
+            setCalificacion("Bueno");
+          } else if (prom > 60 && prom <= 80) {
+            setCalificacion("Muy Bueno");
+          } else if (prom > 80 && prom <= 100) {
+            setCalificacion("Exelente");
+          }
+        }
+      })
+      .catch((err) => console.log(err));
+  }, []);
+
   return (
     <div className="cardCarouselJuegos shadow">
       <Card
@@ -54,9 +79,7 @@ const CardJuego = ({ urlPortada, categoria, nombre, precio, id }) => {
           className="imgCardJuego"
         />
         <Card.ImgOverlay className="pb-0 d-flex justify-content-between">
-          <p>
-            <Badge bg="warning">{categoria}</Badge>
-          </p>
+          <p>{categoria}</p>
         </Card.ImgOverlay>
       </Card>
       <Card className="rounded-top-0 cardJuego">
@@ -76,13 +99,20 @@ const CardJuego = ({ urlPortada, categoria, nombre, precio, id }) => {
                     : agregarJuegoFavorito();
                 }}
               >
-                <i className={iconAction()}></i>
+                <FontAwesomeIcon
+                  icon={
+                    listaJuegosFavoritos.find((juego) => juego !== id)
+                      ? faHeartCirclePlus
+                      : null
+                  }
+                  className={iconAction()}
+                ></FontAwesomeIcon>
               </button>
             </div>
           </Card.Title>
           <Card.Text className="d-none d-md-flex">
             <Badge bg="success" className="fs-6">
-              Muy Recomendable
+              {calificacion}
             </Badge>
           </Card.Text>
           <div className="d-flex flex-column flex-md-row justify-content-between mt-auto pt-3">

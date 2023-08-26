@@ -76,3 +76,44 @@ export const agregarJuegoFav = async(idUser, juegoFav) => {
         console.log(error);
     }
 }
+
+export const agregarCalificacion = async(id, calificacion) => {
+    try {
+        const respuesta = await fetch(`${dbJuegos}/${id}`, {
+            method: "PUT",
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(calificacion)
+        })
+        return respuesta;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+export const calificarJuego = async(id) => {
+    try {
+        const respuesta = await fetch(`${dbJuegos}/${id}`);
+        const data = await respuesta.json();
+        let like = 0;
+        let notLike = 0;
+        let cantidad = 0;
+        data.calificacion.forEach(cal => {
+            if (cal.calificacionJuego === '1') {
+                like++;
+                cantidad++;
+            } else if (cal.calificacionJuego === '0') {
+                notLike++;
+                cantidad++;
+            }
+        });
+
+        let promedio = Math.floor((like * 100) / cantidad);
+        if (promedio) {
+            return promedio;
+        }
+
+    } catch (error) {
+        console.log(error);
+        return null;
+    }
+}
