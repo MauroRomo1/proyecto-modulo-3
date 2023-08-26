@@ -72,6 +72,7 @@ export const agregarJuegoFav = async(idUser, juegoFav) => {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(juegoFav)
         })
+        return respuesta;
     } catch (error) {
         console.log(error);
     }

@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Button, Image } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const ItemJuegoUsuario = ({ juego, borrarJuegoFavorito }) => {
   const detalleJuego = useNavigate();
+  const listaFavoritos =
+    JSON.parse(localStorage.getItem("listaFavoritos")) || [];
+
+  const [listaJuegosFavoritos, setListaJuegosFavoritos] =
+    useState(listaFavoritos);
 
   const borrar = (juego) => {
     Swal.fire({
@@ -19,9 +24,22 @@ const ItemJuegoUsuario = ({ juego, borrarJuegoFavorito }) => {
       if (result.isConfirmed) {
         Swal.fire("Eliminado!", "El juego fue eliminado con exito", "success");
         borrarJuegoFavorito(juego);
+        const listaJuegoFav = listaJuegosFavoritos.map((idJuegos) => {
+          idJuegos !== juego.id;
+        });
+
+        setListaJuegosFavoritos(listaJuegoFav);
       }
     });
   };
+
+  useEffect(() => {
+    localStorage.setItem(
+      "listaFavoritos",
+      JSON.stringify(listaJuegosFavoritos)
+    );
+  }, [listaJuegosFavoritos]);
+
   return (
     <tr>
       <td>

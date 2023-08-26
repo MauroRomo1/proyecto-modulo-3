@@ -31,7 +31,6 @@ const DetalleJuego = () => {
       .then((resp) => {
         if (resp) {
           setJuego(resp);
-          setMostrarSpinner(false);
         }
       })
       .catch((error) => {
