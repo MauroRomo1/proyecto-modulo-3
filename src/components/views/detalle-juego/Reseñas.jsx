@@ -55,7 +55,7 @@ const Reseñas = ({ juego }) => {
   useEffect(() => {
     const reseñas = juego.calificacion.map((res) => res);
     setOpiniones(reseñas);
-  }, [opiniones]);
+  }, []);
 
   return (
     <>
