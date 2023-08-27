@@ -12,6 +12,7 @@ const CardJuego = ({ urlPortada, categoria, nombre, precio, id }) => {
 
   const usuarioLog =
     JSON.parse(sessionStorage.getItem("usuarioLogueado")) || [];
+  
   const [user, setUser] = useState(usuarioLog);
 
   const listaFavoritos =
@@ -77,7 +78,9 @@ const CardJuego = ({ urlPortada, categoria, nombre, precio, id }) => {
         />
         <Card.ImgOverlay className="pb-0 d-flex justify-content-between">
           <p>
-            <Badge bg="warning">{categoria}</Badge>
+            <Badge bg="warning" className="fs-6">
+              {categoria}
+            </Badge>
           </p>
         </Card.ImgOverlay>
       </Card>
@@ -102,7 +105,7 @@ const CardJuego = ({ urlPortada, categoria, nombre, precio, id }) => {
                   icon={
                     listaJuegosFavoritos.find((juego) => juego !== id)
                       ? faHeartCirclePlus
-                      : null
+                      : faHeartCirclePlus
                   }
                   className={iconAction()}
                 ></FontAwesomeIcon>

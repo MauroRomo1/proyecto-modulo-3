@@ -1,4 +1,36 @@
 {
+  "usuarios": [
+    {
+      "nombreUsuario": "admin",
+      "email": "admin@gamestore.com",
+      "password": "Admin123",
+      "id": 1
+    },
+    {
+      "nombreUsuario": "usuario1",
+      "email": "usuario1@gamestore.com",
+      "password": "Usuario123",
+      "id": 2
+    },
+    {
+      "nombreUsuario": "usuario2",
+      "email": "usuario2@gamestore.com",
+      "password": "Usuario123",
+      "id": 3
+    },
+    {
+      "nombreUsuario": "usuario3",
+      "email": "usuario3@gamestore.com",
+      "password": "Usuario123",
+      "id": 4
+    },
+    {
+      "nombreUsuario": "usuario10",
+      "email": "usuario10@gamestore.com",
+      "password": "Admin123",
+      "id": 5
+    }
+  ],
   "juegos": [
     {
       "nombre": "Red Dead Redemption 2",
