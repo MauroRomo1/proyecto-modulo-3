@@ -61,7 +61,7 @@ const Header = ({ usuarioActivo, setUsuarioActivo }) => {
                 <NavLink end to={"/login"} className="nav-link">
                   iniciar sesion
                 </NavLink>
-                <NavLink end to={"/ahah"} className="nav-link">
+                <NavLink end to={"/altausuario"} className="nav-link">
                   regitrarse
                 </NavLink>
               </>
