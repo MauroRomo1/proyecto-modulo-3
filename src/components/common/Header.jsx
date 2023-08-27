@@ -10,7 +10,8 @@ const Header = ({ usuarioActivo, setUsuarioActivo }) => {
 
   const logout = () => {
     setUsuarioActivo(null);
-    sessionStorage.removeItem("usuarioLogeado");
+    sessionStorage.removeItem("usuarioLogueado");
+    localStorage.removeItem("listaFavoritos");
     navegacion("/");
   };
 
@@ -30,9 +31,13 @@ const Header = ({ usuarioActivo, setUsuarioActivo }) => {
                   title={`bienvenido ${usuarioActivo.nombreUsuario}`}
                   id="basic-nav-dropdown"
                 >
-                  <NavDropdown.Item className="text-center" href="#action/3.1">
+                  <NavLink
+                    end
+                    to={"/juegos-favoritos"}
+                    className="dropdown-item text-center"
+                  >
                     Mi lista de juegos
-                  </NavDropdown.Item>
+                  </NavLink>
                   {usuarioActivo.email === "admin@gamestore.com" ? (
                     <NavLink
                       end

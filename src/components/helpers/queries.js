@@ -1,6 +1,5 @@
 const dbJuegos = import.meta.env.VITE_API_JUEGOS;
-const uriUsuario = import.meta.env.VITE_API_USUARIO;
-const dbUsuarios = import.meta.env.VITE_API_USUARIOS;
+const uriUsuario = import.meta.env.VITE_API_USUARIOS;
 
 export const listarJuegos = async () => {
   try {
@@ -35,6 +34,7 @@ export const login = async (usuario) => {
 };
 
 export const altaUsuario = async (usuarioNuevo) => {
+  usuarioNuevo.juegosFavoritos = [];
   try {
     const resp = await fetch(uriUsuario, {
       method: "POST",
@@ -98,7 +98,7 @@ export const borrarJuego = async (id) => {
 
 export const agregarJuegoFav = async (idUser, juegoFav) => {
   try {
-    const respuesta = await fetch(`${dbUsuarios}/${idUser}`, {
+    const respuesta = await fetch(`${uriUsuario}/${idUser}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(juegoFav),
