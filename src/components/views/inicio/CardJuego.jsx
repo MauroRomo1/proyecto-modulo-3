@@ -103,7 +103,7 @@ const CardJuego = ({ urlPortada, categoria, nombre, precio, id }) => {
                   icon={
                     listaJuegosFavoritos.find((juego) => juego !== id)
                       ? faHeartCirclePlus
-                      : null
+                      : faHeartCirclePlus
                   }
                   className={iconAction()}
                 ></FontAwesomeIcon>

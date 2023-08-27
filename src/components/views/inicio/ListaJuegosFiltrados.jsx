@@ -6,7 +6,8 @@ import Carousel from "react-multi-carousel";
 
 const ListaJuegosFiltrados = ({ catSeleccionada, busqueda }) => {
   const [listaJuego, setListaJuego] = useState([]);
-  const [filtrarBusqueda, setFiltrarBusqueda] = useState("");
+  const [listarXCategoria, setListarXCategoria] = useState([]);
+  const [listarXBusqueda, setListarXBusqueda] = useState([]);
 
   const responsiveCarruselCards = {
     superLargeDesktop: {
@@ -47,30 +48,28 @@ const ListaJuegosFiltrados = ({ catSeleccionada, busqueda }) => {
   }, []);
 
   useEffect(() => {
-    setFiltrarBusqueda(busqueda);
-  }, [busqueda]);
+    filtrarBusquedas(listaJuego, busqueda);
+  }, [listaJuego, busqueda]);
 
-  const filtrarJuegoXCategoria = (listaJuegos, catSeleccionada) => {
-    const juegos = listaJuegos.filter(
+  useEffect(() => {
+    filtrarCateforias(listaJuego, catSeleccionada);
+  }, [listaJuego, catSeleccionada]);
+
+  const filtrarCateforias = (listaJuego, catSeleccionada) => {
+    const juegos = listaJuego.filter(
       (juego) => juego.categoria === catSeleccionada
     );
-    console.log(juegos);
-    if (juegos === []) {
-      console.log(juegos);
-      Swal.fire(
-        "Lo lamentamos...",
-        "No pudimos encontrar juegos en la categoria " + catSeleccionada,
-        "error"
-      );
-    } else {
-      return juegos;
+
+    if (juegos.length > 0) {
+      setListarXCategoria(juegos);
     }
   };
 
-  const filtrarJuegoXbusqueda = (listaJuego, busqueda) => {
-    return listaJuego.filter((juego) =>
+  const filtrarBusquedas = (listaJuego, busqueda) => {
+    const lista = listaJuego.filter((juego) =>
       juego.nombre.toLowerCase().includes(busqueda.toLowerCase())
     );
+    setListarXBusqueda(lista);
   };
 
   if (catSeleccionada !== "" && busqueda !== "") {
@@ -84,27 +83,23 @@ const ListaJuegosFiltrados = ({ catSeleccionada, busqueda }) => {
           </div>
           <div>
             <Carousel responsive={responsiveCarruselCards}>
-              {filtrarJuegoXCategoria(listaJuego, catSeleccionada) !== []
-                ? filtrarJuegoXCategoria(listaJuego, catSeleccionada).map(
-                    (juego) => <CardJuego key={juego.id} {...juego}></CardJuego>
-                  )
-                : null}
+              {listarXCategoria.map((juego) => (
+                <CardJuego key={juego.id} {...juego}></CardJuego>
+              ))}
             </Carousel>
           </div>
         </section>
         <section className="mx-5 my-3 shadow rounded bg-sectionInicio">
           <div className="mt-3 mb-5">
             <p className="display-3 fw-light ps-md-5 ps-1 text-dark">
-              {filtrarBusqueda}
+              {busqueda}
             </p>
           </div>
           <div>
             <Carousel responsive={responsiveCarruselCards}>
-              {filtrarJuegoXbusqueda(listaJuego, busqueda) !== []
-                ? filtrarJuegoXbusqueda(listaJuego, busqueda).map((juego) => (
-                    <CardJuego key={juego.id} {...juego}></CardJuego>
-                  ))
-                : null}
+              {listarXBusqueda.map((juego) => (
+                <CardJuego key={juego.id} {...juego}></CardJuego>
+              ))}
             </Carousel>
           </div>
         </section>
@@ -120,11 +115,9 @@ const ListaJuegosFiltrados = ({ catSeleccionada, busqueda }) => {
         </div>
         <div>
           <Carousel responsive={responsiveCarruselCards}>
-            {filtrarJuegoXCategoria(listaJuego, catSeleccionada) !== []
-              ? filtrarJuegoXCategoria(listaJuego, catSeleccionada).map(
-                  (juego) => <CardJuego key={juego.id} {...juego}></CardJuego>
-                )
-              : null}
+            {listarXCategoria.map((juego) => (
+              <CardJuego key={juego.id} {...juego}></CardJuego>
+            ))}
           </Carousel>
         </div>
       </section>
@@ -134,16 +127,14 @@ const ListaJuegosFiltrados = ({ catSeleccionada, busqueda }) => {
       <section className="mx-5 my-3 shadow rounded bg-sectionInicio">
         <div className="mt-3 mb-5">
           <p className="display-3 fw-light ps-md-5 ps-1 text-dark">
-            {filtrarBusqueda}
+            {busqueda}
           </p>
         </div>
         <div>
           <Carousel responsive={responsiveCarruselCards}>
-            {filtrarJuegoXbusqueda(listaJuego, busqueda) !== []
-              ? filtrarJuegoXbusqueda(listaJuego, busqueda).map((juego) => (
-                  <CardJuego key={juego.id} {...juego}></CardJuego>
-                ))
-              : null}
+            {listarXBusqueda.map((juego) => (
+              <CardJuego key={juego.id} {...juego}></CardJuego>
+            ))}
           </Carousel>
         </div>
       </section>
