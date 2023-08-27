@@ -1,0 +1,125 @@
+.imgCardCarrusel {
+  width: 100%;
+  height: 30rem;
+}
+
+.carrusel {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.cardCarruselInicio {
+  margin: 1.5rem;
+}
+
+.shadowCarrusel {
+  box-shadow: 100%;
+}
+
+.bg-card-carrusel {
+  background-color: black;
+  border: gray 1px solid;
+  opacity: 95%;
+  border-radius: 10px;
+  padding: 20px;
+  transition: 1s;
+}
+
+.bg-card-carrusel:hover {
+  opacity: 25%;
+  cursor: pointer;
+}
+
+.cardCarouselJuegos {
+  margin: 0.5rem;
+}
+
+.hoverCardJuego {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.hoverCardJuego:hover {
+  opacity: 50%;
+}
+
+.bg-sectionInicio {
+  background-color: whitesmoke;
+  transition: 1s;
+}
+
+.bg-sectionInicio:hover {
+  background-color: rgb(228, 227, 227);
+}
+
+.favIcon {
+  color: red;
+  transition: 0.5s;
+  opacity: 50%;
+}
+
+.favIcon:hover {
+  font-size: 40px;
+  opacity: 80%;
+  transition: 0.3s;
+}
+
+.favIcon:active {
+  font-size: 50px;
+  color: red;
+  opacity: 100%;
+}
+
+.favIconActive {
+  color: red;
+  font-size: 40px;
+  opacity: 80%;
+}
+
+.bg-TLimitado {
+  background-image: url("https://images.pexels.com/photos/1293266/pexels-photo-1293266.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  height: 17.5rem;
+}
+
+.bg-TLimitado-Carrusel {
+  background-image: url("https://images.pexels.com/photos/1293266/pexels-photo-1293266.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.cardJuegoTLimitado {
+  width: 10rem;
+  height: 15.5rem;
+  transition: 0.5s;
+}
+
+.cardJuegoTLimitado:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+
+.card-Contador {
+  height: 8rem;
+  width: 13rem;
+}
+
+.bg-TLimitado-sm {
+  background-image: url("https://images.pexels.com/photos/1293266/pexels-photo-1293266.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  height: 30rem;
+}
+
+.imgCardJuego {
+  height: 22rem;
+}
+
+.cardJuego {
+  height: 17rem;
+}
+
+.bg-headerPP {
+  background-color: whitesmoke;
+}

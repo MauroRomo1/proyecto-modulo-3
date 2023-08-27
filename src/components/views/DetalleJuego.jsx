@@ -3,13 +3,24 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { obtenerJuego } from "../helpers/queries";
+import { agregarJuegoFav, obtenerJuego } from "../helpers/queries";
 import LoaderCard from "./detalle-juego/LoaderCard";
 import CarouselCapturas from "./detalle-juego/carouselCapturas";
 import RequisitosSistema from "./detalle-juego/RequisitosSistema";
+import Swal from "sweetalert2";
+import Reseñas from "./detalle-juego/Reseñas";
 
 const DetalleJuego = () => {
   const { id } = useParams();
+
+  const listaFavoritos =
+    JSON.parse(localStorage.getItem("listaFavoritos")) || [];
+
+  const [listaJuegosFavoritos, setListaJuegosFavoritos] =
+    useState(listaFavoritos);
+  const usuarioLog =
+    JSON.parse(sessionStorage.getItem("usuarioLogueado")) || [];
+  const [user, setUser] = useState(usuarioLog);
 
   const [juego, setJuego] = useState(null);
 
@@ -20,7 +31,6 @@ const DetalleJuego = () => {
       .then((resp) => {
         if (resp) {
           setJuego(resp);
-          setMostrarSpinner(false);
         }
       })
       .catch((error) => {
@@ -28,6 +38,18 @@ const DetalleJuego = () => {
       });
   }, []);
 
+  useEffect(() => {
+    localStorage.setItem(
+      "listaFavoritos",
+      JSON.stringify(listaJuegosFavoritos)
+    );
+  }, [listaJuegosFavoritos]);
+
+  const agregarJuegoFavorito = () => {
+    user.juegosFavoritos.push(...listaJuegosFavoritos, juego.id);
+    setListaJuegosFavoritos([...listaJuegosFavoritos, juego.id]);
+    agregarJuegoFav(user.id, user);
+  };
   return (
     <>
       {mostrarSpinner ? (
@@ -81,8 +103,26 @@ const DetalleJuego = () => {
                       </div>
                       <div className="card-footer bg-white border-0">
                         <div className="d-grid gap-2 col col-md-6 mx-auto">
-                          <button className="btn btn-primary" type="button">
-                            Añadir a mi lista
+                          <button
+                            className="btn btn-primary"
+                            type="button"
+                            onClick={() => {
+                              listaJuegosFavoritos.find(
+                                (juegos) => juegos === juego.id
+                              )
+                                ? Swal.fire(
+                                    `ya tienes el juego en Favoritos`,
+                                    `si quieres eliminar el juego buscalo en tus favoritos`,
+                                    `info`
+                                  )
+                                : agregarJuegoFavorito();
+                            }}
+                          >
+                            {listaJuegosFavoritos.find(
+                              (juegos) => juegos === juego.id
+                            )
+                              ? "Añadido a Favoritos"
+                              : "Añadir a Favoritos"}
                           </button>
                           <a
                             className="btn btn-danger"
@@ -102,6 +142,12 @@ const DetalleJuego = () => {
           <section className="container mb-4 bg-white shadow">
             <CarouselCapturas capturas={juego?.capturas} />
             <RequisitosSistema requisitos={juego?.requisitos} />
+          </section>
+          <section className="container mb-4 bg-white shadow">
+            <h4 className="my-3">Reseñas</h4>
+            <div>
+              <Reseñas juego={juego}></Reseñas>
+            </div>
           </section>
         </>
       )}

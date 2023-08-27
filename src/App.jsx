@@ -15,6 +15,7 @@ import { useState } from "react";
 import AltaUsuario from "./components/views/AltaUsuario";
 import AgregarJuego from "./components/views/juego/AgregarJuego";
 import EditarJuego from "./components/views/juego/EditarJuego";
+import JuegosFavoritos from "./components/views/JuegosFavoritos";
 
 function App() {
   const usuarioEnlinea =
@@ -50,6 +51,11 @@ function App() {
             exact
             path="/detalle-juego/:id"
             element={<DetalleJuego></DetalleJuego>}
+          />
+          <Route
+            exact
+            path="/juegos-favoritos"
+            element={<JuegosFavoritos></JuegosFavoritos>}
           />
           <Route
             exact
