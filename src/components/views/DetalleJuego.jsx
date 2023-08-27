@@ -18,6 +18,7 @@ const DetalleJuego = () => {
 
   const [listaJuegosFavoritos, setListaJuegosFavoritos] =
     useState(listaFavoritos);
+
   const usuarioLog =
     JSON.parse(sessionStorage.getItem("usuarioLogueado")) || null;
 

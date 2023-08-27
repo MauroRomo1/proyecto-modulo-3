@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Badge, Card } from "react-bootstrap";
 import { calificarJuego, obtenerJuego } from "../../helpers/queries";
+import { useNavigate } from "react-router";
 
 const CarruselInicio = ({ id }) => {
+  const detalleJuego = useNavigate();
   const [juego, setJuego] = useState({});
   const [calificacion, setCalificacion] = useState("");
 
@@ -48,7 +50,10 @@ const CarruselInicio = ({ id }) => {
           alt={juego.nombre}
           className="imgCardCarrusel"
         />
-        <Card.ImgOverlay className="d-flex justify-content-start align-items-end">
+        <Card.ImgOverlay
+          className="d-flex justify-content-start align-items-end"
+          onClick={() => detalleJuego(`/detalle-juego/${juego.id}`)}
+        >
           <div className="d-flex flex-column bg-card-carrusel p-2">
             <Card.Title>
               <div className="d-flex justify-content-between align-items-center">
