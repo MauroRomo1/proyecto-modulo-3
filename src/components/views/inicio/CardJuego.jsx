@@ -12,7 +12,7 @@ const CardJuego = ({ urlPortada, categoria, nombre, precio, id }) => {
 
   const usuarioLog =
     JSON.parse(sessionStorage.getItem("usuarioLogueado")) || [];
-  
+
   const [user, setUser] = useState(usuarioLog);
 
   const listaFavoritos =

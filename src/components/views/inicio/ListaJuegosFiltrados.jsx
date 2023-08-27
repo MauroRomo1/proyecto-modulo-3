@@ -62,6 +62,8 @@ const ListaJuegosFiltrados = ({ catSeleccionada, busqueda }) => {
 
     if (juegos.length > 0) {
       setListarXCategoria(juegos);
+    } else {
+      setListarXCategoria([]);
     }
   };
 
@@ -110,7 +112,9 @@ const ListaJuegosFiltrados = ({ catSeleccionada, busqueda }) => {
       <section className="mx-5 my-3 shadow rounded bg-sectionInicio">
         <div className="mt-3 mb-5">
           <p className="display-3 fw-light ps-md-5 ps-1 text-dark">
-            {catSeleccionada}
+            {listarXCategoria.length === 0
+              ? `No hay juego en ${catSeleccionada}`
+              : catSeleccionada}
           </p>
         </div>
         <div>
