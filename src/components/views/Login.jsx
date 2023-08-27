@@ -38,7 +38,7 @@ const Login = ({ setUsuarioActivo }) => {
   return (
     <>
       <div className="d-flex justify-content-center bgLogin place-login">
-        <Container className="bg-light mb-auto rounded-4 shadow cont-login">
+        <Container className="bg-light mb-4 mb-lg-auto rounded-4 shadow cont-login">
           <h4 className="fw-bold title-page-login">
             Acceder o crear una cuenta
           </h4>
