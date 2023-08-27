@@ -1,20 +1,15 @@
 .backg {
-  background-color: rgb(24, 61, 61);
+  background-color: rgb(92, 131, 116);
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: auto;
 }
 
 .floating {
-  position: absolute;
-  padding: 10vh;
-  margin: 5vh;
-  top: 1vmin;
-  right: 150px;
-  height: 1vmin;
   animation: floating 3s infinite ease-in-out;
 }
 
-.support {
-  bottom: 15vmin;
+.containerdos {
+  margin: 10px;
+  padding: 40px;
 }
