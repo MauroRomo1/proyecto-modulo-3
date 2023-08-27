@@ -75,7 +75,11 @@ const CardJuego = ({ urlPortada, categoria, nombre, precio, id }) => {
           className="imgCardJuego"
         />
         <Card.ImgOverlay className="pb-0 d-flex justify-content-between">
-          <p>{categoria}</p>
+          <p>
+            <Badge bg="warning" className="fs-6">
+              {categoria}
+            </Badge>
+          </p>
         </Card.ImgOverlay>
       </Card>
       <Card className="rounded-top-0 cardJuego">
@@ -99,7 +103,7 @@ const CardJuego = ({ urlPortada, categoria, nombre, precio, id }) => {
                   icon={
                     listaJuegosFavoritos.find((juego) => juego !== id)
                       ? faHeartCirclePlus
-                      : null
+                      : faHeartCirclePlus
                   }
                   className={iconAction()}
                 ></FontAwesomeIcon>

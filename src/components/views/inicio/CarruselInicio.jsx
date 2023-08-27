@@ -11,7 +11,6 @@ const CarruselInicio = ({ id }) => {
       .then((resp) => {
         if (resp) {
           setJuego(resp);
-          setMostrarSpinner(false);
         }
       })
       .catch((error) => {
