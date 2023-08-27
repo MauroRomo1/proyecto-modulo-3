@@ -11,15 +11,25 @@ import Login from "./components/views/Login";
 import Administracion from "./components/views/Administracion";
 import DetalleJuego from "./components/views/DetalleJuego";
 import AcercaDeNosotros from "./components/views/AcercaDeNosotros";
+import { useState } from "react";
+import AltaUsuario from "./components/views/AltaUsuario";
 import AgregarJuego from "./components/views/juego/AgregarJuego";
 import EditarJuego from "./components/views/juego/EditarJuego";
 import JuegosFavoritos from "./components/views/JuegosFavoritos";
 
 function App() {
+  const usuarioEnlinea =
+    JSON.parse(sessionStorage.getItem("usuarioLogueado")) || null;
+
+  const [usuarioActivo, setUsuarioActivo] = useState(usuarioEnlinea);
+
   return (
     <>
       <BrowserRouter>
-        <Header></Header>
+        <Header
+          usuarioActivo={usuarioActivo}
+          setUsuarioActivo={setUsuarioActivo}
+        ></Header>
         <Routes>
           <Route exact path="/" element={<PaginaPrincipal></PaginaPrincipal>} />
           <Route
@@ -52,7 +62,16 @@ function App() {
             path="/acerca-de-nosotros"
             element={<AcercaDeNosotros></AcercaDeNosotros>}
           />
-          <Route exact path="/login" element={<Login></Login>} />
+          <Route
+            exact
+            path="/login"
+            element={<Login setUsuarioActivo={setUsuarioActivo}></Login>}
+          />
+          <Route
+            exact
+            path="/altausuario"
+            element={<AltaUsuario></AltaUsuario>}
+          />
           <Route exact path="*" element={<Error404></Error404>} />
         </Routes>
         <Footer></Footer>
