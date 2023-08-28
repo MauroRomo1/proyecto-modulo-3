@@ -80,7 +80,7 @@ const Login = ({ setUsuarioActivo }) => {
             <Button
               variant="primary"
               type="submit"
-              className="btn-access shadow"
+              className="btn btn-accederLogin border-0 shadow"
             >
               Acceder
             </Button>

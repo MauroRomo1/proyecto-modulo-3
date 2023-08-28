@@ -15,9 +15,13 @@
   font-size: 22px;
 }
 
-.btn-access {
+.btn-accederLogin {
+  background-color: #183d3d;
   display: block;
   width: 100%;
+}
+.btn-accederLogin:hover {
+  background-color: #5c8374;
 }
 
 .subtitle-page-login {
