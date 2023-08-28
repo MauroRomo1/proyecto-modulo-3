@@ -5,19 +5,13 @@
       "email": "admin@gamestore.com",
       "password": "Admin123",
       "id": 1,
-      "juegosFavoritos": [
-        2,
-        1,
-        5
-      ]
+      "juegosFavoritos": [2, 1, 5]
     },
     {
       "nombreUsuario": "Dharez",
       "email": "mauroromo1999@outlook.com",
       "password": "Dharez123",
-      "juegosFavoritos": [
-        2
-      ],
+      "juegosFavoritos": [2],
       "id": 2
     }
   ],
@@ -54,7 +48,15 @@
         "url4": "https://media.rockstargames.com/rockstargames-newsite/uploads/f924a7858cf5bbf0cb990f252a2fa8efb7919bec.jpg"
       },
       "urlTrailer": "https://www.youtube.com/watch?v=SXvQ1nK4oxk&ab_channel=RockstarGames",
-      "id": 1
+      "id": 1,
+      "calificacion": [
+        {
+          "userId": 1,
+          "userName": "admin",
+          "calificacionJuego": "1",
+          "comentario": "muy buen juego\n"
+        }
+      ]
     },
     {
       "nombre": "Hogwarts Legacy",
