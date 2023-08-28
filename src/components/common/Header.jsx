@@ -28,14 +28,17 @@ const Header = ({ usuarioActivo, setUsuarioActivo }) => {
             className="d-inline-block"
           />
         </NavLink>
-        <span onClick={() => navegacion("/")} className="text-white titulo">
+        <span
+          onClick={() => navegacion("/")}
+          className="text-white titulo d-none d-md-flex me-auto"
+        >
           Joystick Jungle
         </span>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="text-center">
           <Nav className="ms-auto">
             <NavLink end to={"/"} className="nav-link">
-              inicio
+              Inicio
             </NavLink>
             {usuarioActivo ? (
               <>
@@ -56,16 +59,16 @@ const Header = ({ usuarioActivo, setUsuarioActivo }) => {
                       to={"/administracion"}
                       className="dropdown-item text-center"
                     >
-                      administracion
+                      Administracion
                     </NavLink>
                   ) : (
-                    <NavDropdown.Item href="/error" className="text-center">
-                      configuracion
+                    <NavDropdown.Item href="/error404" className="text-center">
+                      Configuracion
                     </NavDropdown.Item>
                   )}
                   <NavDropdown.Item className="text-center">
                     <Button variant="dark" onClick={logout}>
-                      cerrar sesion
+                      Cerrar Sesion
                     </Button>
                   </NavDropdown.Item>
                 </NavDropdown>
@@ -73,10 +76,10 @@ const Header = ({ usuarioActivo, setUsuarioActivo }) => {
             ) : (
               <>
                 <NavLink end to={"/login"} className="nav-link">
-                  iniciar sesion
+                  Iniciar Sesion
                 </NavLink>
                 <NavLink end to={"/altausuario"} className="nav-link">
-                  regitrarse
+                  Regitrarse
                 </NavLink>
               </>
             )}

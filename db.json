@@ -5,30 +5,20 @@
       "email": "admin@gamestore.com",
       "password": "Admin123",
       "id": 1,
-      "juegosFavoritos": [
-        2,
-        1,
-        5,
-        1,
-        3
-      ]
+      "juegosFavoritos": [2, 1, 5, 1, 3, 1]
     },
     {
       "nombreUsuario": "Dharez",
       "email": "mauroromo1999@outlook.com",
       "password": "Dharez123",
-      "juegosFavoritos": [
-        2
-      ],
+      "juegosFavoritos": [2],
       "id": 2
     },
     {
       "nombreUsuario": "nico23",
       "email": "almiron.nicolas16@gmail.com",
       "password": "Nico1234",
-      "juegosFavoritos": [
-        2
-      ],
+      "juegosFavoritos": [2],
       "id": 3
     }
   ],

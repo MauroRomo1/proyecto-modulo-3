@@ -110,7 +110,7 @@ const Login = ({ setUsuarioActivo }) => {
                     className="font-btn-social border-light-subtle shadow btn-social"
                   >
                     <img
-                      src="/public/google.svg"
+                      src="/assets/google.svg"
                       alt="logo google"
                       className="logo-btn-social"
                     ></img>
@@ -126,7 +126,7 @@ const Login = ({ setUsuarioActivo }) => {
                     className="font-btn-social shadow btn-social"
                   >
                     <img
-                      src="/public/facebook.svg"
+                      src="/assets/facebook.svg"
                       alt="logo facebook"
                       className="logo-btn-social"
                     ></img>
@@ -142,7 +142,7 @@ const Login = ({ setUsuarioActivo }) => {
                     className="font-btn-social shadow btn-social"
                   >
                     <img
-                      src="/public/paypal.svg"
+                      src="/assets/paypal.svg"
                       alt="logo paypal"
                       className="logo-btn-social"
                     ></img>
@@ -161,7 +161,7 @@ const Login = ({ setUsuarioActivo }) => {
                     className="font-btn-social border-light-subtle shadow btn-social"
                   >
                     <img
-                      src="/public/tiktok.svg"
+                      src="/assets/tiktok.svg"
                       alt="logo tiktok"
                       className="logo-btn-social"
                     ></img>
@@ -177,7 +177,7 @@ const Login = ({ setUsuarioActivo }) => {
                     className="font-btn-social border-light-subtle shadow btn-social"
                   >
                     <img
-                      src="/public/twitch.svg"
+                      src="/assets/twitch.svg"
                       alt="logo twitch"
                       className="logo-btn-social"
                     ></img>
@@ -193,7 +193,7 @@ const Login = ({ setUsuarioActivo }) => {
                     className="font-btn-social border-light-subtle shadow btn-social"
                   >
                     <img
-                      src="/public/twitter.svg"
+                      src="/assets/twitter.svg"
                       alt="logo twitter"
                       className="logo-btn-social"
                     ></img>
@@ -212,7 +212,7 @@ const Login = ({ setUsuarioActivo }) => {
                     className="font-btn-social border-light-subtle shadow btn-social"
                   >
                     <img
-                      src="/public/apple.svg"
+                      src="/assets/apple.svg"
                       alt="logo apple"
                       className="logo-btn-social"
                     ></img>
@@ -228,7 +228,7 @@ const Login = ({ setUsuarioActivo }) => {
                     className="font-btn-social border-light-subtle shadow btn-social"
                   >
                     <img
-                      src="/public/telefono.svg"
+                      src="/assets/telefono.svg"
                       alt="logo telefono"
                       className="logo-btn-social"
                     ></img>
