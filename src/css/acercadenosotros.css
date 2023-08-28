@@ -1,5 +1,5 @@
 .backg {
-  background-color: rgb(92, 131, 116);
+  background-image: url(https://cdn.wallpapersafari.com/32/24/KHaWtA.png);
   margin: 0;
   padding: 0;
   height: auto;
@@ -10,6 +10,8 @@
 }
 
 .containerdos {
-  margin: 10px;
-  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
