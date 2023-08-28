@@ -5,11 +5,7 @@
       "email": "admin@gamestore.com",
       "password": "Admin123",
       "id": 1,
-      "juegosFavoritos": [
-        2,
-        1,
-        5
-      ]
+      "juegosFavoritos": [2, 1, 5]
     },
     {
       "nombreUsuario": "Dharez",
@@ -52,7 +48,6 @@
         "url4": "https://media.rockstargames.com/rockstargames-newsite/uploads/f924a7858cf5bbf0cb990f252a2fa8efb7919bec.jpg"
       },
       "urlTrailer": "https://www.youtube.com/watch?v=SXvQ1nK4oxk&ab_channel=RockstarGames",
-      "calificacion": [],
       "id": 1
     },
     {
