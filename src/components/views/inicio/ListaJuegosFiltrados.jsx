@@ -80,12 +80,12 @@ const ListaJuegosFiltrados = ({ catSeleccionada, busqueda }) => {
         <section className="mx-5 my-3 shadow rounded bg-sectionInicio">
           <div className="mt-3 mb-5">
             <p className="display-3 fw-light ps-md-5 ps-1 text-dark">
-              {catSeleccionada}
+              {busqueda}
             </p>
           </div>
           <div>
             <Carousel responsive={responsiveCarruselCards}>
-              {listarXCategoria.map((juego) => (
+              {listarXBusqueda.map((juego) => (
                 <CardJuego key={juego.id} {...juego}></CardJuego>
               ))}
             </Carousel>
@@ -94,12 +94,12 @@ const ListaJuegosFiltrados = ({ catSeleccionada, busqueda }) => {
         <section className="mx-5 my-3 shadow rounded bg-sectionInicio">
           <div className="mt-3 mb-5">
             <p className="display-3 fw-light ps-md-5 ps-1 text-dark">
-              {busqueda}
+              {catSeleccionada}
             </p>
           </div>
           <div>
             <Carousel responsive={responsiveCarruselCards}>
-              {listarXBusqueda.map((juego) => (
+              {listarXCategoria.map((juego) => (
                 <CardJuego key={juego.id} {...juego}></CardJuego>
               ))}
             </Carousel>
