@@ -1,0 +1,26 @@
+.imgFormAdministracion {
+  width: 80px;
+  height: 80px;
+}
+
+.imgItem {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+
+.btn-agregarJuego,
+.btn-update {
+  background-color: #183d3d;
+}
+.btn-agregarJuego:hover,
+.btn-update:hover {
+  background-color: #5c8374;
+}
+
+.btn-editar {
+  background-color: #93b1a6;
+}
+.btn-editar:hover {
+  background-color: #5c8374;
+}

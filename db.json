@@ -1,0 +1,426 @@
+{
+  "usuarios": [
+    {
+      "nombreUsuario": "admin",
+      "email": "admin@gamestore.com",
+      "password": "Admin123",
+      "id": 1,
+      "juegosFavoritos": [2, 1, 5]
+    },
+    {
+      "nombreUsuario": "Dharez",
+      "email": "mauroromo1999@outlook.com",
+      "password": "Dharez123",
+      "juegosFavoritos": [2],
+      "id": 2
+    }
+  ],
+  "juegos": [
+    {
+      "nombre": "Red Dead Redemption 2",
+      "precio": "39.99",
+      "categoria": "Aventura",
+      "desarrolladora": "Rockstar Games",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "editora": "Rockstar Games",
+      "descripcion": "América, 1899. Arthur Morgan y la banda de Van der Linde se ven obligados a huir. Con agentes federales y los mejores cazarrecompensas de la nación pisándoles los talones, la banda deberá atracar, robar y luchar, para sobrevivir en su camino por el escabroso territorio del corazón de América. Mientras las divisiones internas aumentan y amenazan con separarlos a todos, Arthur deberá elegir entre sus propios ideales y la lealtad a la banda que lo vio crecer.",
+      "requisitos": {
+        "minimos": {
+          "sistemaOperativo": "Windows 10 - April 2018 Update (v1803)",
+          "procesador": "Intel(R) Core(TM) i5-2500K / AMD FX-6300",
+          "memoria": "8 GB de RAM",
+          "tarjetaGrafica": "Nvidia GeForce GTX 770 2 GB / AMD Radeon R9 280 3 GB",
+          "almacenamiento": "150 GB"
+        },
+        "recomendado": {
+          "sistemaOperativo": "Windows 10 - April 2018 Update (v1803)",
+          "procesador": "Intel(R) Core(TM) i7-4770K / AMD Ryzen 5 1500x",
+          "memoria": "12 GB de RAM",
+          "tarjetaGrafica": "Nvidia GeForce GTX 1060 6 GB / AMD Radeon RX 480 4 GB",
+          "almacenamiento": "150 GB"
+        }
+      },
+      "urlPortada": "https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png",
+      "capturas": {
+        "url1": "https://media.rockstargames.com/rockstargames-newsite/uploads/c0cc88f41d10ff2bfafcc43d4356303c1fcaba43.jpg",
+        "url2": "https://media.rockstargames.com/rockstargames-newsite/uploads/10402b7c7c4a3faea439166ea0df0520d8ab1865.jpg",
+        "url3": "https://media.rockstargames.com/rockstargames-newsite/uploads/3bd96e9640bf85015ea24970957ff8deab3e211d.jpg",
+        "url4": "https://media.rockstargames.com/rockstargames-newsite/uploads/f924a7858cf5bbf0cb990f252a2fa8efb7919bec.jpg"
+      },
+      "urlTrailer": "https://www.youtube.com/watch?v=SXvQ1nK4oxk&ab_channel=RockstarGames",
+      "id": 1,
+      "calificacion": [
+        {
+          "userId": 1,
+          "userName": "admin",
+          "calificacionJuego": "1",
+          "comentario": "muy buen juego\n"
+        }
+      ]
+    },
+    {
+      "nombre": "Hogwarts Legacy",
+      "precio": "49.99",
+      "categoria": "Aventura",
+      "desarrolladora": "Avalanche Software",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Teen_SP.svg",
+      "editora": "Warner Bros. Games",
+      "descripcion": "Hogwarts Legacy es un RPG envolvente de acción en un mundo abierto ambientado en el universo de los libros de Harry Potter. Ahora puedes tomar el control de la acción y ser el centro de tu propia aventura en el mundo mágico. Tú defines tu legado. Vive la historia nunca escrita.",
+      "requisitos": {
+        "minimos": {
+          "sistemaOperativo": "Windows 10",
+          "procesador": "Intel Core i5-8400 o AMD Ryzen 5 2600",
+          "memoria": "8 GB de RAM",
+          "tarjetaGrafica": "NVIDIA GeForce GTX 1070 o AMD RX Vega 56",
+          "almacenamiento": "85 GB"
+        },
+        "recomendado": {
+          "sistemaOperativo": "Windows 10",
+          "procesador": "Intel Core i7-8700 o AMD Ryzen 5 3600",
+          "memoria": "16 GB de RAM",
+          "tarjetaGrafica": "NVIDIA GeForce 1080 Ti o AMD RX 5700 XT",
+          "almacenamiento": "85 GB"
+        }
+      },
+      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202208/0921/dR9KJAKDW2izPbptHQbh3rnj.png",
+      "capturas": {
+        "url1": "https://sm.ign.com/t/ign_latam/screenshot/default/screenshot-15-1600287822654_6r3d.1080.jpg",
+        "url2": "https://sm.ign.com/t/ign_latam/screenshot/default/screenshot-20-1600287832362_f2qh.1080.jpg",
+        "url3": "https://sm.ign.com/t/ign_latam/screenshot/default/screenshot-19-1600287830096_yfqg.1080.jpg",
+        "url4": "https://sm.ign.com/t/ign_latam/screenshot/default/screenshot-22-1600287836034_jw93.1080.jpg"
+      },
+      "urlTrailer": "https://www.youtube.com/watch?v=S6GTl_vPRvU&ab_channel=PlayStationEspa%C3%B1a",
+      "id": 2,
+      "calificacion": [
+        {
+          "userId": 1,
+          "userName": "admin",
+          "calificacionJuego": "1",
+          "comentario": "muy buen juego"
+        }
+      ]
+    },
+    {
+      "nombre": "FIFA 23",
+      "precio": "69.99",
+      "categoria": "Deportes",
+      "desarrolladora": "EA Canada",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Everyone_SP.svg",
+      "editora": "Electronic Arts",
+      "descripcion": "FIFA 23 nos acerca a The World's Game con la tecnología HyperMotion2, la FIFA World Cup™ masculina y femenina disponibles durante la temporada, clubes femeninos, función de juego cruzado* y mucho más.",
+      "requisitos": {
+        "minimos": {
+          "sistemaOperativo": "Windows 10 de 64 bits",
+          "procesador": "Ryzen 5 1600, Core i5 6600K",
+          "memoria": "8 GB de RAM",
+          "tarjetaGrafica": "Radeon RX 570, GeForce GTX 1050 Ti",
+          "almacenamiento": "100 GB"
+        },
+        "recomendado": {
+          "sistemaOperativo": "Windows 10 de 64 bits",
+          "procesador": "Ryzen 7 2700X, Core i7 6700",
+          "memoria": "12 GB de RAM",
+          "tarjetaGrafica": "Radeon RX 5600 XT, GeForce GTX 1660",
+          "almacenamiento": "100 GB"
+        }
+      },
+      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202301/0312/yM0eeJui8AFByeP5BC5XV5j9.png",
+      "capturas": {
+        "url1": "https://uvejuegos.com/img/juegos/68679/WANDAMETROPOLITANO_23_16X9_WM_LORES.jpg",
+        "url2": "https://uvejuegos.com/img/juegos/68679/Mbappe_Lores_WM_16x9.jpg",
+        "url3": "https://uvejuegos.com/img/juegos/68679/Copy-of-Kelly_Hero_Hires_WM_16x9.jpg",
+        "url4": "https://uvejuegos.com/img/juegos/68679/FIFA-23_20221008015817.jpg"
+      },
+      "urlTrailer": "https://www.youtube.com/watch?v=zMyeAFzCTM0&ab_channel=PlayStationLatinoam%C3%A9rica",
+      "id": 3,
+      "calificacion": [
+        {
+          "userId": 1,
+          "userName": "admin",
+          "calificacionJuego": "0",
+          "comentario": "igual que los de mas\n"
+        }
+      ]
+    },
+    {
+      "nombre": "Grand Theft Auto V",
+      "precio": 29.99,
+      "categoria": "Sandbox",
+      "desarrolladora": "Rockstar North",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "editora": "Rockstar Games",
+      "descripcion": "Cuando un joven estafador callejero, un ladrón de bancos retirado y un psicópata aterrador se ven involucrados con lo peor y más desquiciado del mundo criminal, del gobierno de los EE. UU. y de la industria del espectáculo, tendrán que llevar a cabo una serie de peligrosos golpes para sobrevivir en una ciudad implacable en la que no pueden confiar en nadie. Y mucho menos los unos en los otros.",
+      "requisitos": {
+        "minimos": {
+          "sistemaOperativo": "Windows 8.1 de 64 bits, Windows 8 de 64 bits, Windows 7 de 64 bits con Service Pack 1",
+          "procesador": " Intel Core 2 Quad CPU Q6600 a 2,4 GHz (4 CPU)/AMD Phenom 9850 Quad-Core (4 CPU) a 2,5 GHz.",
+          "memoria": "4 GB de RAM",
+          "tarjetaGrafica": "NVIDIA 9800 GT 1 GB/AMD HD 4870 1 GB (DX 10, 10.1, 11).",
+          "almacenamiento": "72 GB"
+        },
+        "recomendado": {
+          "sistemaOperativo": " Windows 8.1 de 64 bits, Windows 8 de 64 bits, Windows 7 de 64 bits con Service Pack 1.",
+          "procesador": "Intel Core i5 3470 a 3,2 GHz (4 CPU)/AMD X8 FX-8350 a 4 GHz (8 CPU).",
+          "memoria": "8 GB de RAM",
+          "tarjetaGrafica": "NVIDIA GTX 660 2 GB/AMD HD7870 2 GB.",
+          "almacenamiento": "72 GB"
+        }
+      },
+      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202202/2816/K6mmm89oNII1iI1aqaClO0wh.png",
+      "capturas": {
+        "url1": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_2.jpg",
+        "url2": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_12.jpg",
+        "url3": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_5.jpg",
+        "url4": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_3.jpg"
+      },
+      "urlTrailer": "https://www.youtube.com/watch?v=QkkoHAzjnUs&ab_channel=RockstarGames",
+      "id": 4,
+      "calificacion": []
+    },
+    {
+      "nombre": "Assassin's Creed Valhalla",
+      "precio": 32.99,
+      "categoria": "Sandbox",
+      "desarrolladora": "Ubisoft Montreal",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "editora": "Ubisoft",
+      "descripcion": "Ponte en la piel de una leyenda vikinga en busca de gloria. Saquea a tus enemigos, haz prosperar tu asentamiento y consolida tu poder político.",
+      "requisitos": {
+        "minimos": {
+          "sistemaOperativo": "Windows 10 (solo de 64 bits)",
+          "procesador": "Ryzen 3 1200 a 3,1 GHz / i5-4460 a 3,2 GHz",
+          "memoria": "8 GB de RAM",
+          "tarjetaGrafica": "AMD R9 380 de 4 GB / GeForce GTX 960 de 4 GB",
+          "almacenamiento": "50 GB"
+        },
+        "recomendado": {
+          "sistemaOperativo": "Windows 10 (solo de 64 bits)",
+          "procesador": "Ryzen 5 1600 a 3,2 GHz / i7-4790 a 3,6 GHz",
+          "memoria": "8 GB de RAM",
+          "tarjetaGrafica": "AMD RX 570 de 8 GB / GeForce GTX 1060 de 6 GB",
+          "almacenamiento": "50 GB"
+        }
+      },
+      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202006/1520/EDtkdijFRwbmGKk1G9lrDoEF.png",
+      "capturas": {
+        "url1": "https://sm.ign.com/t/ign_latam/screenshot/default/ack-dlc-01-coronation-257625609339d99889e3-50289465-16208381_wew2.1080.jpg",
+        "url2": "https://sm.ign.com/t/ign_latam/screenshot/default/ack-dlc-25-barid-257625609339d5055600-70353614-1620838198682_gw61.1080.jpg",
+        "url3": "https://sm.ign.com/t/ign_latam/screenshot/default/ack-dlc-06-asfinnhut-257625609339e0cd8019-59668505-162083819_f2xk.1080.jpg",
+        "url4": "https://sm.ign.com/t/ign_latam/screenshot/default/ack-dlc-11-doondaven-257625609339c5d59a18-08993957-162083819_9ghd.1080.jpg"
+      },
+      "urlTrailer": "https://www.youtube.com/watch?v=1Z7mIKGzowQ&t=22s&ab_channel=UbisoftLatinoam%C3%A9rica",
+      "id": 5,
+      "calificacion": []
+    },
+    {
+      "nombre": "Dead Island 2",
+      "precio": 44.99,
+      "categoria": "Terror",
+      "desarrolladora": "Deep Silver Dambuster Studios",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "editora": "Deep Silver",
+      "descripcion": "Un virus mortal se extiende por Los Ángeles y está convirtiendo a sus habitantes en zombis. Te han mordido e infectado, pero tu cuerpo es inmune. Descubre la verdad tras el brote y quién (o qué) eres.",
+      "requisitos": {
+        "minimos": {
+          "sistemaOperativo": "Windows 10",
+          "procesador": "AMD FX-9590, Intel Core i7-7700HQ",
+          "memoria": "10 GB de RAM",
+          "tarjetaGrafica": "Radeon R9 390X (8192 MB de VRAM), GeForce GTX 1060 (6144 MB de VRAM)",
+          "almacenamiento": "70 GB"
+        },
+        "recomendado": {
+          "sistemaOperativo": "Windows 10",
+          "procesador": "Ryzen 5 5600X, Intel Core i9-9900k",
+          "memoria": "10 GB de RAM",
+          "tarjetaGrafica": "Radeon RX 6800 XT (16 384 MB de VRAM), GeForce RTX 2070 Super (8192 MB de VRAM)",
+          "almacenamiento": "70 GB"
+        }
+      },
+      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1012/SyX3pwXDmPfzSY6KsdCU6dfk.jpg",
+      "capturas": {
+        "url1": "https://sm.ign.com/t/ign_es/screenshot/default/dead-island-2-20230404150747_sueq.1080.jpg",
+        "url2": "https://sm.ign.com/t/ign_es/screenshot/default/dead-island-2-20230404151004_asxy.1080.jpg",
+        "url3": "https://sm.ign.com/t/ign_es/screenshot/default/dead-island-2-20230404165511_15yw.1080.jpg",
+        "url4": "https://sm.ign.com/t/ign_es/screenshot/default/dead-island-2-20230404170252_91ya.1080.jpg"
+      },
+      "urlTrailer": "https://www.youtube.com/watch?v=bX66ibydpjk&ab_channel=PlayStationEspa%C3%B1a",
+      "id": 6,
+      "calificacion": []
+    },
+    {
+      "nombre": "Resident Evil 4",
+      "precio": 59.99,
+      "categoria": "Terror",
+      "desarrolladora": "Capcom",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "editora": "Capcom",
+      "descripcion": "Seis años después de la catástrofe biológica en Raccoon City, el agente Leon S. Kennedy, uno de los supervivientes del desastre, ha sido enviado a rescatar a la hija del presidente, a quien han secuestrado. Siguiendo su rastro, llega a una apartada población europea, donde sus habitantes sufren un mal terrible. Así comienza esta historia de un arriesgado rescate y terror escalofriante donde se cruzan la vida y la muerte, y el miedo y la catarsis.",
+      "requisitos": {
+        "minimos": {
+          "sistemaOperativo": "Windows 10 (64 bit)",
+          "procesador": "AMD Ryzen 3 1200 / Intel Core i5-7500",
+          "memoria": "8 GB de RAM",
+          "tarjetaGrafica": "AMD Radeon RX 560 with 4GB VRAM / NVIDIA GeForce GTX 1050 Ti with 4GB VRAM",
+          "almacenamiento": "51 GB"
+        },
+        "recomendado": {
+          "sistemaOperativo": "Windows 10 (64 bit)/Windows 11 (64 bit)",
+          "procesador": "AMD Ryzen 5 3600 / Intel Core i7 8700",
+          "memoria": "16 GB de RAM",
+          "tarjetaGrafica": "AMD Radeon RX 5700 / NVIDIA GeForce GTX 1070",
+          "almacenamiento": "51 GB"
+        }
+      },
+      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202210/0706/EVWyZD63pahuh95eKloFaJuC.png",
+      "capturas": {
+        "url1": "https://sm.ign.com/t/ign_es/screenshot/default/unknown-2023-03-09-16-42-45_tpbf.1080.jpg",
+        "url2": "https://sm.ign.com/t/ign_es/screenshot/default/unknown-2023-03-09-16-48-43_nqw7.1080.jpg",
+        "url3": "https://sm.ign.com/t/ign_es/screenshot/default/unknown-2023-03-09-17-29-59_cuw7.1080.jpg",
+        "url4": "https://sm.ign.com/t/ign_es/screenshot/default/unknown-2023-03-09-16-45-24_qy46.1080.jpg"
+      },
+      "urlTrailer": "https://www.youtube.com/watch?v=bX66ibydpjk&ab_channel=PlayStationEspa%C3%B1a",
+      "id": 7,
+      "calificacion": []
+    },
+    {
+      "nombre": "ELDEN RING",
+      "precio": 59.99,
+      "categoria": "RPG",
+      "desarrolladora": "FromSoftware Inc.",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "editora": "FromSoftware Inc.",
+      "descripcion": "Elden Ring es el nuevo videojuego de FromSoftware, creadores de Dark Souls, Sekiro o Bloodborne. Se trata del nuevo título de acción y rol para un jugador ideado por Hidetaka Miyazaki, que en esta ocasión, estrenará un mundo abierto más grande y ambicioso. Su argumento y mitología están firmados por George R.R. Martin, autor de Canción de hielo y fuego.",
+      "requisitos": {
+        "minimos": {
+          "sistemaOperativo": "Windows 10",
+          "procesador": "INTEL CORE I5-8400 or AMD RYZEN 3 3300X",
+          "memoria": "12 GB de RAM",
+          "tarjetaGrafica": "NVIDIA GEFORCE GTX 1060 3 GB or AMD RADEON RX 580 4 GB",
+          "almacenamiento": "60 GB"
+        },
+        "recomendado": {
+          "sistemaOperativo": "Windows 10/11",
+          "procesador": "INTEL CORE I7-8700K or AMD RYZEN 5 3600X",
+          "memoria": "16 GB de RAM",
+          "tarjetaGrafica": "NVIDIA GEFORCE GTX 1070 8 GB or AMD RADEON RX VEGA 56 8 GB",
+          "almacenamiento": "60 GB"
+        }
+      },
+      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202110/2000/aGhopp3MHppi7kooGE2Dtt8C.png",
+      "capturas": {
+        "url1": "https://p325k7wa.twic.pics/high/elden-ring/elden-ring/02-screenshots/elden-ring-newscreen04.png",
+        "url2": "https://p325k7wa.twic.pics/high/elden-ring/elden-ring/02-screenshots/elden-ring-newscreen02.png",
+        "url3": "https://p325k7wa.twic.pics/high/elden-ring/elden-ring/02-screenshots/elden-ring-newscreen01.png",
+        "url4": "https://p325k7wa.twic.pics/high/elden-ring/elden-ring/02-screenshots/elden-ring-newscreen06.png"
+      },
+      "urlTrailer": "https://www.youtube.com/watch?v=E3Huy2cdih0&ab_channel=BANDAINAMCOEurope",
+      "id": 8,
+      "calificacion": []
+    },
+    {
+      "nombre": "DOOM Eternal",
+      "precio": 39.99,
+      "categoria": "Accion/Shooter",
+      "desarrolladora": "id Software",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "editora": "Bethesda Softworks",
+      "descripcion": "Los ejércitos del infierno han invadido la Tierra. Ponte en la piel del Slayer en una épica campaña para un jugador y cruza dimensiones aniquilando demonios para detener la destrucción definitiva de la humanidad.",
+      "requisitos": {
+        "minimos": {
+          "sistemaOperativo": "64-bit Windows 7 / 64-Bit Windows 10",
+          "procesador": "Intel Core i5 @ 3.3 GHz or better, or AMD Ryzen 3 @ 3.1 GHz or better",
+          "memoria": "8 GB de RAM",
+          "tarjetaGrafica": "NVIDIA GeForce GTX 1050Ti (4GB), GTX 1060 (3GB), GTX 1650 (4GB) or AMD Radeon R9 280(3GB), AMD Radeon R9 290 (4GB), RX 470 (4GB)",
+          "almacenamiento": "80 GB"
+        },
+        "recomendado": {
+          "sistemaOperativo": "64-bit Windows 10",
+          "procesador": "Intel Core i7-6700K or better, or AMD Ryzen 7 1800X or better",
+          "memoria": "8 GB de RAM",
+          "tarjetaGrafica": "NVIDIA GeForce GTX 1060 (6GB), NVIDIA GeForce 970 (4GB), AMD RX 480 (8GB)",
+          "almacenamiento": "80 GB"
+        }
+      },
+      "urlPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202010/0114/ERNPc4gFqeRDG1tYQIfOKQtM.png",
+      "capturas": {
+        "url1": "https://sm.ign.com/t/ign_es/screenshot/default/chainsaw-1559900183-1579287070267_3j9z.1080.jpg",
+        "url2": "https://sm.ign.com/t/ign_es/screenshot/default/cyber-mancubus-1579287083266_yxrt.1080.jpg",
+        "url3": "https://sm.ign.com/t/ign_es/screenshot/default/doom-eternal-fire-baron-1533718919-1579287218145_fxvw.1080.jpg",
+        "url4": "https://sm.ign.com/t/ign_es/screenshot/default/marauder-1559925215-1579287352523_h3e6.1080.jpg"
+      },
+      "urlTrailer": "https://www.youtube.com/watch?v=-fsz6b3IBJY&ab_channel=BethesdaSoftworksES",
+      "id": 9,
+      "calificacion": []
+    },
+    {
+      "nombre": "Forza Horizon 5",
+      "precio": 59.99,
+      "categoria": "Carreras",
+      "desarrolladora": "Playground Games",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Everyone_SP.svg",
+      "editora": "Xbox Game Studios",
+      "descripcion": "Explora los vibrantes paisajes del mundo abierto de México y disfruta de una diversión sin límites al volante de los mejores coches del mundo. Conquista la escarpada Sierra Nueva en la experiencia definitiva del rally de Horizon.",
+      "requisitos": {
+        "minimos": {
+          "sistemaOperativo": "Windows 10",
+          "procesador": "Intel i5-4460 or AMD Ryzen 3 1200",
+          "memoria": "8 GB de RAM",
+          "tarjetaGrafica": "NVidia GTX 970 OR AMD RX 470",
+          "almacenamiento": "110 GB"
+        },
+        "recomendado": {
+          "sistemaOperativo": "Windows 10",
+          "procesador": "Intel i5-8400 or AMD Ryzen 5 1500X",
+          "memoria": "16 GB de RAM",
+          "tarjetaGrafica": "NVidia GTX 1070 OR AMD RX 590",
+          "almacenamiento": "110 GB"
+        }
+      },
+      "urlPortada": "https://www.ultimagame.es/forza-horizon-5/imagen-i18351-pge.jpg",
+      "capturas": {
+        "url1": "https://sm.ign.com/t/ign_es/gallery/f/forza-hori/forza-horizon-5-gamescom-screenshots_3eck.1080.jpg",
+        "url2": "https://sm.ign.com/t/ign_es/photo/default/forzahorizon5-gamescom-01-16x9-wm-1629828784351_xmgk.1080.jpg",
+        "url3": "https://sm.ign.com/t/ign_es/photo/default/forzahorizon5-gamescom-02-16x9-wm-1629828784352_ys1g.1080.jpg",
+        "url4": "https://sm.ign.com/t/ign_es/photo/default/forzahorizon5-gamescom-03-16x9-wm-1629828784353_s4cm.1080.jpg"
+      },
+      "urlTrailer": "https://www.youtube.com/watch?v=FYH9n37B7Yw&ab_channel=Xbox",
+      "id": 10,
+      "calificacion": []
+    },
+    {
+      "nombre": "Good of War: Ragnarok",
+      "precio": "50.99",
+      "categoria": "Aventura",
+      "desarrolladora": "SIE Santa Monica",
+      "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
+      "editora": "SIE Santa Monica Studios",
+      "descripcion": "Fimbulvetr ya está en camino. Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo. En el camino explorarán paisajes increíbles y míticos, y se enfrentarán a aterradores enemigos en la forma de dioses nórdicos y monstruos. La amenaza del Ragnarök cada vez está más cerca. ",
+      "requisitos": {
+        "minimos": {
+          "sistemaOperativo": "Windows 10",
+          "procesador": "Intel i5-2500k / AMD Ryzen 3 1200",
+          "memoria": "16 GB",
+          "tarjetaGrafica": "NVIDIA GTX 960 / AMD R9 290X",
+          "almacenamiento": "70 GB"
+        },
+        "recomendado": {
+          "sistemaOperativo": "windows 10",
+          "procesador": "Intel i5 6600k / AMD Ryzen 5 2400",
+          "memoria": "16gb",
+          "tarjetaGrafica": "NVIDIA GTX1060 / AMD RX570",
+          "almacenamiento": "70gb"
+        }
+      },
+      "urlPortada": "https://sm.ign.com/t/ign_es/game/g/god-of-war/god-of-war-ragnarok_tgde.300.jpg",
+      "capturas": {
+        "url1": "https://sm.ign.com/t/ign_es/gallery/g/god-of-war/god-of-war-ragnarok-preview_2tqs.1080.jpg",
+        "url2": "https://sm.ign.com/t/ign_es/photo/default/gowr-preview-screenshot-18-1666368017375_gryr.1080.jpg",
+        "url3": "https://sm.ign.com/t/ign_es/photo/default/gowr-preview-screenshot-14-1666368017377_3jcd.1080.jpg",
+        "url4": "https://sm.ign.com/t/ign_es/photo/default/gowr-preview-screenshot-12-1666368017378_8fnn.1080.jpg"
+      },
+      "urlTrailer": "https://youtu.be/EE-4GvjKcfs",
+      "id": 11,
+      "calificacion": []
+    }
+  ]
+}
