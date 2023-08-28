@@ -99,6 +99,7 @@ const EditarJuego = () => {
   }, [urlPortada]);
 
   const onSubmit = (juego) => {
+    juego.calificacion = [];
     editarJuego(id, juego)
       .then((respuesta) => {
         if (respuesta.status === 200) {
@@ -107,10 +108,11 @@ const EditarJuego = () => {
             "fue editado con exito!",
             "success"
           );
-          detalleJuego(`/detalle-juego/${juego.id}`);
+          detalleJuego(`/detalle-juego/${id}`);
         }
       })
       .catch((error) => {
+        console.log(error);
         Swal.fire(
           "Se produjo un error!",
           "no se pudo editar el juego",
@@ -611,10 +613,13 @@ const EditarJuego = () => {
           </Col>
         </Row>
         <div className="text-end mb-5">
-          <Link to={"/Administracion"} className="btn btn-lg btn-primary me-4">
+          <Link
+            to={"/Administracion"}
+            className="btn btn-lg btn-secondary me-4"
+          >
             Volver
           </Link>
-          <Button variant="success" size="lg" type="submit">
+          <Button size="lg" type="submit" className="btn-update">
             Guardar Cambios
           </Button>
         </div>

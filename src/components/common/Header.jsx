@@ -17,7 +17,7 @@ const Header = ({ usuarioActivo, setUsuarioActivo }) => {
   };
 
   return (
-    <Navbar expand="lg" className=" bg-body-tertiary ">
+    <Navbar expand="lg" bg="dark" data-bs-theme="dark">
       <Container>
         <NavLink end to={"/"} className="navbar-brand">
           <img
@@ -27,8 +27,10 @@ const Header = ({ usuarioActivo, setUsuarioActivo }) => {
             height="70"
             className="d-inline-block"
           />
-          Joystick Jungle
         </NavLink>
+        <span onClick={() => navegacion("/")} className="text-white titulo">
+          Joystick Jungle
+        </span>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="text-center">
           <Nav className="ms-auto">

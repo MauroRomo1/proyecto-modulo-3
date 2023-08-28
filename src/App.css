@@ -4,6 +4,18 @@
   min-height: 100vh;
 }
 
+.navbar-header {
+  background-color: #040d12;
+}
+
+.titulo {
+  cursor: pointer;
+}
+
+.dropdown-navbar {
+  color: #ff0000 !important;
+}
+
 footer {
   margin-top: auto;
 }

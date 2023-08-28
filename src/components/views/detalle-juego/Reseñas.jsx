@@ -110,7 +110,7 @@ const Reseñas = ({ juego }) => {
                 {errors.comentario?.message}
               </Form.Text>
             </Form.Group>
-            <Button variant="success" type="submit" className="m-2">
+            <Button type="submit" className="btn btn-verJuego border-white m-2">
               Enviar Reseña
             </Button>
           </Form>

@@ -29,7 +29,10 @@ const Administracion = () => {
         <p>Administrar Juegos</p>
       </article>
       <article className="d-flex justify-content-between">
-        <Link to={"/agregar-juego"} className="btn btn-primary btn-lg ps-2">
+        <Link
+          to={"/agregar-juego"}
+          className="btn btn-agregarJuego text-white btn-lg ps-2"
+        >
           ➕ Agregar Juegos
         </Link>
       </article>
