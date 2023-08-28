@@ -5,8 +5,13 @@ import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { altaUsuario } from "../helpers/queries";
 import Swal from "sweetalert2";
+import { useEffect } from "react";
 
 const AltaUsuario = () => {
+  useEffect(() => {
+    document.title = "Registrarse";
+  }, []);
+
   const navegacion = useNavigate();
   const {
     register,

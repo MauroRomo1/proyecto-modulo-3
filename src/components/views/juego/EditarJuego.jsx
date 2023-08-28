@@ -31,6 +31,7 @@ const EditarJuego = () => {
   } = useForm();
 
   useEffect(() => {
+    document.title = "Administracion | Editar juego";
     obtenerJuego(id)
       .then((resp) => {
         if (resp) {

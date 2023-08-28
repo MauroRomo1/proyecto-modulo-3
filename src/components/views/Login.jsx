@@ -6,8 +6,13 @@ import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { login } from "../helpers/queries";
 import Swal from "sweetalert2";
+import { useEffect } from "react";
 
 const Login = ({ setUsuarioActivo }) => {
+  useEffect(() => {
+    document.title = "Iniciar sesion";
+  }, []);
+
   const navegacion = useNavigate();
   const {
     register,

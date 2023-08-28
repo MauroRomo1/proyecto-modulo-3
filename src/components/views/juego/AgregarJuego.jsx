@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Button,
   Col,
@@ -15,6 +15,10 @@ import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 
 const AgregarJuego = () => {
+  useEffect(() => {
+    document.title = "Administracion | Agregar juego";
+  }, []);
+
   const detalleJuego = useNavigate();
 
   const {

@@ -32,6 +32,7 @@ const DetalleJuego = () => {
     obtenerJuego(id)
       .then((resp) => {
         if (resp) {
+          document.title = resp.nombre;
           setJuego(resp);
           setMostrarSpinner(false);
         }

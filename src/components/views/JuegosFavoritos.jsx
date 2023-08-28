@@ -15,6 +15,7 @@ const JuegosFavoritos = () => {
   const [juegosFav, setJuegosFav] = useState([]);
 
   useEffect(() => {
+    document.title = "Lista de juegos favoritos";
     listarJuegos().then((respuestaJuegos) => {
       if (respuestaJuegos) {
         setListaJuegos(respuestaJuegos);

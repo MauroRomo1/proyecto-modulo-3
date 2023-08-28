@@ -10,6 +10,7 @@ const Administracion = () => {
   const [listaJuegos, setListaJuegos] = useState([]);
 
   useEffect(() => {
+    document.title = "Administracion";
     listarJuegos().then((respuestaJuegos) => {
       if (respuestaJuegos) {
         setListaJuegos(respuestaJuegos);

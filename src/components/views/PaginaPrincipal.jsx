@@ -1,7 +1,7 @@
 import "../../css/PaginaPrincipal.css";
 import "react-multi-carousel/lib/styles.css";
 import { Form } from "react-bootstrap";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ListaJuegos from "./inicio/ListaJuegos";
 import { useForm } from "react-hook-form";
 import CarruselYOferta from "./inicio/CarruselYOferta";
@@ -9,6 +9,10 @@ import ListaJuegosFiltrados from "./inicio/ListaJuegosFiltrados";
 
 const PaginaPrincipal = () => {
   const [filtro, setFiltro] = useState({});
+
+  useEffect(() => {
+    document.title = "Pagina Principal";
+  }, []);
 
   const {
     register,
