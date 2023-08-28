@@ -121,7 +121,7 @@ const CardJuego = ({ urlPortada, categoria, nombre, precio, id }) => {
             <p className="display-5 fw-light">${precio}</p>
             <Link
               to={"/detalle-juego/" + id}
-              className="btn btn-primary btn-sm rounded-pill fs-5 px-0 p-md-3 my-2"
+              className="btn btn-verjuego text-white btn-sm rounded-pill fs-5 px-0 p-md-3 my-2"
             >
               Ver Juego!
             </Link>

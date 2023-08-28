@@ -22,7 +22,7 @@
   "juegos": [
     {
       "nombre": "Red Dead Redemption 2",
-      "precio": "49.99",
+      "precio": "39.99",
       "categoria": "Aventura",
       "desarrolladora": "Rockstar Games",
       "clasificacionImg": "https://www.esrb.org/wp-content/uploads/2019/05/Mature_SP.svg",
@@ -52,15 +52,8 @@
         "url4": "https://media.rockstargames.com/rockstargames-newsite/uploads/f924a7858cf5bbf0cb990f252a2fa8efb7919bec.jpg"
       },
       "urlTrailer": "https://www.youtube.com/watch?v=SXvQ1nK4oxk&ab_channel=RockstarGames",
-      "id": 1,
-      "calificacion": [
-        {
-          "userId": 1,
-          "userName": "admin",
-          "calificacionJuego": "1",
-          "comentario": "muy buen juego\n"
-        }
-      ]
+      "calificacion": [],
+      "id": 1
     },
     {
       "nombre": "Hogwarts Legacy",

@@ -107,7 +107,7 @@ const DetalleJuego = () => {
                       <div className="card-footer bg-white border-0">
                         <div className="d-grid gap-2 col col-md-6 mx-auto">
                           <button
-                            className="btn btn-primary"
+                            className="btn btn-añadirFav text-white"
                             type="button"
                             onClick={() => {
                               listaJuegosFavoritos.find(
@@ -128,7 +128,7 @@ const DetalleJuego = () => {
                               : "Añadir a Favoritos"}
                           </button>
                           <a
-                            className="btn btn-danger"
+                            className="btn btn-trailer text-white"
                             href={juego?.urlTrailer}
                             target="_black"
                           >

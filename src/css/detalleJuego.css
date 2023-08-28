@@ -7,6 +7,24 @@
   opacity: 80%;
 }
 
+.btn-añadirFav,
+.btn-verJuego {
+  background-color: #183d3d;
+}
+
+.btn-añadirFav:hover,
+.btn-verJuego:hover {
+  background-color: #5c8374;
+}
+
+.btn-trailer {
+  background-color: #93b1a6;
+  transition: 1s;
+}
+.btn-trailer:hover {
+  background-color: #040d12;
+}
+
 .itemReseña:hover {
   background-color: whitesmoke;
   opacity: 100%;

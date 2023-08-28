@@ -517,7 +517,11 @@ const AgregarJuego = () => {
           </Col>
         </Row>
         <div className="text-end mb-5">
-          <Button variant="primary" size="lg" type="submit">
+          <Button
+            size="lg"
+            type="submit"
+            className="btn btn-agregarJuego border-0"
+          >
             Agregar Juego
           </Button>
         </div>
