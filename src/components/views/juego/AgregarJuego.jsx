@@ -28,15 +28,16 @@ const AgregarJuego = () => {
   } = useForm();
 
   const onSubmit = (juego) => {
+    juego.calificacion = [];
     agregarJuegos(juego)
-      .then((respuesta) => {
+      .then(({ respuesta, dato }) => {
         if (respuesta.status === 201) {
           Swal.fire(
             "El juego " + juego.nombre,
             " fue cargado con exito",
             "success"
           );
-          detalleJuego("/detalle-juego/" + juego.id);
+          detalleJuego(`/detalle-juego/${dato.id}`);
         }
       })
       .catch((error) => {

@@ -6,7 +6,7 @@ import {
   faInstagram,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import logo from "../../../public/logo-pagina.svg";
+import logo from "../../../public/assets/logo-pagina.svg";
 
 const Footer = () => {
   return (

@@ -22,6 +22,7 @@ const EditarJuego = () => {
   const [url2, setUrl2] = useState("");
   const [url3, setUrl3] = useState("");
   const [url4, setUrl4] = useState("");
+  const [calificacion, setCalificaion] = useState([]);
 
   const {
     register,
@@ -94,13 +95,14 @@ const EditarJuego = () => {
           setUrl2(resp.capturas.url2);
           setUrl3(resp.capturas.url3);
           setUrl4(resp.capturas.url4);
+          setCalificaion(resp.calificacion);
         }
       })
       .catch((error) => console.log(error));
   }, [urlPortada]);
 
   const onSubmit = (juego) => {
-    juego.calificacion = [];
+    juego.calificacion = calificacion;
     editarJuego(id, juego)
       .then((respuesta) => {
         if (respuesta.status === 200) {

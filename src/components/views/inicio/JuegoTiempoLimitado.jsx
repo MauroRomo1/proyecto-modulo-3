@@ -26,10 +26,10 @@ const JuegoTiempoLimitado = () => {
         onClick={() => detalleJuego(`/detalle-juego/${juego.id}`)}
       >
         <Card.Img variant="top" src={juego.urlPortada} />
-        <Card.Body className="p-2">
+        <Card.Body className="p-2 text-center">
           <p className="fs-4 m-0 ">Precio</p>
-          <div className="d-flex">
-            <p className="fs-5 fw-ligth ps-2">{juego.precio}</p>
+          <div className="text-center">
+            <p className="fs-5 fw-ligth">${juego.precio}</p>
           </div>
         </Card.Body>
       </Card>

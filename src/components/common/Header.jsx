@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { NavLink, useNavigate } from "react-router-dom";
-import logo from "../../../public/logo-pagina.svg";
+import logo from "../../../public/assets/logo-pagina.svg";
 
 const Header = ({ usuarioActivo, setUsuarioActivo }) => {
   const navegacion = useNavigate();
