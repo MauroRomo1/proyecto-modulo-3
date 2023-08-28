@@ -8,13 +8,10 @@ import Footer from "./components/common/Footer";
 import Error404 from "./components/views/Error404";
 import PaginaPrincipal from "./components/views/PaginaPrincipal";
 import Login from "./components/views/Login";
-import Administracion from "./components/views/Administracion";
 import DetalleJuego from "./components/views/DetalleJuego";
 import AcercaDeNosotros from "./components/views/AcercaDeNosotros";
 import { useState } from "react";
 import AltaUsuario from "./components/views/AltaUsuario";
-import AgregarJuego from "./components/views/juego/AgregarJuego";
-import EditarJuego from "./components/views/juego/EditarJuego";
 import JuegosFavoritos from "./components/views/JuegosFavoritos";
 import EncapsularRutas from "./components/routes/EncapsularRutas";
 import RutasProtegidas from "./components/routes/RutasProtegidas";
@@ -34,14 +31,16 @@ function App() {
         ></Header>
         <Routes>
           <Route exact path="/" element={<PaginaPrincipal></PaginaPrincipal>} />
-          <Route
-            path="/administracion/*"
-            element={
-              <EncapsularRutas>
-                <RutasProtegidas></RutasProtegidas>
-              </EncapsularRutas>
-            }
-          ></Route>
+          {usuarioActivo?.email === "admin@gamestore.com" ? (
+            <Route
+              path="/administracion/*"
+              element={
+                <EncapsularRutas>
+                  <RutasProtegidas></RutasProtegidas>
+                </EncapsularRutas>
+              }
+            ></Route>
+          ) : null}
           <Route
             exact
             path="/detalle-juego/:id"
