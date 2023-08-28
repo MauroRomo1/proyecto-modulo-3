@@ -5,7 +5,6 @@ import Swal from "sweetalert2";
 import { agregarJuegoFav, calificarJuego } from "../../helpers/queries";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeartCirclePlus } from "@fortawesome/free-solid-svg-icons";
-
 const CardJuego = ({ urlPortada, categoria, nombre, precio, id }) => {
   const [calificacion, setCalificacion] = useState("");
   const detalleJuego = useNavigate();
@@ -28,10 +27,22 @@ const CardJuego = ({ urlPortada, categoria, nombre, precio, id }) => {
     );
   }, [listaJuegosFavoritos]);
 
-  const agregarJuegoFavorito = () => {
+  const agregarJuegoFavorito = (listaJuegosFavoritos, id) => {
     user.juegosFavoritos.push(...listaJuegosFavoritos, id);
     setListaJuegosFavoritos([...listaJuegosFavoritos, id]);
-    agregarJuegoFav(user.id, user);
+    agregarJuegoFav(user.id, user)
+      .then((resp) => {
+        if (resp.status === 200) {
+          Swal.fire(`Añadiste ${nombre}`, `a tu lista de favoritos`, `success`);
+        }
+      })
+      .catch((error) => {
+        Swal.fire(
+          `hubo un error inesperado`,
+          `codigo de error ${error.message}`,
+          `error`
+        );
+      });
   };
 
   const iconAction = () => {
@@ -98,7 +109,7 @@ const CardJuego = ({ urlPortada, categoria, nombre, precio, id }) => {
                         `si quieres eliminar el juego buscalo en tus favoritos`,
                         `info`
                       )
-                    : agregarJuegoFavorito();
+                    : agregarJuegoFavorito(listaJuegosFavoritos, id);
                 }}
               >
                 <FontAwesomeIcon

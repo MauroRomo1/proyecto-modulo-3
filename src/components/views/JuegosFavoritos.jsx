@@ -41,7 +41,7 @@ const JuegosFavoritos = () => {
       "listaFavoritos",
       JSON.stringify(listaJuegosFavoritos)
     );
-  }, []);
+  }, [listaJuegosFavoritos]);
 
   const borrarJuegoFavorito = (juego) => {
     let listaJuegosFiltrada = listaJuegosFavoritos.filter(

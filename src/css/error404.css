@@ -1,0 +1,59 @@
+.bg {
+  background-image: url("https://assets.codepen.io/1538474/star.svg"),
+    linear-gradient(to bottom, #05007a, #4d007d);
+}
+
+.imgEror404 {
+  width: 40%;
+}
+
+.containerError404 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes floating {
+  from {
+    transform: translateY(0px);
+  }
+  65% {
+    transform: translateY(15px);
+  }
+  to {
+    transform: translateY(-0px);
+  }
+}
+
+.astronaut {
+  position: absolute;
+  top: 18vmin;
+  left: 10vmin;
+  height: 30vmin;
+  animation: floating 3s infinite ease-in-out;
+}
+
+.spaceship {
+  position: absolute;
+  bottom: 15vmin;
+  right: 24vmin;
+}
+
+.astronaut {
+  width: 40%;
+  position: absolute;
+  top: 18vmin;
+  left: 10vmin;
+  height: 30vmin;
+  animation: floating 3s infinite ease-in-out;
+}
+
+.spaceship {
+  width: 20%;
+  position: absolute;
+  bottom: 1vmin;
+  right: 1vmin;
+}

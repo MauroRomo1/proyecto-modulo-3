@@ -1,0 +1,17 @@
+.backg {
+  background-image: url(https://cdn.wallpapersafari.com/32/24/KHaWtA.png);
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+
+.floating {
+  animation: floating 3s infinite ease-in-out;
+}
+
+.containerdos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

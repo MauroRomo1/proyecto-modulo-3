@@ -59,10 +59,7 @@ const Header = ({ usuarioActivo, setUsuarioActivo }) => {
                       administracion
                     </NavLink>
                   ) : (
-                    <NavDropdown.Item
-                      href="#action/3.2"
-                      className="text-center"
-                    >
+                    <NavDropdown.Item href="/error" className="text-center">
                       configuracion
                     </NavDropdown.Item>
                   )}
