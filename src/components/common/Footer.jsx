@@ -10,7 +10,7 @@ import logo from "../../../public/logo-pagina.svg";
 
 const Footer = () => {
   return (
-    <footer className=" bg-dark text-light py-3 text-center">
+    <footer className="text-light py-3 text-center">
       <div className="row py-5 m-0">
         <div className="col-12 col-md-4">
           <img src={logo} alt="logo de la pagina" className="logoPagina" />

@@ -8,6 +8,10 @@
   background-color: #040d12;
 }
 
+.titulo {
+  cursor: pointer;
+}
+
 .dropdown-navbar {
   color: #ff0000 !important;
 }

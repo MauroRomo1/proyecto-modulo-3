@@ -3,6 +3,11 @@
   font-size: 25px;
 }
 
+footer {
+  background-color: #040d12;
+}
+
 .logoPagina {
-  width: 150px;
+  width: 120px;
+  margin: 20px;
 }
