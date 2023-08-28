@@ -75,7 +75,7 @@ const ItemJuego = ({ juego }) => {
       <td>
         <div className="d-flex flex-column">
           <Link
-            to={`/editar-juego/${juego.id}`}
+            to={`/administracion/editar-juego/${juego.id}`}
             className="btn btn-editar btn-sm"
           >
             Editar 🖊

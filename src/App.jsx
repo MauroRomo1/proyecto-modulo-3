@@ -16,6 +16,8 @@ import AltaUsuario from "./components/views/AltaUsuario";
 import AgregarJuego from "./components/views/juego/AgregarJuego";
 import EditarJuego from "./components/views/juego/EditarJuego";
 import JuegosFavoritos from "./components/views/JuegosFavoritos";
+import EncapsularRutas from "./components/routes/EncapsularRutas";
+import RutasProtegidas from "./components/routes/RutasProtegidas";
 
 function App() {
   const usuarioEnlinea =
@@ -33,20 +35,13 @@ function App() {
         <Routes>
           <Route exact path="/" element={<PaginaPrincipal></PaginaPrincipal>} />
           <Route
-            exact
-            path="/administracion"
-            element={<Administracion></Administracion>}
-          />
-          <Route
-            exact
-            path="/agregar-juego"
-            element={<AgregarJuego></AgregarJuego>}
-          />
-          <Route
-            exact
-            path="/editar-juego/:id"
-            element={<EditarJuego></EditarJuego>}
-          />
+            path="/administracion/*"
+            element={
+              <EncapsularRutas>
+                <RutasProtegidas></RutasProtegidas>
+              </EncapsularRutas>
+            }
+          ></Route>
           <Route
             exact
             path="/detalle-juego/:id"

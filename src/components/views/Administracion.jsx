@@ -31,7 +31,7 @@ const Administracion = () => {
       </article>
       <article className="d-flex justify-content-between">
         <Link
-          to={"/agregar-juego"}
+          to={"/administracion/agregar-juego"}
           className="btn btn-agregarJuego text-white btn-lg ps-2"
         >
           ➕ Agregar Juegos
