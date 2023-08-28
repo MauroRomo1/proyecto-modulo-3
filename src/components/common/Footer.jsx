@@ -6,17 +6,14 @@ import {
   faInstagram,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import logo from "../../../public/logo-pagina.svg";
 
 const Footer = () => {
   return (
     <footer className=" bg-dark text-light py-3 text-center">
       <div className="row py-5 m-0">
         <div className="col-12 col-md-4">
-          <img
-            src="https://static.vecteezy.com/system/resources/thumbnails/004/739/197/small_2x/icon-broken-image-1-long-shadow-style-simple-illustration-editable-stroke-free-vector.jpg"
-            alt="logo"
-            width="40"
-          />
+          <img src={logo} alt="logo de la pagina" className="logoPagina" />
         </div>
         <div className="col-12 col-md-4">
           <h4>Para compradores</h4>
@@ -42,7 +39,7 @@ const Footer = () => {
             <div className="logo text-primary">
               <FontAwesomeIcon icon={faFacebook} />
             </div>
-            <div className="logo">
+            <div className="logo text-info">
               <FontAwesomeIcon icon={faTwitter} />
             </div>
             <div className="logo text-danger">

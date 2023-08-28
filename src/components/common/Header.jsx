@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { NavLink, useNavigate } from "react-router-dom";
+import logo from "../../../public/logo-pagina.svg";
 
 const Header = ({ usuarioActivo, setUsuarioActivo }) => {
   const navegacion = useNavigate();
@@ -18,7 +19,16 @@ const Header = ({ usuarioActivo, setUsuarioActivo }) => {
   return (
     <Navbar expand="lg" className=" bg-body-tertiary ">
       <Container>
-        <Navbar.Brand href="#home">logo</Navbar.Brand>
+        <NavLink end to={"/"} className="navbar-brand">
+          <img
+            src={logo}
+            alt="logo de la pagina"
+            width="70"
+            height="70"
+            className="d-inline-block"
+          />
+          Joystick Jungle
+        </NavLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="text-center">
           <Nav className="ms-auto">
