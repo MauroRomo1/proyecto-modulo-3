@@ -120,6 +120,7 @@
   height: 17rem;
 }
 
-.bg-headerPP {
-  background-color: whitesmoke;
+.bg-categoria {
+  background-color: #183d3d;
+  border-color: transparent;
 }
